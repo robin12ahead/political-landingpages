@@ -1,4 +1,8 @@
 <?php
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["komitee_status"] == true) {
+
 // Add Custom Post Type
 function create_post_type_komitee() {
     $supports = array(
@@ -88,3 +92,4 @@ function register_komitee_category() {
 }
 
 add_action( 'init', 'register_komitee_category', 0 );
+}

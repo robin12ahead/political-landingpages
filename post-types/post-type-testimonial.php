@@ -1,4 +1,8 @@
 <?php
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["testimonials_status"] == true) {
+
 // Add Custom Post Type
 function create_post_type_testimonial() {
     $supports = array(
@@ -87,3 +91,4 @@ function register_testimonial_category() {
 }
 
 add_action( 'init', 'register_testimonial_category', 0 );
+}

@@ -1,4 +1,8 @@
 <?php
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["forderungen_status"] == true) {
+
 // Add Custom Post Type
 function create_post_type_forderung() {
     $supports = array(
@@ -47,3 +51,4 @@ function create_post_type_forderung() {
     register_post_type('forderung', $args);
 }
 add_action('init', 'create_post_type_forderung', 4);
+}

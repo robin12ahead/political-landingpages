@@ -1,4 +1,8 @@
 <?php
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["downloads_status"] == true) {
+
 // Add Custom Post Type
 function create_post_type_download() {
     $supports = array(
@@ -88,3 +92,4 @@ function register_download_category() {
 }
 
 add_action( 'init', 'register_download_category', 0 );
+}

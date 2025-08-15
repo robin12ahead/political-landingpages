@@ -50,7 +50,7 @@ Settings / Controls
 $colors = array (
 'base-color-black' => array (
 		"label" => "Black",
-		"default" => "#111111",
+		"default" => "#000000",
 		"section" => "base-colors",
 	),
 'base-color-white' => array (
@@ -60,7 +60,7 @@ $colors = array (
 	),
 'base-color-accent' => array (
 		"label" => "Accent Color",
-		"default" => "#D62828",
+		"default" => "#E8308A",
 		"section" => "base-colors",
 	),
 'base-color-primary' => array (
@@ -70,12 +70,12 @@ $colors = array (
 	),
 'base-color-secondary' => array (
 		"label" => "Secondary Color",
-		"default" => "#333333",
+		"default" => "#074EA1",
 		"section" => "base-colors",
 	),
 'base-color-tertiary' => array (
 		"label" => "Tertiary Color",
-		"default" => "#666666",
+		"default" => "#00A0E2",
 		"section" => "base-colors",
 	),
 'system-color-error' => array (
@@ -115,7 +115,7 @@ $colors = array (
 	),
 'text-color-accent' => array (
 		"label" => "Accent Text Color",
-		"default" => "#D62828",
+		"default" => "#E8308A",
 		"section" => "text-colors",
 	),
 'background-color-primary' => array (
@@ -135,7 +135,7 @@ $colors = array (
 	),
 'background-color-accent' => array (
 		"label" => "Accent Background Color",
-		"default" => "#D62828",
+		"default" => "#E8308A",
 		"section" => "background-colors",
 	),
 'background-color-body' => array (
@@ -160,27 +160,27 @@ $colors = array (
 	),
 'links-color' => array (
 		"label" => "Link Color",
-		"default" => "#6100FF",
+		"default" => "#00A0E2",
 		"section" => "links",
 	),
 'links-color-decoration' => array (
 		"label" => "Link Decoration Color",
-		"default" => "#6100FF",
+		"default" => "#00A0E2",
 		"section" => "links",
 	),
 'links-color-hover' => array (
 		"label" => "Link Hover Color",
-		"default" => "#AD00FF",
+		"default" => "#074EA1",
 		"section" => "links",
 	),
 'buttons-color-background' => array (
 		"label" => "Button Background Color",
-		"default" => "#6100FF",
+		"default" => "#00A0E2",
 		"section" => "buttons",
 	),
 'buttons-color-background-hover' => array (
 		"label" => "Button Background Hover Color",
-		"default" => "#AD00FF",
+		"default" => "#074EA1",
 		"section" => "buttons",
 	),
 'buttons-color-text' => array (
@@ -195,12 +195,12 @@ $colors = array (
 	),
 'icons-color' => array (
 		"label" => "Icon Color",
-		"default" => "#D62828",
+		"default" => "#E8308A",
 		"section" => "icons",
 	),
 'icons-color-hover' => array (
 		"label" => "Icon Hover Color",
-		"default" => "#AD00FF",
+		"default" => "#074EA1",
 		"section" => "icons",
 	),
 'forms-color-text' => array (
@@ -220,7 +220,7 @@ $colors = array (
 	),
 'forms-color-border-focus' => array (
 		"label" => "Form Fields Border Focus Color",
-		"default" => "#D62828",
+		"default" => "#E8308A",
 		"section" => "forms",
 	),
 'boxes-background-color' => array (

@@ -1,4 +1,5 @@
 <?php
+// proceed if status is set to "active"
 $optionsAddons = get_field('addons', 'option');
 if ($optionsAddons["partner_status"] == true) {
 

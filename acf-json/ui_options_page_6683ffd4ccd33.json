@@ -5,19 +5,22 @@
     "menu_order": 0,
     "page_title": "Theme Options",
     "menu_slug": "theme-options",
-    "parent_slug": "themes.php",
-    "advanced_configuration": 0,
+    "parent_slug": "none",
+    "advanced_configuration": 1,
     "icon_url": "",
-    "menu_title": "",
-    "position": "",
-    "redirect": false,
+    "menu_title": "Theme Options",
+    "position": 60,
+    "redirect": 0,
     "description": "",
-    "menu_icon": [],
+    "menu_icon": {
+        "type": "dashicons",
+        "value": "dashicons-admin-customizer"
+    },
     "update_button": "Aktualisieren",
     "updated_message": "Optionen aktualisiert",
     "capability": "edit_posts",
     "data_storage": "options",
     "post_id": "",
     "autoload": 0,
-    "modified": 1755260056
+    "modified": 1755265734
 }

@@ -1,4 +1,7 @@
 <?php
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["partner_status"] == true) {
+
 // Add Custom Post Type
 function create_post_type_partner() {
     $supports = array(
@@ -47,3 +50,4 @@ function create_post_type_partner() {
     register_post_type('partner', $args);
 }
 add_action('init', 'create_post_type_partner', 8);
+}

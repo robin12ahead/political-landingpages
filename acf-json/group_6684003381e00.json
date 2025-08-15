@@ -1,6 +1,6 @@
 {
     "key": "group_6684003381e00",
-    "title": "Theme Options Fields",
+    "title": "Theme Options",
     "fields": [
         {
             "key": "field_66856316feb8e",
@@ -86,184 +86,6 @@
                     "append": ""
                 }
             ]
-        },
-        {
-            "key": "field_66b497494921c",
-            "label": "Options Testimonials",
-            "name": "options_testimonials",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_66b497494921d",
-                    "label": "Banner Prefix",
-                    "name": "banner_prefix",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "Without separator between prefix and suffix",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "bildungsgesetz-nein-testimonial",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "_XXXX"
-                },
-                {
-                    "key": "field_66b4992d49221",
-                    "label": "Banner file type",
-                    "name": "banner_file_type",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "Choose between .jpg and .png (Standard is .png)",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": ".png",
-                    "maxlength": "",
-                    "placeholder": ".png",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_66b4996349222",
-                    "label": "Banner Qualitiy",
-                    "name": "banner_qualitiy",
-                    "aria-label": "",
-                    "type": "number",
-                    "instructions": "Choose Banner quality: 0 (no compression) – 9 (max compression)",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": 4,
-                    "min": 1,
-                    "max": 9,
-                    "placeholder": 4,
-                    "step": "",
-                    "prepend": "",
-                    "append": ""
-                }
-            ]
-        },
-        {
-            "key": "field_66b49a1149223",
-            "label": "Email Options",
-            "name": "options_emails",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_66b49ac449225",
-                    "label": "Send Email \"New Testimonial\"",
-                    "name": "send_email_new_testimonial",
-                    "aria-label": "",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 1,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
-                },
-                {
-                    "key": "field_66b49b2749228",
-                    "label": "Receiver \"New Testimonial\"",
-                    "name": "receiver_new_testimonial",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "(Optional) If the field is empty it will use WP-admin-email",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "stipendienreferendum@gmail.com",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_66b49af549227",
-                    "label": "Send Email \"New comitee member\"",
-                    "name": "send_email_new_comitee_member",
-                    "aria-label": "",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 1,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
-                },
-                {
-                    "key": "field_66b49a2e49224",
-                    "label": "Receiver \"New comitee member\"",
-                    "name": "receiver_new_comitee_member",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "(Optional) If the field is empty it will use WP-admin-email",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "stipendienreferendum@gmail.com",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                }
-            ]
         }
     ],
     "location": [
@@ -284,5 +106,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755259765
+    "modified": 1755264319
 }

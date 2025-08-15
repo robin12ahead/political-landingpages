@@ -1,4 +1,8 @@
 <?php
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["argumente_status"] == true) {
+
 // Add Custom Post Type
 function create_post_type_argument() {
     $supports = array(
@@ -47,3 +51,4 @@ function create_post_type_argument() {
     register_post_type('argument', $args);
 }
 add_action('init', 'create_post_type_argument', 3);
+}

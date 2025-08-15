@@ -1,4 +1,11 @@
 <?php
+<<<<<<< Updated upstream
+=======
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["partner_status"] == true) {
+
+>>>>>>> Stashed changes
 // Add Custom Post Type
 function create_post_type_partner() {
     $supports = array(

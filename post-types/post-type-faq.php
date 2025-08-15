@@ -1,4 +1,8 @@
 <?php
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["faq_status"] == true) {
+
 // Add Custom Post Type
 function create_post_type_faq() {
     $supports = array(
@@ -88,3 +92,4 @@ function register_faq_category() {
 }
 
 add_action( 'init', 'register_faq_category', 0 );
+}

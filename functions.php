@@ -210,8 +210,15 @@ function political_landingpages_scripts() {
 	wp_enqueue_style( 'slick', get_template_directory_uri() . '/inc/slick/slick.css', array(), '1.8.1');
 	wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/inc/slick/slick-theme.css', array(), '1.8.1' );
 
-	// typekit
-	// wp_enqueue_style('typekit', 'https://use.typekit.net/mje1ybt.css', array(), _S_VERSION );
+	// Fonts
+	$typographyOptions = get_field('typography', 'option');
+	$fontFamilies = $typographyOptions["font_family"]
+	if( $fontFamilies ) {
+		foreach( $fontFamilies as $font ) {
+			$fontLink = $font['font-url'];
+			wp_enqueue_style($fontLink["title"], $fontLink["url"], array(), _S_VERSION );
+		}
+	}
 
 	// Add to calender
 	wp_enqueue_script('addtocalendar', get_template_directory_uri() . '/inc/addtocalendar/addtocalendar.min.js', array(), null, true);

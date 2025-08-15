@@ -16,7 +16,25 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<div class="container ">
+
+		<?php 
+		if (get_field("hero_visibility") == true) {
+
+			// different template if it is home or subpage
+			if ( is_front_page() ) {
+				get_template_part('template-parts/hero-home'); 
+			} else {
+				get_template_part('template-parts/hero-subpages'); 
+			}
+		}
+		?>
+
+		<?php
+		// Add Container to non-elementor pages
+		$page_id =  get_the_ID();
+		if ( !metadata_exists('post', $page_id, '_elementor_edit_mode') ) : ?>
+			<div class="container">
+		<?php endif; ?>
 
 			<?php
 			if ( have_posts() ) :
@@ -50,12 +68,15 @@ get_header();
 
 			endif;
 			?>
-		</div>
+				
+		<?php 
+		if ( !metadata_exists('post', $page_id, '_elementor_edit_mode') ) : ?>
+			</div><!-- .container -->
+		<?php endif; ?>
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 
 // Load CTA Section
 if ( !get_field( 'cta_section_visibility' ) == false && get_post_type() == 'page' ) {

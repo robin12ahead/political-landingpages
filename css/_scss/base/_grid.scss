@@ -1,0 +1,119 @@
+// Elementor and Bootstrap grid system and column fix
+// Version 3.1
+
+// Bootstrap container
+.container {
+    max-width: $container_width;
+    // width: calc(100% - #{$container_padding * 2});
+    padding-left: $container_padding;
+    padding-right: $container_padding;
+    box-sizing: content-box;
+    width: calc(100% - #{$container_padding * 2});
+}
+
+.container-fluid {
+    // width: 100%;
+    // max-width: 100%;
+    padding-left: $container_padding;
+    padding-right: $container_padding;
+    box-sizing: content-box;
+    width: calc(100% - #{$container_padding * 2});
+}
+
+// @function var($name) {
+//     @return unquote("var(#{$name})");
+//   }
+  
+// @mixin media($breakpoint) {
+//     @media (min-width: $breakpoint) {
+//         @content;
+//     }
+// }
+
+.row {
+    --bs-gutter-x: #{$gutter_desk};
+    --bs-gutter-y: #{$gutter_desk};
+
+    // @include media(var(--grid-breakpoint-tablet)) {
+    //     --bs-gutter-x: #{$gutter_tab};
+    //     --bs-gutter-y: #{$gutter_tab};
+    // }
+
+    // @include media(var(--grid-breakpoint-mobile)) {
+    //     --bs-gutter-x: #{$gutter_mob};
+    //     --bs-gutter-y: #{$gutter_mob};
+    // }
+}
+
+@media screen and (max-width: 1024px) {
+    .row {
+        --bs-gutter-x: #{$gutter_tab};
+        --bs-gutter-y: #{$gutter_tab};
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .row {
+        --bs-gutter-x: #{$gutter_mob};
+        --bs-gutter-y: #{$gutter_mob};
+    }
+}
+
+.elementor {
+
+    // .e-con.e-child {
+    //     width: calc(#{var(--width)} - (#{var(--gap)}));
+    // }
+
+    .e-con {
+        --widgets-spacing: #{$gutter_desk};
+        --container-max-width: #{$container_width};
+    }
+
+    .e-con,
+    .e-con.e-flex
+    .e-con.e-grid {
+
+        .e-con-inner {
+            padding-left: $container_padding;
+            padding-right: $container_padding;
+            box-sizing: content-box;
+            width: calc(100% - #{$container_padding * 2});
+        }
+        
+        &.gutter-default {
+            gap: $gutter_desk;
+
+            &.e-con-boxed  {
+                --content-width: #{$container_width};
+                // --gap: #{$gutter_desk};
+            }
+
+            .e-con-inner {
+                gap: $gutter_desk;
+            }
+
+            // .e-child {
+            //     width: calc(#{var(--width)} - (#{$gutter_desk} / 2));
+            // }
+        }
+    }
+}
+
+.container,
+.container-fluid {
+    .elementor {
+    
+        .e-con,
+        .e-con.e-flex
+        .e-con.e-grid {
+    
+            .e-con-inner {
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+            }
+        }
+    }            
+}

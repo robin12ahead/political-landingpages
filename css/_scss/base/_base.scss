@@ -1,0 +1,231 @@
+body {
+    background-color: var(--background-color-body);
+}
+
+// page wrapper
+.site#page {
+
+}
+
+// site main
+main.site-main {
+    // padding-top: 5rem;
+    padding-top: 103px;
+
+    &#primary {
+
+    }
+}
+
+// images
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+// all focus
+:focus,
+:focus-visible,
+:focus-within {
+    outline: none;
+}
+
+// Entry Elements
+.page-content, 
+.entry-content, 
+.entry-summary {
+    margin: 0;
+}
+
+.edit-link {
+    display: none;
+}
+
+// hide entry footer on all pages
+.page .entry-footer {
+    display: none;
+}
+
+.post, 
+.page {
+    margin: 0;
+}
+
+
+// general navigations
+.nav,
+.menu {
+    column-gap: $gutter_desk;
+    row-gap: calc(#{$gutter_desk} / 2);
+}
+
+nav.navigation {
+    ul.menu {
+        li.menu-item {
+            a.nav-link {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// Pagination
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: $gutter_desk 0;
+
+    .pagination-numbers {
+        display: inline-flex;
+        justify-content: space-between;
+        gap: .5em;
+    }
+
+    .page-numbers {
+        font-weight: $bold;
+        font-size: 1rem;
+
+        &.prev {
+            font-size: 1.25rem;
+            position: absolute;
+            left: 0;
+        }
+        &.next {
+            font-size: 1.25rem;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+// Post Navigation
+.post-navigation {
+    border-top: 1px solid var(--border-color-secondary);
+    padding: 1rem 0;
+    margin-top: 3rem;
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        gap: $gutter_desk;
+    
+        .nav-previous {
+            margin-right: auto;
+        }
+    
+        .nav-next {
+            margin-left: auto;
+            text-align: right;
+        }
+
+        .nav-previous,
+        .nav-next {
+
+            .nav-subtitle {
+                display: block;
+                color: var(--text-color-secondary);
+                font-weight: $regular;
+                font-size: 1rem;
+            }
+
+            .nav-title {
+                display: block;
+                font-weight: $bold;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+// General Boxes
+.box {
+    background-color: var(--boxes-background-color);
+    padding: var(--boxes-padding-tb) var(--boxes-padding-lr);
+    border-radius: var(--boxes-border-radius);
+    border: var(--boxes-border-width) solid var(--border-color-secondary);
+    position: relative;
+    display: block;
+    box-shadow: var(--effects-shadow-size) var(--effects-shadow-size) var(--effects-shadow-blur) 0px  rgba(var(--effects-shadow-color), 0.2);
+
+    &.box-gutter,
+    &.box-gap {
+        display: flex;
+        flex-direction: column;
+        gap: $gutter_desk;
+    }
+}
+
+// Dividers
+.divider {
+    border-bottom: var(--divider-width-default) solid var(--border-color-secondary);
+
+    &.divider-primary {
+        border-color: var(--border-color-primary);
+    }
+
+    &.divider-secondary {
+        border-color: var(--border-color-secondary);
+    }
+
+    &.divider-tertiary {
+        border-color: var(--border-color-tertiary);
+    }
+}
+
+// read-more-text
+.read-more-text {
+    color: var(--text-color-accent);
+
+    &:hover,
+    &:focus {
+        color: var(--links-color-hover);
+    }
+}
+
+// all unordered lists
+#primary article {
+    ul:not(.elementor-editor-element-settings) {
+        list-style-type: "–  ";
+        padding-left: 1em;
+    }
+}
+
+// add to calendar link
+.add-to-calendar {
+    position: relative;
+
+    .atcb-list {
+        position: absolute;
+        display: none;
+        list-style: none;
+        padding: 1rem;
+        background-color: var(--background-color-body);
+        left: 0;
+        right: 0;
+        top: 100%;
+        // margin-left: -1rem;
+        // margin-right: -1rem;
+
+        li.atcb-item {
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+    }
+
+    &:hover {
+        .atcb-list {
+            display: block;
+        }
+    }
+}
+
+// recaptcha badge
+.grecaptcha-badge {
+    display: none;
+}

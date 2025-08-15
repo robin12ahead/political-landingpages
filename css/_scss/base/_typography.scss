@@ -1,0 +1,339 @@
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// fluid responsive
+@media screen and (min-width: 1024px) and (max-width:1920px) {
+    html {
+        font-size: calc(0.49999999999999994rem + 0.41666666666666674vw);
+    }
+}
+
+
+body {
+    font-family: $font_body;
+    font-weight: $regular;
+    font-size: var(--font-size-body);
+}
+
+/* Headings */
+h1,
+.text-style-h1 {
+    font-family: $font_headings;
+    font-size: var(--font-size-h1);
+    font-weight: $regular;
+    line-height: 1.1;
+    letter-spacing: 0;
+    hyphens: auto;
+    margin: 0;
+}
+
+// body.home {
+//     h1 {
+//         font-size: 8rem;
+//         line-height: 1;
+//     }
+// }
+
+h2,
+.text-style-h2 {
+    font-family: $font_headings;
+    font-size: var(--font-size-h2);
+    font-weight: $regular;
+    line-height: 1.2;
+    letter-spacing: 0;
+    hyphens: auto;
+    margin: 0;
+}
+
+h3,
+.text-style-h3 {
+    font-family: $font_headings;
+    font-size: var(--font-size-h3);
+    font-weight: $regular;
+    line-height: 1.2;
+    letter-spacing: 0;
+    // hyphens: auto;
+    margin: 0;
+}
+
+h4,
+.text-style-h4 {
+    font-family: $font_headings;
+    font-size: var(--font-size-h4);
+    font-weight: $regular;
+    line-height: 1.3;
+    letter-spacing: 0;
+    // hyphens: auto;
+    margin: 0;
+}
+
+h5,
+.text-style-h5 {
+    font-family: $font_body;
+    font-size: var(--font-size-h5);
+    font-weight: $bold;
+    line-height: 1.4;
+    letter-spacing: -.01em;
+    // hyphens: auto;
+    margin: 0;
+}
+
+h6,
+.text-style-h6 {
+    font-family: $font_body;
+    font-size: var(--font-size-h6);
+    font-weight: $bold;
+    line-height: 1.4;
+    letter-spacing: -.01em;
+    // hyphens: auto;
+    margin: 0;
+}
+
+p {
+    font-family: $font_body;
+    font-size: var(--font-size-paragraph);
+    font-weight: $regular;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: inherit;
+    margin: 0;
+}
+
+article {
+    p {
+        margin-block-end: .75em;
+    }
+}
+
+b,
+strong {
+    font-weight: $bold;
+    font-style: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+em,
+i {
+    font-style: italic;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+.text-style-overline,
+.text-style-overline * {
+    font-family: $font_body;
+    font-size: 2rem;
+    font-weight: $bold;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.text-size-large,
+.text-size-large p {
+    font-size: var(--font-size-large);
+    // line-height: inherit;
+    // font-weight: inherit;
+    // font-style: inherit;
+    // color: inherit;
+}
+
+.text-size-medium,
+.text-size-medium p {
+    font-size: var(--font-size-medium);
+    // line-height: inherit;
+    // font-weight: inherit;
+    // font-style: inherit;
+    // color: inherit;
+}
+
+.text-size-regular,
+.text-size-regular p {
+    font-size: var(--font-size-regular);
+    // line-height: inherit;
+    // font-weight: inherit;
+    // font-style: inherit;
+    // color: inherit;
+}
+
+.text-size-small,
+.text-size-small p {
+    font-size: var(--font-size-small);
+    // line-height: inherit;
+    // font-weight: inherit;
+    // font-style: inherit;
+    // color: inherit;
+}
+
+.site-title {
+    font-family: $font_headings;
+}
+
+span.title-big,
+span.highlighted-text {
+    font-size: 1.55em;
+}
+
+
+// Typography on tablet
+@media screen and (max-width: $breakpoint_tab) {
+    h1 {
+        font-size: calc(var(--font-size-h1) * .7);
+    }
+
+    body.home {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    
+    h2,
+    .text-style-h2 {
+        font-size: calc(var(--font-size-h2) * .7);
+    }
+    
+    h3,
+    .text-style-h3 {
+        font-size: calc(var(--font-size-h3) * .7);
+    }
+    
+    h4,
+    .text-style-h4 {
+        font-size: calc(var(--font-size-h4) * .7);
+    }
+    
+    h5,
+    .text-style-h5 {
+        font-size: calc(var(--font-size-h5) * .9);
+    }
+    
+    h6,
+    .text-style-h6 {
+        font-size: calc(var(--font-size-h6) * 1);
+    }
+    
+    p {
+        font-size: calc(var(--font-size-paragraph) * 1);
+    
+    }
+    
+    .text-style-overline,
+    .text-style-overline * {
+        font-size: 1.5rem;
+    }
+
+    .text-size-large,
+    .text-size-large p {
+        font-size: calc(var(--font-size-large) * .8);
+    }
+
+    .text-size-medium,
+    .text-size-medium p {
+        font-size: calc(var(--font-size-medium) * .8);
+
+    }
+
+    .text-size-regular,
+    .text-size-regular p {
+        font-size: calc(var(--font-size-regular) * .8);
+
+    }
+
+    span.title-big,
+    span.highlighted-text {
+        font-size: 1.5em;
+    }
+
+}
+
+
+// Typography on Mobile
+@media screen and (max-width: $breakpoint_mob) {
+    h1 {
+        font-size: calc(var(--font-size-h1) * .5);
+    }
+
+    body.home {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+    
+    h2,
+    .text-style-h2 {
+        font-size: calc(var(--font-size-h2) * .5);
+    }
+    
+    h3,
+    .text-style-h3 {
+        font-size: calc(var(--font-size-h3) * .5);
+    }
+    
+    h4,
+    .text-style-h4 {
+        font-size: calc(var(--font-size-h4) * .6);
+    }
+    
+    h5,
+    .text-style-h5 {
+        font-size: calc(var(--font-size-h5) * .7);
+    }
+    
+    h6,
+    .text-style-h6 {
+        font-size: calc(var(--font-size-h6) * 1);
+    }
+    
+    p {
+        font-size: calc(var(--font-size-paragraph) * 1);
+    
+    }
+        
+    .text-style-overline,
+    .text-style-overline * {
+        font-size: 1.5rem;
+    }
+
+    .text-size-large,
+    .text-size-large p {
+        font-size: calc(var(--font-size-large) * .7);
+    }
+
+    .text-size-medium,
+    .text-size-medium p {
+        font-size: calc(var(--font-size-medium) * .8);
+
+    }
+
+    .text-size-regular,
+    .text-size-regular p {
+        font-size: calc(var(--font-size-regular) * .9);
+    }
+
+    a.download-button,
+    .text-link,
+    .elementor-widget-button a.elementor-button,
+    input[type="button"],
+    input[type="submit"],
+    .acf-button,
+    .button,
+    .btn,
+    .wp-element-button,
+    .wp-block-button__link {
+        font-size: calc(var(--buttons-font-size) * .9)!important;
+    }
+
+    span.title-big,
+    span.highlighted-text {
+        font-size: 1.45em;
+    }
+
+}

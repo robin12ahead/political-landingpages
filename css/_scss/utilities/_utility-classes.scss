@@ -1,0 +1,326 @@
+/* Utility Classes to use in frontend */
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+// Background Colors
+.background-color-primary {
+    background-color: var(--background-color-primary);
+}
+
+.background-color-secondary {
+    background-color: var(--background-color-secondary);
+}
+
+.background-color-tertiary {
+    background-color: var(--background-color-tertiary);
+}
+
+.background-color-accent {
+    background-color: var(--background-color-accent);
+}
+
+.background-color-body {
+    background-color: var(--background-color-body);
+}
+
+// Text Colors
+.text-color-primary {
+    color: var(--text-color-primary);
+}
+
+.text-color-secondary {
+    color: var(--text-color-secondary);
+}
+
+.text-color-tertiary {
+    color: var(--text-color-tertiary);
+}
+
+.text-color-accent {
+    color: var(--text-color-accent);
+}
+
+.text-color-alternate {
+    color: var(--text-color-alternate);
+}
+
+// Text Styles
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-style-italic {
+    font-style: italic;
+}
+
+.text-style-nowrap {
+    white-space: nowrap;
+}
+
+
+// Text Columns
+.text-columns-2 {
+    columns: 2;
+    gap: $gutter_desk;
+}
+
+.text-columns-3 {
+    columns: 3;
+    gap: $gutter_desk;
+}
+
+// Font Weights
+.text-weight-xbold {
+    font-weight: $heavy;
+}
+
+.text-weight-bold {
+    font-weight: $bold;
+}
+
+.text-weight-semibold {
+    font-weight: $semibold;
+}
+
+.text-weight-medium {
+    font-weight: $medium;
+}
+
+.text-weight-regular {
+    font-weight: $regular;
+}
+
+.text-weight-light {
+    font-weight: $light;
+}
+
+.text-weight-extralight {
+    font-weight: $extralight;
+}
+
+.text-weight-thin {
+    font-weight: $thin;
+}
+
+
+// Paddings / Margins
+.margin-0 {
+    margin: 0rem !important;
+}
+
+.padding-0 {
+    padding: 0rem !important;
+}
+
+.spacing-clean {
+    padding: 0rem !important;
+    margin: 0rem !important;
+}
+
+.margin-top {
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-top {
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-right {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-right {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-bottom {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-bottom {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.margin-left {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.padding-left {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.margin-horizontal {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.padding-vertical {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .padding-container-left {
+        padding-left: clamp(calc((50vw - 15px / 2) - (var(--grid-container-width) / 2)), #{$container_padding}, #{$container_padding} ) !important;
+    }
+    
+    .padding-container-right {
+        padding-right: clamp(calc((50vw - 15px / 2) - (var(--grid-container-width) / 2)), #{$container_padding}, #{$container_padding} ) !important;
+    }
+}
+
+// Max width
+.max-width-xsmall {
+    max-width: 16rem;
+}
+
+.max-width-small {
+    max-width: 20rem;
+}
+
+.max-width-medium {
+    max-width: 32rem;
+}
+
+.max-width-large {
+    max-width: 48rem;
+}
+
+.max-width-xlarge {
+    max-width: 64rem;
+}
+
+.max-width-xxlarge {
+    max-width: 80rem;
+}
+
+// Section Padding
+.section-padding-huge {
+    padding-top: var(--spacer-huge);
+    padding-bottom: var(--spacer-huge);
+}
+
+.section-padding-xxlarge,
+.section-padding-xxl {
+    padding-top: var(--spacer-xxl);
+    padding-bottom: var(--spacer-xxl);
+}
+
+.section-padding-xlarge,
+.section-padding-xl {
+    padding-top: var(--spacer-xl);
+    padding-bottom: var(--spacer-xl);
+}
+
+.section-padding-large,
+.section-padding-lg {
+    padding-top: var(--spacer-lg);
+    padding-bottom: var(--spacer-lg);
+}
+
+.section-padding-medium,
+.section-padding-md {
+    padding-top: var(--spacer-md);
+    padding-bottom: var(--spacer-md);
+}
+
+.section-padding-small,
+.section-padding-sm {
+    padding-top: var(--spacer-sm);
+    padding-bottom: var(--spacer-sm);
+}
+
+// Spacers
+.spacer-tiny {
+    padding-top: var(--spacer-tiny); // 8
+    width: 100%;
+    display: block;
+}
+
+.spacer-xxsmall {
+    padding-top: var(--spacer-xxs); // 16
+    width: 100%;
+    display: block;
+}
+
+.spacer-xsmall {
+    padding-top: var(--spacer-xs); // 24
+    width: 100%;
+    display: block;
+}
+
+.spacer-small {
+    padding-top: var(--spacer-sm); // 32
+    width: 100%;
+    display: block;
+}
+
+.spacer-medium {
+    padding-top: var(--spacer-md); // 48
+    width: 100%;
+    display: block;
+}
+
+.spacer-large {
+    padding-top: var(--spacer-lg); // 64
+    width: 100%;
+    display: block;
+}
+
+.spacer-xlarge {
+    padding-top: var(--spacer-xl); // 80
+    width: 100%;
+    display: block;
+}
+
+.spacer-xxlarge {
+    padding-top: var(--spacer-xxl); // 96
+    width: 100%;
+    display: block;
+}
+
+.spacer-huge {
+    padding-top: var(--spacer-huge); // 120
+    width: 100%;
+    display: block;
+}
+
+.spacer-xhuge {
+    padding-top: var(--spacer-xhuge); // 160
+    width: 100%;
+    display: block;
+}
+

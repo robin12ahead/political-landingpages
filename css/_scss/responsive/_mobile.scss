@@ -1,0 +1,124 @@
+/* Mobile Styles */
+
+// Header / Navigation
+$header_height : 5rem;
+
+// Header
+header.header {
+
+    // site header
+    &#site-header {
+        .navbar#main-navbar {
+    
+            .site-branding {
+                .site-title {
+                    font-size: clamp(calc(var(--font-size-site-title) / 2), 6vw, var(--font-size-site-title));
+                }
+            }
+    
+            nav.navigation {
+
+                &#main-nav {
+
+                    .menu#primary-menu {
+                        margin: 0;
+                        padding-top: 0;
+
+                        & > li.menu-item {
+                            padding: 1rem 0;
+                            font-size: clamp( var(--font-size-nav), 8vw, calc(var(--font-size-nav) * 1.5));
+
+                        }
+
+                        li.menu-item {
+
+                            &.menu-item-has-children {
+
+                                .dropdown-wrapper {
+                                }
+
+                                span.dropdown-icon {
+                                    width: 2rem;
+                                    height: 2rem;
+                                    background-size: 60%;
+                                }
+
+                                ul.sub-menu {
+
+                                    li.menu-item {
+                                        font-size: clamp(calc(var(--font-size-nav) / 2), 5vw, var(--font-size-nav));
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Hero
+.hero-section {
+
+    .headvisual-wrapper {
+        max-width: 18rem;
+        padding-top: var(--spacer-xs);
+        padding-bottom: var(--spacer-xs);
+    }
+
+    &.hero-home {
+        min-height: unset;
+
+        .headvisual-wrapper {
+            max-width: 24rem;
+        }
+    }
+
+    &.hero-subpages {
+        min-height: 30rem;
+
+        .headvisual-wrapper {
+            max-width: 18rem;
+        }
+    }
+
+    .scroll-to-main {
+        bottom: 0;
+        transform: translateY(50%);
+    }
+}
+
+// hero events
+.hero-section.hero-events {
+
+    .back-wrapper {
+        .text-link {
+            .button-text {
+                display: none;
+            }
+        }
+    }
+
+    .calendar-wrapper {
+        .text-link {
+            .button-text {
+                display: none;
+            }
+        }
+    }
+
+    .hero-events_content {
+
+        .col-md-2 {
+            text-align: center;
+        }
+    }
+}
+
+
+// Boxes
+.box,
+.linkbox {
+    padding: calc(var(--boxes-padding-tb) * .7) calc(var(--boxes-padding-lr) * .7);
+}

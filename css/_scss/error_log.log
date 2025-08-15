@@ -1,0 +1,9 @@
+07/05/24 1:09:17: theme.scss - `utilities/frontend-classes` file not found for @import: theme.scss on line 83, at column 1
+07/05/24 1:19:03: theme.scss - Undefined variable $container_width: base/_grid.scss on line 6, at column 5
+Call Stack:
+#0 import base/_grid.scss theme.scss on line 15
+07/05/24 1:19:08: theme.scss - Undefined variable $container_width: base/_grid.scss on line 6, at column 5
+Call Stack:
+#0 import base/_grid.scss theme.scss on line 15
+08/06/24 9:36:22: theme.scss - unclosed block: failed at `` /home/httpd/vhosts/aenderung-bildungsgesetz-nein.ch/gratis-studium-nein.ch/wp-content/themes/political-landingpages/css/_scss/base/_typography.scss on line 298, at column 0
+08/06/24 9:36:23: theme.scss - unclosed block: failed at `` /home/httpd/vhosts/aenderung-bildungsgesetz-nein.ch/gratis-studium-nein.ch/wp-content/themes/political-landingpages/css/_scss/base/_typography.scss on line 298, at column 0

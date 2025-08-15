@@ -1,0 +1,240 @@
+/* Links */
+
+a {
+    color: var(--links-color);
+    text-decoration: none;
+    transition: color 300ms ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--links-color-hover);
+    text-decoration: none;
+}
+
+// a:visited {
+//     color: var(--links-color);
+// }
+
+a.nav-link {
+    color: var(--links-color);
+    font-size: inherit;
+    font-weight: $semibold;
+    line-height: inherit;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+        color: var(--links-color-hover);
+    }
+}
+
+/* Buttons */
+button {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+    outline: none;
+        box-shadow: none;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+// Elementor Button
+.elementor-widget-button {
+
+    a.elementor-button {
+        display: inline-flex;
+        background-color: var(--buttons-color-background);
+        font-size: var(--buttons-font-size);
+        line-height: 1;
+        font-family: $font_body;
+        font-weight: $bold;
+        padding: var(--buttons-padding-tb) var(--buttons-padding-lr);
+        border-radius: var(--buttons-border-radius);
+        color: var(--buttons-color-text);
+        fill: var(--buttons-color-text);
+        transition: all .3s;
+        border: none;
+        text-align: left;
+        
+        &:hover {
+            background-color: var(--buttons-color-background-hover);
+            color: var(--buttons-color-text-hover);
+            fill: var(--buttons-color-text-hover);
+        }
+    
+        .elementor-button-content-wrapper {
+            gap: var(--buttons-spacing);
+        }
+    }
+
+    &.is-secondary {
+        a.elementor-button {
+            border: 2px solid var(--buttons-color-background);
+            color: var(--buttons-color-background);
+            fill: var(--buttons-color-background);
+            background: none;
+
+            &:hover {
+                border-color: var(--buttons-color-background-hover);
+                color: var(--buttons-color-background-hover);
+                fill: var(--buttons-color-background-hover);
+                background: none;
+            }
+        }
+    }
+}
+
+// All other buttons
+input[type="button"],
+input[type="submit"],
+.acf-button,
+.button,
+.btn,
+.wp-element-button,
+.wp-block-button__link {
+    display: inline-flex;
+    background-color: var(--buttons-color-background);
+    font-size: var(--buttons-font-size);
+    line-height: 1;
+    font-family: $font_body;
+    font-weight: $bold;
+    padding: var(--buttons-padding-tb) var(--buttons-padding-lr);
+    border-radius: var(--buttons-border-radius);
+    color: var(--buttons-color-text);
+    fill: var(--buttons-color-text);
+    transition: all .3s;
+    border: none;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: var(--buttons-color-background-hover);
+        color: var(--buttons-color-text-hover);
+        fill: var(--buttons-color-text-hover);
+    }
+
+    &:visited {
+        color: var(--buttons-color-text);
+    }
+
+    &.is-primary,
+    &.button-primary {
+
+    }
+
+    &.is-secondary,
+    &.button-secondary {
+        border: 2px solid var(--buttons-color-background);
+        color: var(--buttons-color-background);
+        fill: var(--buttons-color-background);
+        background: none;
+
+        &:hover {
+            border-color: var(--buttons-color-background-hover);
+            color: var(--buttons-color-background-hover);
+            fill: var(--buttons-color-background-hover);
+            background: none;
+        }
+
+        &:visited {
+            color: var(--buttons-color-background);
+        }
+    }
+}
+
+// download-button
+a.download-button {
+    font-family: $font_body;
+    font-size: var(--buttons-font-size);
+    font-weight: $bold;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+// Textlinks
+.text-link {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    border: none;
+    background: none;
+    color: var(--links-color);
+    font-size: var(--buttons-font-size);
+    line-height: 1;
+    font-family: $font_body;
+    font-weight: $bold;
+
+    &:hover {
+        color: var(--links-color-hover);
+    }
+}
+
+// Linkboxes
+.linkbox {
+    padding: var(--boxes-padding-tb) var(--boxes-padding-lr);
+    background: var(--background-color-primary);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer-xs);
+    height: 100%;
+    width: 100%;
+    transition: all 500ms ease;
+
+    > * {
+        color: var(--text-color-primary);
+    }
+
+    .divider {
+        background-color: var(--border-color-primary);
+        height: 1px;
+        width: 2.5rem;
+        display: block;
+    }
+
+    .link-text {
+
+    }
+
+    &:hover {
+        background: var(--background-color-accent);
+
+        > * {
+            color: var(--base-color-white);
+        }
+
+        .divider {
+            background-color: var(--base-color-white);
+        }
+
+        .text-link {
+            color: var(--background-color-primary);
+        }
+    }
+}
+
+// arrow button
+.arrow-button {
+    border: none;
+    outline: none;
+    background: none; 
+    color: var(--links-color);
+    font-size: inherit;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+        color: var(--links-color-hover);
+    }
+}

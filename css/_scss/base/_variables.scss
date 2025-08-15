@@ -1,0 +1,23 @@
+/* Font Weights */
+$thin: 100;
+$extralight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$heavy: 900;
+
+/* Variables that control the grid layout*/
+$container_width: var(--grid-container-width);   // sets container width for bootstrap and elementor
+$gutter_desk: var(--grid-gutter-desk);       // sets column gutter space
+$gutter_tab: var(--grid-gutter-tab);       // sets column gutter space
+$gutter_mob: var(--grid-gutter-mob);       // sets column gutter space
+$container_padding: var(--grid-container-padding);   // sets container padding (left and right) on responsive
+
+/* Responsive Breakpoints */
+// $breakpoint_tab: unquote("var(#{--grid-breakpoint-tablet})");
+// $breakpoint_mob: var(--grid-breakpoint-mobile);
+$breakpoint_tab: 1024px;
+$breakpoint_mob: 768px;

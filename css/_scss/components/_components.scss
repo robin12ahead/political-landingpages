@@ -1,0 +1,151 @@
+/* Components */
+
+// Hero
+.hero-section {
+    height: auto;
+    min-height: unset;
+    // height: 0;
+    position: relative;
+    border-bottom: var(--border-width-default) solid var(--base-color-accent);
+
+    .container {
+        position: relative;
+        height: 100%;
+    }
+
+    .row {
+        height: 100%;
+    }
+
+    .headvisual-wrapper {
+        max-width: 32rem;
+    }
+
+    &.hero-home {
+        min-height: 42rem;
+
+        .headvisual-wrapper {
+            max-width: 34rem;
+        }
+
+        h1 {
+            line-height: .9;
+        }
+    }
+
+    &.hero-subpages {
+        min-height: 30rem;
+
+        .headvisual-wrapper {
+            max-width: 26rem;
+        }
+    }
+
+    .hero_inner {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacer-sm);
+    }
+
+    .scroll-to-main {
+        background-color: var(--background-color-secondary);
+        width: 2.5rem;
+        height: 2.5rem;
+        display: inline-flex;
+        padding: .5rem;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        bottom: 3rem;
+        margin: 0 auto;
+        color: var(--icons-color);
+        
+        &:hover {
+            color: var(--icons-color-hover);
+        }
+    }
+
+    h1 {
+        line-height: 1;
+    }
+
+
+    // hero events
+    &.hero-events {
+
+        .date-wrapper {
+            background-color: var(--background-color-primary);
+            padding: 1rem 2rem;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .date-day {
+                font-family: $font_headings;
+                color: var(--text-color-accent);
+                font-size: 4rem;
+                line-height: 1;
+            }
+    
+            .date-month {
+                color: var(--text-color-secondary);
+                font-size: 1.5rem;
+                line-height: 1;
+                font-weight: $bold;
+            }
+        }
+    }
+} 
+
+
+// CookieYes Cookie Banner
+.cky-consent-container,
+.cky-modal {
+
+    &.cky-banner-bottom {
+
+    }
+
+    .cky-btn {
+        font-size: 1rem;
+        line-height: 1;
+        border-width: 2px;
+        border-radius: var(--buttons-border-radius);
+        font-weight: $bold;
+        padding: var(--buttons-padding-tb) var(--buttons-padding-lr);
+        border-color: var(--links-color)!important;
+        color: var(--links-color)!important;
+        fill: var(--buttons-color-text)!important;
+        background-color: transparent;
+    
+        &:hover {
+            fill: var(--buttons-color-text-hover)!important;
+            color: var(--links-color-hover)!important;
+            border-color: var(--links-color-hover)!important;
+        }
+
+        &.cky-btn-accept {
+            background-color: var(--buttons-color-background)!important;
+            color: var(--buttons-color-text)!important;
+                    
+            &:hover {
+                background-color: var(--buttons-color-background-hover)!important;
+                color: var(--buttons-color-text-hover)!important;
+            }
+        }
+    }
+
+    .cky-switch {
+        input {
+            background-color: var(--buttons-color-background)!important;
+        }
+    }
+} 
+
+.cky-modal {
+    border-radius: var(--boxes-border-radius);
+}

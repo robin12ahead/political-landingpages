@@ -1,0 +1,117 @@
+{
+    "key": "group_6698e6502154b",
+    "title": "Events",
+    "fields": [
+        {
+            "key": "field_6698e6507a496",
+            "label": "Event Start Date",
+            "name": "event_start_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "Wann findet der Event statt",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d.m.Y H:i",
+            "return_format": "d.m.Y H:i",
+            "first_day": 1
+        },
+        {
+            "key": "field_66ace0e5cbd8a",
+            "label": "Event End Date",
+            "name": "event_end_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "Wann findet der Event statt",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d.m.Y H:i",
+            "return_format": "d.m.Y H:i",
+            "first_day": 1
+        },
+        {
+            "key": "field_6698e74c7a498",
+            "label": "Location",
+            "name": "event_location",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Wo findet der Event statt",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66b3284c606a9",
+            "label": "Adresse",
+            "name": "event_address",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Wo findet der Event statt",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6698e6d87a497",
+            "label": "Weiterführender Link",
+            "name": "event_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Link zu Veranstaltung oder ähnlich",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755259620
+}

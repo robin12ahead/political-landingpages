@@ -1,0 +1,126 @@
+{
+    "key": "group_66a21c18d813d",
+    "title": "Hero",
+    "fields": [
+        {
+            "key": "field_66a21c4c37a5c",
+            "label": "Hero Visibility",
+            "name": "hero_visibility",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "If the default Hero Section should be displayed on this page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide",
+            "ui": 1
+        },
+        {
+            "key": "field_66a21c1937a59",
+            "label": "Overline Text",
+            "name": "overline_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Optional: Text will be shown above the page title in the Hero Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66a21c2b37a5a",
+            "label": "Title Override",
+            "name": "title_override",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Optional: Overrides the page title in the Hero Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_66a21c3637a5b",
+            "label": "Hero Visual Override",
+            "name": "hero_visual_override",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Optional: Overrides the default head visual set in customizer",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_66a21d90f5d99",
+            "label": "Hero Button",
+            "name": "hero_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Set Link and Button Text in Hero Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755259545
+}

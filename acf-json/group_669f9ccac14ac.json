@@ -1,0 +1,70 @@
+{
+    "key": "group_669f9ccac14ac",
+    "title": "Footer Sections",
+    "fields": [
+        {
+            "key": "field_669f9ccbd0073",
+            "label": "CTA Section",
+            "name": "cta_section_visibility",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Sichtbarkeit der CTA Section oberhalb des Footers",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "ON",
+            "ui_off_text": "OFF",
+            "ui": 1
+        },
+        {
+            "key": "field_669f9de6d0075",
+            "label": "Kontaktformular",
+            "name": "contact-form_visibility",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Sichtbarkeit der Formular-Section oberhalb des Footers",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "ON",
+            "ui_off_text": "OFF",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755259603
+}

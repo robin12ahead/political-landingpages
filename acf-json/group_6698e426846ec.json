@@ -1,0 +1,75 @@
+{
+    "key": "group_6698e426846ec",
+    "title": "FAQ's",
+    "fields": [
+        {
+            "key": "field_6698e4262c602",
+            "label": "Frage (Titel)",
+            "name": "frage",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Falls die Frage lang ist bitte dieses Feld benutzen. Alternativ wird der Post-Title verwendet falls dieses Feld leer bleibt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6698e4532c603",
+            "label": "Antwort (Inhalt)",
+            "name": "antwort",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "faq"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755259734
+}

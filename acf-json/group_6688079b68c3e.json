@@ -1,0 +1,325 @@
+{
+    "key": "group_6688079b68c3e",
+    "title": "Komitee",
+    "fields": [
+        {
+            "key": "field_66880973f2bb8",
+            "label": "Allgemeine Angaben",
+            "name": "allgemeine_angaben",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_66963d7aba83d",
+                    "label": "Anrede",
+                    "name": "anrede",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "herr": "Herr",
+                        "frau": "Frau"
+                    },
+                    "default_value": false,
+                    "return_format": "label",
+                    "multiple": 0,
+                    "allow_null": 1,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6688079b42850",
+                    "label": "Vorname",
+                    "name": "first_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Vorname *",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_668807bf42851",
+                    "label": "Nachname",
+                    "name": "last_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Nachname *",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_668807ed42854",
+                    "label": "Wohnort",
+                    "name": "wohnort",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Wohnort",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6688081b42855",
+                    "label": "Kanton",
+                    "name": "kanton",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "AG": "AG",
+                        "AR": "AR",
+                        "AI": "AI",
+                        "BL": "BL",
+                        "BS": "BS",
+                        "BE": "BE",
+                        "FR": "FR",
+                        "GE": "GE",
+                        "GL": "GL",
+                        "GR": "GR",
+                        "JU": "JU",
+                        "LU": "LU",
+                        "NE": "NE",
+                        "NW": "NW",
+                        "OW": "OW",
+                        "SH": "SH",
+                        "SZ": "SZ",
+                        "SO": "SO",
+                        "SG": "SG",
+                        "TG": "TG",
+                        "TI": "TI",
+                        "UR": "UR",
+                        "VS": "VS",
+                        "VD": "VD",
+                        "ZG": "ZG",
+                        "ZH": "ZH"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 1,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6688082542856",
+                    "label": "Funktion \/ Beruf",
+                    "name": "funktion",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Funktion \/ Beruf",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_668808c0754c8",
+                    "label": "Parteizugehörigkeit",
+                    "name": "partei",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Parteizugehörigkeit",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_66880a99871ad",
+            "label": "Kontaktangaben",
+            "name": "kontaktangaben",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Diese Kontaktangaben werden <b>nicht<\/b> auf der Website publiziert und werden nur zur Überprüfung und für allfällige Nachfragen benötigt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_66880afd871ae",
+                    "label": "Email",
+                    "name": "email",
+                    "aria-label": "",
+                    "type": "email",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Email *",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_66880b0c871af",
+                    "label": "Telefon",
+                    "name": "telefon",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "Telefon",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_66963eaf87738",
+            "label": "Datenschutzerklärung",
+            "name": "datenschutz",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Ich bin mit der <a href=\"\/datenschutz\" target=\"_blank\">Datenschutzerklärung<\/a>  einverstanden *",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_669508a490052",
+            "label": "Newsletter",
+            "name": "newsletter",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Für den Newsletter anmelden?",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "komitee"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "author",
+        "page_attributes"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755259755
+}

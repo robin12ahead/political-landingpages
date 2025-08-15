@@ -1,0 +1,98 @@
+{
+    "key": "group_6698e5114c416",
+    "title": "Forderungen",
+    "fields": [
+        {
+            "key": "field_6698e54755847",
+            "label": "Pro \/ Contra",
+            "name": "pro_contra",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "Pro (Häkchen)",
+            "ui_off_text": "Contra (Kreuz)",
+            "ui": 1
+        },
+        {
+            "key": "field_6698e51155846",
+            "label": "Icon",
+            "name": "icon",
+            "aria-label": "",
+            "type": "icon_picker",
+            "instructions": "(Optional) Falls die Forderung ein spezielles Icon haben soll",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "tabs": [
+                "dashicons",
+                "media_library"
+            ],
+            "return_format": "array",
+            "library": "all",
+            "default_value": {
+                "type": null,
+                "value": null
+            }
+        },
+        {
+            "key": "field_6698e58455848",
+            "label": "Inhalt",
+            "name": "content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "forderung"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "format",
+        "page_attributes",
+        "featured_image"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755259690
+}

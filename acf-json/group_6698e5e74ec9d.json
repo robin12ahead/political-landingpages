@@ -1,0 +1,199 @@
+{
+    "key": "group_6698e5e74ec9d",
+    "title": "Testimonials",
+    "fields": [
+        {
+            "key": "field_66cc8b3cb4928",
+            "label": "Email",
+            "name": "email",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Die Emailadresse wird <b>nicht<\/b> auf der Website publiziert und wird nur zur Überprüfung und für allfällige Nachfragen benötigt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Email *",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66a1223baaf73",
+            "label": "Vorname",
+            "name": "vorname",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "col-md-6",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Vorname *",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66a1226aaaf74",
+            "label": "Nachname",
+            "name": "nachname",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "col-md-6",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Nachname *",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6698e631e9799",
+            "label": "Zitat",
+            "name": "zitat",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Maximal 120 Zeichen. Anführungs- und Schlusszeichen werden automatisch hinzugefügt.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": 120,
+            "rows": 5,
+            "placeholder": "Ihr Zitat *",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6698e61ce9797",
+            "label": "Funktion",
+            "name": "funktion",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Funktion *",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66c7426818da5",
+            "label": "Partei",
+            "name": "partei",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Parteizugehörigkeit",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6698e625e9798",
+            "label": "Profilbild",
+            "name": "profilbild",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Profilbild hochladen (optional). Max 1MB, .zulässige Dateiformate sind .JPG und .PNG. Für das beste Ergebnis Profilbild quadratisch hochladen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": 2,
+            "mime_types": ".jpg, .png",
+            "preview_size": "komitee"
+        },
+        {
+            "key": "field_66b37f7e6e5c1",
+            "label": "Datenschutzerklärung",
+            "name": "datenschutz",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Ich bin mit der <a href=\"\/datenschutz\" target=\"_blank\">Datenschutzerklärung<\/a>  einverstanden *",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "testimonial"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "page_attributes",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755259653
+}

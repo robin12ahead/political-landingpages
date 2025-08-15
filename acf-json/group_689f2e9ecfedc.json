@@ -1,0 +1,311 @@
+{
+    "key": "group_689f2e9ecfedc",
+    "title": "Options: Addons",
+    "fields": [
+        {
+            "key": "field_689f2e9ea1e86",
+            "label": "Addons",
+            "name": "addons",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_689f300234ad6",
+                    "label": "News Status",
+                    "name": "news_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f2fe234ad5",
+                    "label": "Events Status",
+                    "name": "events_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f2ed227ef9",
+                    "label": "Testimonials Status",
+                    "name": "testimonials-status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f31ff35dda",
+                    "label": "Testimonials Generieren",
+                    "name": "testimonials_generieren",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_689f2ed227ef9",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f308631735",
+                    "label": "Banner Generator",
+                    "name": "banner_generator_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f2fc834ad3",
+                    "label": "Komitee Status",
+                    "name": "komitee_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f322a35ddb",
+                    "label": "Komitee Registrieren",
+                    "name": "komitee_registrieren",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_689f2fc834ad3",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f2f9f34ad1",
+                    "label": "Partner Status",
+                    "name": "partner_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f2fbb34ad2",
+                    "label": "FAQ Status",
+                    "name": "faq_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f2fd534ad4",
+                    "label": "Downloads Status",
+                    "name": "downloads_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f301634ad7",
+                    "label": "Argumente Status",
+                    "name": "argumente_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f302c34ad8",
+                    "label": "Forderungen Status",
+                    "name": "forderungen_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "options-addons"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755267154
+}

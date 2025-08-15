@@ -1,4 +1,7 @@
 <?php
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["testimonials_generieren"] == true) {
 
 /*---------------------------------------------------------------------------
 Add Shortcode to create Testimonial with frontend form
@@ -43,6 +46,12 @@ function shortcode_testimonial_create( $atts ) {
     ob_end_clean();
     return $html;
 }
+
+}
+
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["banner_generator_status"] == true) {
 
 /*---------------------------------------------------------------------------
 Create custom Banner Image
@@ -287,6 +296,7 @@ function create_custom_testimonial_banner($post_id) {
     // update and set meta field containing the banner url
     update_post_meta($post_id, 'custom_banner_image', $image_url, $post_id);
 
+}
 }
 
 /*---------------------------------------------------------------------------

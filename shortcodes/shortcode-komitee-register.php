@@ -1,4 +1,7 @@
 <?php
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["komitee_registrieren"] == true) {
 
 /*---------------------------------------------------------------------------
 Shortcode to add frontend form to crete new komitee post
@@ -195,3 +198,5 @@ Send Notification Email to admin
 // 	wp_mail( $to, $subject, $body, $headers );
 
 // }
+
+}

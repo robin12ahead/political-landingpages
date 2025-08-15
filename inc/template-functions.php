@@ -275,3 +275,26 @@ function my_pagination( $args = array() ) {
 
     return $output;
 }
+
+/*=========================================================
+// Hide Posts from Wordpress Dashboard
+=========================================================*/
+
+$optionsAddons = get_field('addons', 'option');
+
+if ($optionsAddons["news_status"] == false) {
+
+// Hide "Posts" menu in the WordPress admin
+function my_remove_posts_menu() {
+    remove_menu_page('edit.php'); // 'edit.php' is the slug for Posts
+}
+add_action('admin_menu', 'my_remove_posts_menu');
+
+// Hide "Posts" from admin bar
+function my_remove_posts_admin_bar() {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_node('new-post');
+}
+add_action('wp_before_admin_bar_render', 'my_remove_posts_admin_bar');
+
+}

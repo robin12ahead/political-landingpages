@@ -1,4 +1,7 @@
 <?php
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["events_status"] == true) {
 // Add Custom Post Type
 function create_post_type_event() {
     $supports = array(
@@ -87,4 +90,4 @@ function register_event_category() {
 }
 
 add_action( 'init', 'register_event_category', 0 );
-
+}

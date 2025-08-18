@@ -636,7 +636,6 @@ Function Register (Add Functions)
 			$setting_id, 
 			array(
 				'default' => $setting_value['default'],
-				'sanitize_callback' => 'wp_filter_nohtml_kses' //validates 3 or 6 digit HTML hex color code
 			)
 		);
 		
@@ -661,7 +660,6 @@ Function Register (Add Functions)
 			$setting_id, 
 			array(
 				'default' => $setting_value['default'],
-				'sanitize_callback' => 'wp_filter_nohtml_kses' //validates 3 or 6 digit HTML hex color code
 			)
 		);
 		
@@ -686,7 +684,6 @@ Function Register (Add Functions)
 			$setting_id, 
 			array(
 				'default' => $setting_value['default'],
-				'sanitize_callback' => 'wp_filter_nohtml_kses' //validates 3 or 6 digit HTML hex color code
 			)
 		);
 		

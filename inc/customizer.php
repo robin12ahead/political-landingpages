@@ -135,17 +135,17 @@ $colors = array (
 	),
 'background-color-primary' => array (
 		"label" => "Primary Background Color",
-		"default" => "#A2A2A2",
+		"default" => "#F5F5F5",
 		"section" => "background-colors",
 	),
 'background-color-secondary' => array (
 		"label" => "Secondary Background Color",
-		"default" => "#D2D2D2",
+		"default" => "#074EA1",
 		"section" => "background-colors",
 	),
 'background-color-tertiary' => array (
 		"label" => "Tertiary Background Color",
-		"default" => "#F0F0F0",
+		"default" => "#00A0E2",
 		"section" => "background-colors",
 	),
 'background-color-accent' => array (
@@ -160,17 +160,22 @@ $colors = array (
 	),
 'border-color-primary' => array (
 		"label" => "Primary Border Color",
-		"default" => "#333333",
+		"default" => "#000000",
 		"section" => "borders",
 	),
 'border-color-secondary' => array (
 		"label" => "Secondary Border Color",
-		"default" => "#666666",
+		"default" => "#074EA1",
 		"section" => "borders",
 	),
 'border-color-tertiary' => array (
 		"label" => "Tertiary Border Color",
-		"default" => "#AAAAAA",
+		"default" => "#00A0E2",
+		"section" => "borders",
+	),
+'border-color-accent' => array (
+		"label" => "Tertiary Border Color",
+		"default" => "#E8308A",
 		"section" => "borders",
 	),
 'links-color' => array (

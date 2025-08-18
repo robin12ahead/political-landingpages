@@ -1,0 +1,216 @@
+{
+    "key": "group_689f2c863be3f",
+    "title": "Options: Testimonials",
+    "fields": [
+        {
+            "key": "field_66b497494921c",
+            "label": "Banner",
+            "name": "options_testimonials",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_66b497494921d",
+                    "label": "Banner Prefix",
+                    "name": "banner_prefix",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Without separator between prefix and suffix",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "bildungsgesetz-nein-testimonial",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "_XXXX"
+                },
+                {
+                    "key": "field_66b4992d49221",
+                    "label": "Banner file type",
+                    "name": "banner_file_type",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Choose between .jpg and .png (Standard is .png)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": ".png",
+                    "maxlength": "",
+                    "placeholder": ".png",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_66b4996349222",
+                    "label": "Banner Qualitiy",
+                    "name": "banner_qualitiy",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Choose Banner quality: 0 (no compression) – 9 (max compression)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 4,
+                    "min": 1,
+                    "max": 9,
+                    "placeholder": 4,
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_68a31e5ed07a3",
+                    "label": "Banner Heading Font",
+                    "name": "banner_heading_font",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Upload font files to the following theme folder (use hosting file browser or FTP):\r\n\/themes\/political-landingpages\/assets\/fonts\r\n\r\n!Important! Only use TTF Fonts (.ttf, use converter if necessary)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "MyriadPro-Bold.ttf",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "font-filename.ttf",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_68a31fe7d07a4",
+                    "label": "Banner Body Font",
+                    "name": "banner_body_font",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Upload font files to the following theme folder (use hosting file browser or FTP):\r\n\/themes\/political-landingpages\/assets\/fonts\r\n\r\n!Important! Only use TTF Fonts (.ttf, use converter if necessary)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "MyriadPro-Regular.ttf",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "font-filename.ttf",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_68a32019d07a5",
+                    "label": "Banner Width",
+                    "name": "banner_width",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1280,
+                    "min": "",
+                    "max": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": 1280,
+                    "step": 1,
+                    "prepend": "",
+                    "append": "px"
+                },
+                {
+                    "key": "field_68a3204ed07a6",
+                    "label": "Banner Height",
+                    "name": "banner_height",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1500,
+                    "min": "",
+                    "max": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": 1500,
+                    "step": 1,
+                    "prepend": "",
+                    "append": "px"
+                },
+                {
+                    "key": "field_68a32094d07a7",
+                    "label": "Banner Padding",
+                    "name": "banner_padding",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 100,
+                    "min": "",
+                    "max": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": 1500,
+                    "step": 1,
+                    "prepend": "",
+                    "append": "px"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "options-testimonials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755522024
+}

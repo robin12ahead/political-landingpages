@@ -83,7 +83,7 @@
                 },
                 {
                     "key": "field_689f31ff35dda",
-                    "label": "Testimonials Generieren",
+                    "label": "Testimonials Generieren (Frontend Formular)",
                     "name": "testimonials_generieren",
                     "aria-label": "",
                     "type": "true_false",
@@ -118,7 +118,15 @@
                     "type": "true_false",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_689f31ff35dda",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -307,5 +315,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755522876
+    "modified": 1755525099
 }

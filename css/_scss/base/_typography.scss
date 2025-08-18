@@ -16,7 +16,7 @@
 
 body {
     font-family: $font_body;
-    font-weight: $regular;
+    font-weight: $bold;
     font-size: var(--font-size-body);
 }
 
@@ -25,7 +25,7 @@ h1,
 .text-style-h1 {
     font-family: $font_headings;
     font-size: var(--font-size-h1);
-    font-weight: $regular;
+    font-weight: $bold;
     line-height: 1.1;
     letter-spacing: 0;
     hyphens: auto;
@@ -43,7 +43,7 @@ h2,
 .text-style-h2 {
     font-family: $font_headings;
     font-size: var(--font-size-h2);
-    font-weight: $regular;
+    font-weight: $bold;
     line-height: 1.2;
     letter-spacing: 0;
     hyphens: auto;
@@ -54,7 +54,7 @@ h3,
 .text-style-h3 {
     font-family: $font_headings;
     font-size: var(--font-size-h3);
-    font-weight: $regular;
+    font-weight: $bold;
     line-height: 1.2;
     letter-spacing: 0;
     // hyphens: auto;
@@ -65,7 +65,7 @@ h4,
 .text-style-h4 {
     font-family: $font_headings;
     font-size: var(--font-size-h4);
-    font-weight: $regular;
+    font-weight: $bold;
     line-height: 1.3;
     letter-spacing: 0;
     // hyphens: auto;

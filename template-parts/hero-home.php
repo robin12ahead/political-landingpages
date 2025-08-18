@@ -26,6 +26,10 @@
                         } else {
                             the_title( '<h1 class="site-title">', '</h1>' );
                         }
+                    else :
+
+                        the_title( '<h1 class="site-title">', '</h1>' );
+                    
                     endif; ?>
                     <div class="spacer-medium"></div>
                 </div>

@@ -57,8 +57,7 @@
 
 	</main><!-- #main -->
 
-<?php	
-get_sidebar();
+<?php
 
 // Load CTA Section
 if ( !get_field( 'cta_section_visibility' ) == false ) {

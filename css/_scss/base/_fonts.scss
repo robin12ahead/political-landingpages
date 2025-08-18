@@ -1,18 +1,11 @@
 /* Font Families */
-$myriad : 'myriad-pro', sans-serif;
-$anzeigen_grotesk : 'anzeigen-grotesk', sans-serif;
+// $myriad : 'myriad-pro', sans-serif;
+// $anzeigen_grotesk : 'anzeigen-grotesk', sans-serif;
 
 $font_headings : #{var(--font-family-heading)};
 $font_body : #{var(--font-family-body)};
 
 /* Utility Classes */
-.font-myriad-pro { 
-    font-family: $myriad; 
-}
-
-.font-anzeigen-grotesk { 
-    font-family: $anzeigen_grotesk; 
-}
 
 .font-heading { 
     font-family: $font_headings; 
@@ -21,3 +14,11 @@ $font_body : #{var(--font-family-body)};
 .font-body { 
     font-family: $font_body; 
 }
+
+// .font-myriad-pro { 
+//     font-family: $myriad; 
+// }
+
+// .font-anzeigen-grotesk { 
+//     font-family: $anzeigen_grotesk; 
+// }

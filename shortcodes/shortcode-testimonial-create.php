@@ -77,11 +77,11 @@ function create_custom_testimonial_banner($post_id) {
     $banner_dir = "/banners/testimonials/";
     $banner_prefix = $optionsEmails["banner_prefix"];
     $banner_format = $optionsEmails["banner_file_type"];
-    $font_bold = $template_dir . '/assets/fonts/MyriadPro-Bold.ttf';
-    $font_regular = $template_dir . '/assets/fonts/MyriadPro-Regular.ttf';
-    $banner_width = '1280';
-    $banner_height = '1500';
-    $banner_padding = '100';
+    $font_heading = $template_dir . '/assets/fonts/' . $optionsEmails["banner_heading_font"];
+    $font_body = $template_dir . '/assets/fonts/' . $optionsEmails["banner_body_font"];
+    $banner_width = $optionsEmails["banner_width"];
+    $banner_height = $optionsEmails["banner_height"];
+    $banner_padding = $optionsEmails["banner_padding"];
 
     /*--------------------------------------------
     Get Texts
@@ -246,7 +246,7 @@ function create_custom_testimonial_banner($post_id) {
         $text_quote_PosY = '900';
 
         $text_quote = wordwrap($text_quote, 34, "\n", true);
-        imagettftext($image, $text_quote_size, 0, $banner_padding, $text_quote_PosY, $text_quote_color, $font_bold, $text_quote);
+        imagettftext($image, $text_quote_size, 0, $banner_padding, $text_quote_PosY, $text_quote_color, $font_heading, $text_quote);
     }
 
     // Sender text
@@ -256,7 +256,7 @@ function create_custom_testimonial_banner($post_id) {
         $text_author_size = '48';
         $text_author_PosY = '1380';
 
-        imagettftext($image, $text_author_size, 0, $banner_padding, $text_author_PosY, $text_author_color, $font_regular, $text_sender);
+        imagettftext($image, $text_author_size, 0, $banner_padding, $text_author_PosY, $text_author_color, $font_body, $text_sender);
         
     }
 
@@ -266,7 +266,7 @@ function create_custom_testimonial_banner($post_id) {
         $quotation_size = '256';
         $quotation_PosY = '768';
 
-        imagettftext($image, $quotation_size, 0, $banner_padding, $quotation_PosY, $quotation_color, $font_bold, "«");
+        imagettftext($image, $quotation_size, 0, $banner_padding, $quotation_PosY, $quotation_color, $font_heading, "«");
     }
 
     /*--------------------------------------------

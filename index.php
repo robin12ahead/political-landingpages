@@ -17,17 +17,7 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<?php 
-		if (get_field("hero_visibility") == true) {
-
-			// different template if it is home or subpage
-			if ( is_front_page() ) {
-				get_template_part('template-parts/hero-home'); 
-			} else {
-				get_template_part('template-parts/hero-subpages'); 
-			}
-		}
-		?>
+		<?php get_template_part('template-parts/hero-home'); ?>
 
 		<?php
 		// Add Container to non-elementor pages

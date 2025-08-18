@@ -161,7 +161,7 @@ function create_custom_testimonial_banner($post_id) {
 
     // Image base (BG)
     $image = imagecreatetruecolor($banner_width, $banner_height);
-    $background_color = imagecolorallocate($image, $BannerOptions["banner_background_color"]); // background color in RGB
+    $background_color = imagecolorallocate($image, 255, 229, 0); // background color in RGB
     imagefilledrectangle($image, 0, 0, $banner_width, $banner_height, $background_color);
 
     /*--------------------------------------------
@@ -244,7 +244,7 @@ function create_custom_testimonial_banner($post_id) {
     // Quote text
     if ( !empty($text_quote) ) {
 
-        $text_quote_color = imagecolorallocate($image, $BannerOptions["banner_text_color"]); // RGB Color
+        $text_quote_color = imagecolorallocate($image, 0, 0, 0); // RGB Color
         $text_quote_size = '54';
         $text_quote_PosY = '900';
 
@@ -255,7 +255,7 @@ function create_custom_testimonial_banner($post_id) {
     // Sender text
     if ( !empty($text_sender) ) {
 
-        $text_author_color = imagecolorallocate($image, $BannerOptions["banner_text_color"]); // RGB Color
+        $text_author_color = imagecolorallocate($image, 218, 8, 18); // RGB Color
         $text_author_size = '48';
         $text_author_PosY = '1380';
 
@@ -265,7 +265,7 @@ function create_custom_testimonial_banner($post_id) {
 
     if ( !empty($profilePictureImage) ) {
         // quotation mark
-        $quotation_color = imagecolorallocate($image, $BannerOptions["banner_text_color"]); // RGB Color
+        $quotation_color = imagecolorallocate($image, 218, 8, 18); // RGB Color
         $quotation_size = '256';
         $quotation_PosY = '768';
 

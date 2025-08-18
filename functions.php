@@ -212,11 +212,13 @@ function political_landingpages_scripts() {
 
 	// Fonts
 	$typographyOptions = get_field('typography', 'option');
-	$fontFamilies = $typographyOptions["font_family"]
+	$fontFamilies = $typographyOptions['add_fonts'];
+	$index = 0;
 	if( $fontFamilies ) {
 		foreach( $fontFamilies as $font ) {
 			$fontLink = $font['font-url'];
-			wp_enqueue_style($fontLink["title"], $fontLink["url"], array(), _S_VERSION );
+			wp_enqueue_style("font-family-" . $index, $fontLink['url'], array(), _S_VERSION );
+			$index++;
 		}
 	}
 

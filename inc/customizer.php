@@ -173,6 +173,11 @@ $colors = array (
 		"default" => "#AAAAAA",
 		"section" => "borders",
 	),
+'border-color-accent' => array (
+		"label" => "Tertiary Border Color",
+		"default" => "#D62828",
+		"section" => "borders",
+	),
 'links-color' => array (
 		"label" => "Link Color",
 		"default" => "#6100FF",

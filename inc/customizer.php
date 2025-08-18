@@ -23,6 +23,7 @@ Sections
 --------------------------------------------*/
 
 $sections = array(
+	'typography' => 'Typography',
 	'base-colors' => 'Base Colors',
 	'system-colors' => 'System Colors',
 	'text-colors' => 'Text Colors',
@@ -45,6 +46,20 @@ $sections = array(
 /*--------------------------------------------
 Settings / Controls
 --------------------------------------------*/
+
+// Font Sizes
+$typography = array (
+	'font-family-heading' => array (
+		"label" => "Font Family Headings",
+		"default" => "Arial",
+		"section" => "typography",
+	),
+	'font-family-body' => array (
+		"label" => "Font Family Body",
+		"default" => "Arial",
+		"section" => "typography",
+	),
+);
 
 // Colors
 $colors = array (
@@ -744,6 +759,14 @@ function add_customizer_live_css()
 		<?php
 		global $font_sizes;
 		foreach ($font_sizes as $setting_id => $setting_value) {
+			echo '--' . $setting_id . ': ' . get_theme_mod( $setting_id, $setting_value['default'] ) . ';';
+		} 
+		?>
+
+		/* Typography */
+		<?php
+		global $typography;
+		foreach ($typography as $setting_id => $setting_value) {
 			echo '--' . $setting_id . ': ' . get_theme_mod( $setting_id, $setting_value['default'] ) . ';';
 		} 
 		?>

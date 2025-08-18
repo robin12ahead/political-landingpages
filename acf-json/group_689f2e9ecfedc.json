@@ -63,7 +63,7 @@
                 {
                     "key": "field_689f2ed227ef9",
                     "label": "Testimonials Status",
-                    "name": "testimonials-status",
+                    "name": "testimonial_status",
                     "aria-label": "",
                     "type": "true_false",
                     "instructions": "",
@@ -307,5 +307,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755267154
+    "modified": 1755522876
 }

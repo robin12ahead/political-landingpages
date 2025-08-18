@@ -59,7 +59,7 @@
 							<?php the_custom_logo(); ?>
 						<?php 
 						$genericLogo = get_template_directory_uri() . '/assets/img/site-logo.svg';
-						elseif ( file_exists( $genericLogo ) ) : ?>
+						elseif ( getimagesize( $genericLogo ) ) : ?>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="custom-logo-link" rel="home" aria-current="page"><img src="<?php echo $genericLogo; ?>" class="custom-logo" alt="<?php bloginfo( 'name' ); ?>-logo" decoding="async"></a>
 						<?php else: ?>
 							<div class="site-title"><a class="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>

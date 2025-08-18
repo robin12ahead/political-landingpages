@@ -179,7 +179,7 @@ $colors = array (
 		"section" => "borders",
 	),
 'border-color-accent' => array (
-		"label" => "Tertiary Border Color",
+		"label" => "Accent Border Color",
 		"default" => "#D62828",
 		"section" => "borders",
 	),
@@ -226,6 +226,11 @@ $colors = array (
 'icons-color-hover' => array (
 		"label" => "Icon Hover Color",
 		"default" => "#074EA1",
+		"section" => "icons",
+	),
+'icons-color-background' => array (
+		"label" => "Icon Background Color",
+		"default" => "#F5F5F5",
 		"section" => "icons",
 	),
 'forms-color-text' => array (

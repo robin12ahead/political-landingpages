@@ -1,11 +1,9 @@
-@import url("https://use.typekit.net/mje1ybt.css");
-
 /* Font Families */
 $myriad : 'myriad-pro', sans-serif;
 $anzeigen_grotesk : 'anzeigen-grotesk', sans-serif;
 
-$font_headings : $anzeigen_grotesk;
-$font_body : $myriad;
+$font_headings : #{var(--font-family-heading)};
+$font_body : #{var(--font-family-body)};
 
 /* Utility Classes */
 .font-myriad-pro { 

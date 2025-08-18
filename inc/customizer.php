@@ -65,7 +65,7 @@ $typography = array (
 $colors = array (
 'base-color-black' => array (
 		"label" => "Black",
-		"default" => "#000000",
+		"default" => "#111111",
 		"section" => "base-colors",
 	),
 'base-color-white' => array (
@@ -75,7 +75,7 @@ $colors = array (
 	),
 'base-color-accent' => array (
 		"label" => "Accent Color",
-		"default" => "#E8308A",
+		"default" => "#D62828",
 		"section" => "base-colors",
 	),
 'base-color-primary' => array (
@@ -85,12 +85,12 @@ $colors = array (
 	),
 'base-color-secondary' => array (
 		"label" => "Secondary Color",
-		"default" => "#074EA1",
+		"default" => "#333333",
 		"section" => "base-colors",
 	),
 'base-color-tertiary' => array (
 		"label" => "Tertiary Color",
-		"default" => "#00A0E2",
+		"default" => "#666666",
 		"section" => "base-colors",
 	),
 'system-color-error' => array (
@@ -130,27 +130,27 @@ $colors = array (
 	),
 'text-color-accent' => array (
 		"label" => "Accent Text Color",
-		"default" => "#E8308A",
+		"default" => "#D62828",
 		"section" => "text-colors",
 	),
 'background-color-primary' => array (
 		"label" => "Primary Background Color",
-		"default" => "#F5F5F5",
+		"default" => "#A2A2A2",
 		"section" => "background-colors",
 	),
 'background-color-secondary' => array (
 		"label" => "Secondary Background Color",
-		"default" => "#074EA1",
+		"default" => "#D2D2D2",
 		"section" => "background-colors",
 	),
 'background-color-tertiary' => array (
 		"label" => "Tertiary Background Color",
-		"default" => "#00A0E2",
+		"default" => "#F0F0F0",
 		"section" => "background-colors",
 	),
 'background-color-accent' => array (
 		"label" => "Accent Background Color",
-		"default" => "#E8308A",
+		"default" => "#D62828",
 		"section" => "background-colors",
 	),
 'background-color-body' => array (
@@ -160,47 +160,47 @@ $colors = array (
 	),
 'border-color-primary' => array (
 		"label" => "Primary Border Color",
-		"default" => "#000000",
+		"default" => "#333333",
 		"section" => "borders",
 	),
 'border-color-secondary' => array (
 		"label" => "Secondary Border Color",
-		"default" => "#074EA1",
+		"default" => "#666666",
 		"section" => "borders",
 	),
 'border-color-tertiary' => array (
 		"label" => "Tertiary Border Color",
-		"default" => "#00A0E2",
+		"default" => "#AAAAAA",
 		"section" => "borders",
 	),
 'border-color-accent' => array (
 		"label" => "Accent Border Color",
-		"default" => "#E8308A",
+		"default" => "#D62828",
 		"section" => "borders",
 	),
 'links-color' => array (
 		"label" => "Link Color",
-		"default" => "#00A0E2",
+		"default" => "#6100FF",
 		"section" => "links",
 	),
 'links-color-decoration' => array (
 		"label" => "Link Decoration Color",
-		"default" => "#00A0E2",
+		"default" => "#6100FF",
 		"section" => "links",
 	),
 'links-color-hover' => array (
 		"label" => "Link Hover Color",
-		"default" => "#074EA1",
+		"default" => "#AD00FF",
 		"section" => "links",
 	),
 'buttons-color-background' => array (
 		"label" => "Button Background Color",
-		"default" => "#00A0E2",
+		"default" => "#6100FF",
 		"section" => "buttons",
 	),
 'buttons-color-background-hover' => array (
 		"label" => "Button Background Hover Color",
-		"default" => "#074EA1",
+		"default" => "#AD00FF",
 		"section" => "buttons",
 	),
 'buttons-color-text' => array (
@@ -215,12 +215,12 @@ $colors = array (
 	),
 'icons-color' => array (
 		"label" => "Icon Color",
-		"default" => "#E8308A",
+		"default" => "#D62828",
 		"section" => "icons",
 	),
 'icons-color-hover' => array (
 		"label" => "Icon Hover Color",
-		"default" => "#074EA1",
+		"default" => "#AD00FF",
 		"section" => "icons",
 	),
 'icons-color-background' => array (
@@ -245,7 +245,7 @@ $colors = array (
 	),
 'forms-color-border-focus' => array (
 		"label" => "Form Fields Border Focus Color",
-		"default" => "#E8308A",
+		"default" => "#D62828",
 		"section" => "forms",
 	),
 'boxes-background-color' => array (

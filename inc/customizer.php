@@ -652,6 +652,31 @@ Function Register (Add Functions)
 			) 
 		); 
 	}	
+
+	/* Typography */
+	global $typography;
+	foreach ($typography as $setting_id => $setting_value) {
+
+		$wp_customize->add_setting( 
+			$setting_id, 
+			array(
+				'default' => $setting_value['default'],
+				'sanitize_callback' => 'wp_filter_nohtml_kses' //validates 3 or 6 digit HTML hex color code
+			)
+		);
+		
+		$wp_customize->add_control( 
+			new WP_Customize_Color_Control( 
+			$wp_customize, 
+			$setting_id, 
+				array(              
+					'label'      => __( $setting_value['label'], 'political-landingpages' ),
+					'section'    => $setting_value['section'],    
+					'type' => 'text',
+				)
+			) 
+		); 
+	}
 	
 	/* Font Sizes Controls */
 	global $font_sizes;

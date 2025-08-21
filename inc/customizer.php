@@ -115,12 +115,12 @@ $colors = array (
 	),
 'text-color-secondary' => array (
 		"label" => "Secondary Text Color",
-		"default" => "#333333",
+		"default" => "#074EA1",
 		"section" => "text-colors",
 	),
 'text-color-tertiary' => array (
 		"label" => "Tertiary Text Color",
-		"default" => "#666666",
+		"default" => "#00A0E2",
 		"section" => "text-colors",
 	),
 'text-color-alternate' => array (
@@ -135,17 +135,17 @@ $colors = array (
 	),
 'background-color-primary' => array (
 		"label" => "Primary Background Color",
-		"default" => "#F5F5F5",
+		"default" => "#074EA1",
 		"section" => "background-colors",
 	),
 'background-color-secondary' => array (
 		"label" => "Secondary Background Color",
-		"default" => "#074EA1",
+		"default" => "#00A0E2",
 		"section" => "background-colors",
 	),
 'background-color-tertiary' => array (
 		"label" => "Tertiary Background Color",
-		"default" => "#00A0E2",
+		"default" => "#f5f5f5",
 		"section" => "background-colors",
 	),
 'background-color-accent' => array (

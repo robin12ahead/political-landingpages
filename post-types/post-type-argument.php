@@ -20,7 +20,7 @@ function create_post_type_argument() {
     $labels = array(
         'name' => _x('Themen', 'plural'),
         'singular_name' => _x('Thema', 'singular'),
-        'menu_name' => _x('Themen', 'admin menu'),
+        'menu_name' => _x('Thema', 'admin menu'),
         'name_admin_bar' => _x('Themen', 'admin bar'),
         'add_new' => _x('Neues Thema', 'add new'),
         'add_new_item' => __('Neues Thema'),

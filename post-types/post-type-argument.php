@@ -18,18 +18,18 @@ function create_post_type_argument() {
     );
 
     $labels = array(
-        'name' => _x('Argumente', 'plural'),
-        'singular_name' => _x('Argument', 'singular'),
-        'menu_name' => _x('Argumente', 'admin menu'),
-        'name_admin_bar' => _x('Argumente', 'admin bar'),
-        'add_new' => _x('Neues Argument', 'add new'),
-        'add_new_item' => __('Neues Argument'),
-        'new_item' => __('Neues Argument'),
-        'edit_item' => __('Argument bearbeiten'),
-        'view_item' => __('Argument ansehen'),
-        'all_items' => __('Alle Argumente'),
-        'search_items' => __('Argumente suchen'),
-        'not_found' => __('keine Argumente gefunden'),
+        'name' => _x('Themen', 'plural'),
+        'singular_name' => _x('Thema', 'singular'),
+        'menu_name' => _x('Themen', 'admin menu'),
+        'name_admin_bar' => _x('Themen', 'admin bar'),
+        'add_new' => _x('Neues Thema', 'add new'),
+        'add_new_item' => __('Neues Thema'),
+        'new_item' => __('Neues Thema'),
+        'edit_item' => __('Thema bearbeiten'),
+        'view_item' => __('Thema ansehen'),
+        'all_items' => __('Alle Themen'),
+        'search_items' => __('Themen suchen'),
+        'not_found' => __('keine Themen gefunden'),
     );
 
     $args = array(

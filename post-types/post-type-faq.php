@@ -18,18 +18,18 @@ function create_post_type_faq() {
     );
 
     $labels = array(
-        'name' => _x('FAQ', 'plural'),
-        'singular_name' => _x('FAQ', 'singular'),
-        'menu_name' => _x('FAQ', 'admin menu'),
-        'name_admin_bar' => _x('FAQ', 'admin bar'),
-        'add_new' => _x('Neues FAQ', 'add new'),
-        'add_new_item' => __('Neues FAQ'),
-        'new_item' => __('Neues FAQ'),
-        'edit_item' => __('FAQ bearbeiten'),
-        'view_item' => __('FAQ ansehen'),
-        'all_items' => __('Alle FAQ'),
-        'search_items' => __('FAQ suchen'),
-        'not_found' => __('keine FAQ gefunden'),
+        'name' => _x('Accordions', 'plural'),
+        'singular_name' => _x('Accordion', 'singular'),
+        'menu_name' => _x('Accordion', 'admin menu'),
+        'name_admin_bar' => _x('Accordion', 'admin bar'),
+        'add_new' => _x('Neues Accordion', 'add new'),
+        'add_new_item' => __('Neues Accordion'),
+        'new_item' => __('Neues Accordion'),
+        'edit_item' => __('Accordion bearbeiten'),
+        'view_item' => __('Accordions ansehen'),
+        'all_items' => __('Alle Accordion'),
+        'search_items' => __('Accordion suchen'),
+        'not_found' => __('keine Accordions gefunden'),
     );
 
     $args = array(

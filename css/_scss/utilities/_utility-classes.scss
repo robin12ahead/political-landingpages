@@ -46,6 +46,14 @@
     color: var(--text-color-alternate);
 }
 
+.text-color-white {
+    color: var(--text-color-alternate);
+}
+
+.text-color-black {
+    color: var(--text-color-alternate);
+}
+
 // Text Styles
 .text-align-right {
     text-align: right;
@@ -228,37 +236,48 @@
 }
 
 // Section Padding
-.section-padding-huge {
+.section-padding-huge,
+.padding-section-huge {
     padding-top: var(--spacer-huge);
     padding-bottom: var(--spacer-huge);
 }
 
 .section-padding-xxlarge,
-.section-padding-xxl {
+.section-padding-xxl,
+.padding-section-xxlarge,
+.padding-section-xxl {
     padding-top: var(--spacer-xxl);
     padding-bottom: var(--spacer-xxl);
 }
 
 .section-padding-xlarge,
-.section-padding-xl {
+.section-padding-xl,
+.padding-section--xlarge,
+.padding-section--xl {
     padding-top: var(--spacer-xl);
     padding-bottom: var(--spacer-xl);
 }
 
 .section-padding-large,
-.section-padding-lg {
+.section-padding-lg,
+.padding-section--large,
+.padding-section--lg {
     padding-top: var(--spacer-lg);
     padding-bottom: var(--spacer-lg);
 }
 
 .section-padding-medium,
-.section-padding-md {
+.section-padding-md,
+.padding-section--medium,
+.padding-section--md {
     padding-top: var(--spacer-md);
     padding-bottom: var(--spacer-md);
 }
 
 .section-padding-small,
-.section-padding-sm {
+.section-padding-sm,
+.padding-section--small,
+.padding-section--sm {
     padding-top: var(--spacer-sm);
     padding-bottom: var(--spacer-sm);
 }

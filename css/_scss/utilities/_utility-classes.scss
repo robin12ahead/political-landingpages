@@ -406,38 +406,13 @@
         top: calc(100% - 1px);
         left: 0;
         right: 0;
+        z-index: 1;
 
     }
 }
 
-// .section-edge-top {
-//     &::before {
-//         content: "";
-//         width: 100%;
-//         height: auto;
-//         aspect-ratio: 16.271;
-// 	    clip-path: shape(from 0% 99.7%,vline to 100%,hline to 100%,vline to 0%,line to 0% 99.7%,close);
-//         display: block;
-//         position: absolute;
-//         top: calc(100% - 1px);
-//         left: 0;
-//         right: 0;
-
-//     }
-// }
-
-// .section-edge-bottom {
-//     &::after {
-//         content: "";
-//         width: 100%;
-//         height: auto;
-//         aspect-ratio: 16.271;
-// 	    clip-path: shape(from 100% 0.3%,vline to 0%,line to 0% 0%,line to 0% 100%,line to 100% 0.3%,close);
-//         display: block;
-//         position: absolute;
-//         top: calc(100% - 1px);
-//         left: 0;
-//         right: 0;
-
-//     }
-// }
+.section-padding-edge {
+    &::before {
+        padding-top: 6.15vw!important;
+    }
+}

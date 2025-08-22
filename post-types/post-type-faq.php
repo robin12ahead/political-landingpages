@@ -33,7 +33,7 @@ function create_post_type_faq() {
     );
 
     $args = array(
-        'menu_icon' => 'dashicons-format-chat',
+        'menu_icon' => 'dashicons-excerpt-view',
         'supports' => $supports,
         'labels' => $labels,
         'public' => false,

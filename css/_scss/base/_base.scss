@@ -145,6 +145,7 @@ nav.navigation {
 // General Boxes
 .box {
     background-color: var(--boxes-background-color);
+    color: var(--text-color-primary);
     padding: var(--boxes-padding-tb) var(--boxes-padding-lr);
     border-radius: var(--boxes-border-radius);
     border: var(--boxes-border-width) solid var(--border-color-secondary);

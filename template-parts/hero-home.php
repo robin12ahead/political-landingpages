@@ -16,19 +16,19 @@
                 <div class="max-width-large">
                     <?php
                     if (get_field("overline_text")) : ?>
-                    <h4 class="text-style-overline text-color-accent"><?php the_field("overline_text"); ?></h4>
+                    <h4 class="text-style-overline text-color-primary"><?php the_field("overline_text"); ?></h4>
                     <?php endif; ?>
                     
                     <?php
                     if ( is_singular() ) :
                         if (get_field("title_override")) {
-                            echo '<h1 class="site-title ">' . wp_kses_post ( get_field("title_override") ) .'</h1>';
+                            echo '<h1 class="site-title text-color-accent">' . wp_kses_post ( get_field("title_override") ) .'</h1>';
                         } else {
-                            the_title( '<h1 class="site-title">', '</h1>' );
+                            the_title( '<h1 class="site-title text-color-accent">', '</h1>' );
                         }
                     else :
 
-                        the_title( '<h1 class="site-title">', '</h1>' );
+                        the_title( '<h1 class="site-title text-color-accent">', '</h1>' );
                     
                     endif; ?>
                     <div class="spacer-medium"></div>

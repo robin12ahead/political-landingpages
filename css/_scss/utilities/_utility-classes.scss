@@ -6,7 +6,7 @@
 
 // Background Colors
 .background-color-primary {
-    color: ar(--text-color-white);
+    color: var(--text-color-white);
     background-color: var(--background-color-primary);
     
     &.section-edge {

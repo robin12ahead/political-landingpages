@@ -94,6 +94,46 @@ button {
     }
 }
 
+.background-color-primary {
+    .elementor-widget-button {
+        &.is-secondary {
+            a.elementor-button {
+
+                border-color: var(--text-color-alternate);
+                color: var(--text-color-alternate);
+                fill: var(--text-color-alternate);
+                
+                &:hover {
+                    border-color: var(--buttons-color-background);
+                    color: var(--buttons-color-background);
+                    fill: var(--buttons-color-background);
+                }
+            }
+        }
+
+    }
+}
+
+
+.background-color-secondary {
+    .elementor-widget-button {
+        &.is-secondary {
+            a.elementor-button {
+                border-color: var(--text-color-alternate);
+                color: var(--text-color-alternate);
+                fill: var(--text-color-alternate);
+
+                &:hover {
+                    border-color: var(--text-color-accent);
+                    color: var(--text-color-accent);
+                    fill: var(--text-color-accent);
+                }
+            }
+        }
+
+    }
+}
+
 // All other buttons
 input[type="button"],
 input[type="submit"],

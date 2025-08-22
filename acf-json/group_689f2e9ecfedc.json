@@ -82,6 +82,35 @@
                     "ui": 1
                 },
                 {
+                    "key": "field_68a86ee2897e7",
+                    "label": "Events Detailpage",
+                    "name": "events_detailpage",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_689f2fe234ad5",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
                     "key": "field_689f2ed227ef9",
                     "label": "Testimonials Status",
                     "name": "testimonial_status",
@@ -309,7 +338,7 @@
                         "id": ""
                     },
                     "message": "",
-                    "default_value": 1,
+                    "default_value": 0,
                     "allow_in_bindings": 0,
                     "ui_on_text": "Aktiviert",
                     "ui_off_text": "Deaktiviert",
@@ -336,5 +365,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755874817
+    "modified": 1755868981
 }

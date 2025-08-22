@@ -15,10 +15,16 @@ header.header {
             transform: translateY(-100%);
         }
 
-        &.navbar-sticky:not(.navbar-hide) {
-            box-shadow: 0px var(--effects-shadow-size) var(--effects-shadow-blur) rgba(0, 0, 0, 0.2);
+        &.navbar-sticky {
+            .navbar-sticky .site-branding {
+                max-width: 6rem;
+            }   
+
+            &:not(.navbar-hide) {
+                box-shadow: 0px var(--effects-shadow-size) var(--effects-shadow-blur) rgba(0, 0, 0, 0.2);
+            }
         }
-    
+
         .navbar#main-navbar {
             padding: 1.5rem 0;
             background-color: var(--background-color-body);
@@ -28,6 +34,8 @@ header.header {
             }
     
             .site-branding {
+                    max-width: 9rem;
+                    transition: all 250ms ease;
     
                 .site-title {
                     font-family: $font_headings;

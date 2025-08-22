@@ -84,6 +84,45 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": ""
+                },
+                {
+                    "key": "field_68a85e68da004",
+                    "label": "Bezirk",
+                    "name": "bezirk",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "dielsdorf": "Dielsdorf",
+                        "winterthur": "Winterthur",
+                        "pfaeffikon": "Pfäffikon",
+                        "zuerich": "Zürich",
+                        "dietikon": "Dietikon",
+                        "uster": "Uster",
+                        "meilen": "Meilen",
+                        "horgen": "Horgen",
+                        "affoltern": "Affoltern",
+                        "hinwil": "Hinwil",
+                        "buelach": "Bülach",
+                        "andelfingen": "Andelfingen"
+                    },
+                    "default_value": "zuerich",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "create_options": 0,
+                    "save_options": 0
                 }
             ]
         },
@@ -166,5 +205,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755515801
+    "modified": 1755866323
 }

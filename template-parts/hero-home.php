@@ -46,8 +46,6 @@
                     <?php
                     if ( get_theme_mod( 'headvisual-image' )) : ?>
                         <img src="<?php echo get_theme_mod( 'headvisual-image' ); ?>" alt="headvisual">
-                    <?php else : ?>
-                        <img src="<?php echo get_template_directory_uri() . '/assets/img/headvisual-placeholder.jpg'; ?>" alt="headvisual">
                     <?php endif; ?>
                 </div>
             </div>

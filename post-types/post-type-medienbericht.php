@@ -35,7 +35,7 @@ function create_post_type_medienbericht() {
     );
 
     $args = array(
-        'menu_icon' => 'dashicons-document',
+        'menu_icon' => 'dashicons-media-document',
         'supports' => $supports,
         'labels' => $labels,
         'public' => false,

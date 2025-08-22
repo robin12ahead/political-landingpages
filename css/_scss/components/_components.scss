@@ -149,3 +149,11 @@
 .cky-modal {
     border-radius: var(--boxes-border-radius);
 }
+
+// Berzirk Map
+.map-bezirk {
+    position: relative;
+    z-index: 9;
+    transform: translate(5vw, 4vw);
+    margin-bottom: -25%;
+}

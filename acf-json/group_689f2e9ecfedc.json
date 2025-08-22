@@ -40,6 +40,27 @@
                     "ui": 1
                 },
                 {
+                    "key": "field_68a8850aec851",
+                    "label": "Medienberichte Status",
+                    "name": "medienberichte_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Aktiviert",
+                    "ui_off_text": "Deaktiviert",
+                    "ui": 1
+                },
+                {
                     "key": "field_689f2fe234ad5",
                     "label": "Events Status",
                     "name": "events_status",
@@ -315,5 +336,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755525099
+    "modified": 1755874817
 }

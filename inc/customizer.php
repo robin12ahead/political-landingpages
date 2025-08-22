@@ -265,7 +265,7 @@ $colors = array (
 	),
 'effects-shadow-color' => array (
 		"label" => "Effects Shadow Color",
-		"default" => "#00FFFFFF",
+		"default" => "#111111",
 		"section" => "effects",
 	),
 );

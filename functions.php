@@ -351,3 +351,6 @@ require get_template_directory() . '/shortcodes/shortcode-faq.php';
 
 // Downloads
 require get_template_directory() . '/shortcodes/shortcode-downloads.php';
+
+// Bezirk Map
+require get_template_directory() . '/shortcodes/shortcode-bezirk.php';

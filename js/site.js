@@ -201,7 +201,7 @@ $(document).ready(function () {
     });
 
     // bezirk map sync
-    Bezirk = $('.bezirk-map').attr("data-bezirk");
+    var Bezirk = $('.bezirk-map').attr("data-bezirk");
     $('svg#bezirke-kanton-zh > #Zonen').find('#' + Bezirk).css("fill", "var(--background-color-accent)");
 
 

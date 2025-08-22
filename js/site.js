@@ -200,6 +200,10 @@ $(document).ready(function () {
         $(this).find('.page-numbers:not(.next):not(.prev)').wrapAll('<div class="pagination-numbers"></div>');
     });
 
+    // bezirk map sync
+    Bezirk = $('.bezirk-map').attr("data-bezirk");
+    $('svg#bezirke-kanton-zh > #Zonen').find('#' + Bezirk).css("fill", "var(--background-color-accent)");
+
 
 });
 

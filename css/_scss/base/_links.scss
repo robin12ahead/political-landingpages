@@ -190,7 +190,7 @@ a.download-button {
     gap: var(--spacer-xs);
     height: 100%;
     width: 100%;
-    transition: all 500ms ease;
+    transition: all 300ms ease;
 
     > * {
         color: var(--links-color);
@@ -203,19 +203,15 @@ a.download-button {
         display: block;
     }
 
-    .link-text {
-
-    }
-
     &:hover {
         background: var(--background-color-primary);
 
         > * {
-            color: var(--base-color-secondary);
+            color: var(--text-color-alternate);
         }
 
         .divider {
-            background-color: var(--base-color-white);
+            background-color: var(--base-color-secondary);
         }
 
         .text-link {

@@ -184,7 +184,7 @@ a.download-button {
 // Linkboxes
 .linkbox {
     padding: var(--boxes-padding-tb) var(--boxes-padding-lr);
-    background: var(--background-color-primary);
+    background: var(--background-color-body);
     display: flex;
     flex-direction: column;
     gap: var(--spacer-xs);
@@ -208,7 +208,7 @@ a.download-button {
     }
 
     &:hover {
-        background: var(--background-color-accent);
+        background: var(--background-color-primary);
 
         > * {
             color: var(--base-color-white);

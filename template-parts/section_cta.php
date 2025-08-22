@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="section_cta-boxes background-color-primary">
+<section class="section_cta-boxes background-color-primary section-edge section-padding-edge">
     <div class="section-padding-large">
         <div class="container">
             <h2 class=""><?php _e( 'Mitmachen & Unterstützen', 'political-landingpages' ); ?></h2>

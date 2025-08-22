@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="section_contact-form background-color-tertiary">
+<section class="section_contact-form background-color-tertiary section-padding-edge">
     <div class="section-padding-large">
         <div class="container">
             <h2 class=""><?php _e( 'Kontaktieren Sie uns', 'political-landingpages' ); ?></h2>

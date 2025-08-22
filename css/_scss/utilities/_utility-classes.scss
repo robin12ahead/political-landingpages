@@ -6,6 +6,7 @@
 
 // Background Colors
 .background-color-primary {
+    color: ar(--text-color-white);
     background-color: var(--background-color-primary);
     
     &.section-edge {
@@ -17,6 +18,7 @@
 }
 
 .background-color-secondary {
+    color: var(--text-color-white);
     background-color: var(--background-color-secondary);
 
     &.section-edge {
@@ -39,6 +41,7 @@
 }
 
 .background-color-accent {
+    color: var(--text-color-secondary);
     background-color: var(--background-color-accent);
 
     &.section-edge {

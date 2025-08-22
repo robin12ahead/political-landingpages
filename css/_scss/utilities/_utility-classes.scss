@@ -55,7 +55,7 @@
     &.section-edge {
         &::before,
         &::after {
-            color: var(--background-color-body);
+            background-color: var(--background-color-body);
         }
     }
 }
@@ -374,6 +374,12 @@
 
 .spacer-xhuge {
     padding-top: var(--spacer-xhuge); // 160
+    width: 100%;
+    display: block;
+}
+
+.spacer-edge {
+    padding-top: 6.15vw;
     width: 100%;
     display: block;
 }

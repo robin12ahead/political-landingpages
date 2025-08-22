@@ -9,8 +9,9 @@
 
 ?>
 
-<section class="section_cta-boxes background-color-primary section-edge section-padding-edge">
+<section class="section_cta-boxes background-color-primary section-edge">
     <div class="section-padding-large">
+        <div class="spacer-edge"></div>
         <div class="container">
             <h2 class=""><?php _e( 'Mitmachen & Unterstützen', 'political-landingpages' ); ?></h2>
             <div class="spacer-medium"></div>

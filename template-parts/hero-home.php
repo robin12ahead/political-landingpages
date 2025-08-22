@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="hero-section hero-home background-color-body section-padding-medium d-flex align-items-center section-edge section-padding-edge">
+<section class="hero-section hero-home background-color-body section-padding-medium d-flex align-items-center">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7">

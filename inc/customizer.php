@@ -128,6 +128,16 @@ $colors = array (
 		"default" => "#ffffff",
 		"section" => "text-colors",
 	),
+'text-color-white' => array (
+		"label" => "Alternate Text Color",
+		"default" => "#ffffff",
+		"section" => "text-colors",
+	),
+'text-color-black' => array (
+		"label" => "Alternate Text Color",
+		"default" => "#000000",
+		"section" => "text-colors",
+	),
 'text-color-accent' => array (
 		"label" => "Accent Text Color",
 		"default" => "#D62828",

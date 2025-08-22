@@ -318,6 +318,9 @@ require get_template_directory() . '/post-types/post-type-faq.php';
 // Downloads
 require get_template_directory() . '/post-types/post-type-download.php';
 
+// Downloads
+require get_template_directory() . '/post-types/post-type-medienbericht.php';
+
 
 /**
  * Load Shortcodes

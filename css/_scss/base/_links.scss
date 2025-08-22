@@ -193,11 +193,11 @@ a.download-button {
     transition: all 500ms ease;
 
     > * {
-        color: var(--text-color-primary);
+        color: var(--links-color);
     }
 
     .divider {
-        background-color: var(--border-color-primary);
+        background-color: var(--border-color-accent);
         height: 1px;
         width: 2.5rem;
         display: block;
@@ -211,7 +211,7 @@ a.download-button {
         background: var(--background-color-primary);
 
         > * {
-            color: var(--base-color-white);
+            color: var(--base-color-secondary);
         }
 
         .divider {
@@ -219,7 +219,7 @@ a.download-button {
         }
 
         .text-link {
-            color: var(--background-color-primary);
+            color: var(--text-color-accent);
         }
     }
 }

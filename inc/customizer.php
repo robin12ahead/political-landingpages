@@ -384,7 +384,7 @@ $sizes = array (
 	),
 	'buttons-border-radius' => array (
 		"label" => "Button Border-Radius",
-		"default" => "1rem",
+		"default" => "1.5rem",
 		"section" => "buttons",
 	),
 	'icons-border-radius' => array (

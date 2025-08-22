@@ -16,7 +16,7 @@ header.header {
         }
 
         &.navbar-sticky:not(.navbar-hide) {
-            box-shadow: 0px var(--effects-shadow-size) var(--effects-shadow-blur) rgba(var(--effects-shadow-color), 0.2);
+            box-shadow: 0px var(--effects-shadow-size) var(--effects-shadow-blur) rgba(0, 0, 0, 0.2);
         }
     
         .navbar#main-navbar {

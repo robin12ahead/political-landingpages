@@ -7,22 +7,67 @@
 // Background Colors
 .background-color-primary {
     background-color: var(--background-color-primary);
+    
+    &.section-edge,
+    &.section-edge-top,
+    &.section-edge-bottom {
+        &::before,
+        &::after {
+            color: var(--background-color-primary);
+        }
+    }
 }
 
 .background-color-secondary {
     background-color: var(--background-color-secondary);
+
+    &.section-edge,
+    &.section-edge-top,
+    &.section-edge-bottom {
+        &::before,
+        &::after {
+            color: var(--background-color-secondary);
+        }
+    }
 }
 
 .background-color-tertiary {
     background-color: var(--background-color-tertiary);
+
+    &.section-edge,
+    &.section-edge-top,
+    &.section-edge-bottom {
+        &::before,
+        &::after {
+            color: var(--background-color-tertiary);
+        }
+    }
 }
 
 .background-color-accent {
     background-color: var(--background-color-accent);
+
+    &.section-edge,
+    &.section-edge-top,
+    &.section-edge-bottom {
+        &::before,
+        &::after {
+            color: var(--background-color-accent);
+        }
+    }
 }
 
 .background-color-body {
     background-color: var(--background-color-body);
+
+    &.section-edge,
+    &.section-edge-top,
+    &.section-edge-bottom {
+        &::before,
+        &::after {
+            color: var(--background-color-body);
+        }
+    }
 }
 
 // Text Colors
@@ -343,3 +388,50 @@
     display: block;
 }
 
+
+// Section Edges
+.section-edge {
+    &::before {
+        content: url('data:image/svg+xml,<svg viewBox="0 0 1920 118" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 117.65V118H1920V0L0 117.65Z"/></svg> ');
+        width: 100%;
+        height: auto;
+        aspect-ratio: 960/59;
+        display: block;
+        position: relative;
+
+    }
+
+    &::after {
+        content: url('data:image/svg+xml,<svg viewBox="0 0 1920 118" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M1920 0.35006V0.000167852L1.03159e-05 0L0 118L1920 0.35006Z"/></svg> ');
+        width: 100%;
+        height: auto;
+        aspect-ratio: 960/59;
+        display: block;
+        position: relative;
+
+    }
+}
+
+.section-edge-top {
+    &::before {
+        content: url('data:image/svg+xml,<svg viewBox="0 0 1920 118" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 117.65V118H1920V0L0 117.65Z"/></svg> ');
+        width: 100%;
+        height: auto;
+        aspect-ratio: 960/59;
+        display: block;
+        position: relative;
+
+    }
+}
+
+.section-edge-bottom {
+    &::after {
+        content: url('data:image/svg+xml,<svg viewBox="0 0 1920 118" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M1920 0.35006V0.000167852L1.03159e-05 0L0 118L1920 0.35006Z"/></svg> ');
+        width: 100%;
+        height: auto;
+        aspect-ratio: 960/59;
+        display: block;
+        position: relative;
+
+    }
+}

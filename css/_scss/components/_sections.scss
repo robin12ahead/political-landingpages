@@ -234,6 +234,7 @@
 
 // CTA Section
 .section_cta-boxes {
+    position: relative;
     .cta-box {
         // background-color: var(--background-color-body);
         display: flex;
@@ -258,6 +259,11 @@
             }
         }
     }
+}
+
+// contact form
+.section_contact-form {
+    position: relative;
 }
 
 // Downloads

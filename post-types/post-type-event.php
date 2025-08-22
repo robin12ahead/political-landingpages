@@ -2,9 +2,14 @@
 // proceed if status is set to "active"
 $optionsAddons = get_field('addons', 'option');
 if ($optionsAddons["events_status"] == true) {
+
     
 // Add Custom Post Type
 function create_post_type_event() {
+
+    $optionsAddons = get_field('addons', 'option');
+    $public = $optionsAddons["events_detailpage"];
+
     $supports = array(
         'title', // post title
         'editor', // post content
@@ -36,11 +41,11 @@ function create_post_type_event() {
         'menu_icon' => 'dashicons-calendar-alt',
         'supports' => $supports,
         'labels' => $labels,
-        'public' => $optionsAddons["events_detailpage"],
+        'public' => $public,
         'show_ui' => true,
         'publicity_querable' => true,
         'query_var' => true,
-        'has_archive' => $optionsAddons["events_detailpage"],
+        'has_archive' => true,
         'exclude_from_search' => false,
         'show_in_nav_menus' => false,
         'rewrite' => array('slug' => 'event'),

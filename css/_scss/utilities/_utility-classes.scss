@@ -8,9 +8,7 @@
 .background-color-primary {
     background-color: var(--background-color-primary);
     
-    &.section-edge,
-    &.section-edge-top,
-    &.section-edge-bottom {
+    &.section-edge {
         &::before,
         &::after {
             background-color: var(--background-color-primary);
@@ -21,9 +19,7 @@
 .background-color-secondary {
     background-color: var(--background-color-secondary);
 
-    &.section-edge,
-    &.section-edge-top,
-    &.section-edge-bottom {
+    &.section-edge {
         &::before,
         &::after {
             background-color: var(--background-color-secondary);
@@ -34,9 +30,7 @@
 .background-color-tertiary {
     background-color: var(--background-color-tertiary);
 
-    &.section-edge,
-    &.section-edge-top,
-    &.section-edge-bottom {
+    &.section-edge {
         &::before,
         &::after {
             background-color: var(--background-color-tertiary);
@@ -47,9 +41,7 @@
 .background-color-accent {
     background-color: var(--background-color-accent);
 
-    &.section-edge,
-    &.section-edge-top,
-    &.section-edge-bottom {
+    &.section-edge {
         &::before,
         &::after {
             background-color: var(--background-color-accent);
@@ -60,9 +52,7 @@
 .background-color-body {
     background-color: var(--background-color-body);
 
-    &.section-edge,
-    &.section-edge-top,
-    &.section-edge-bottom {
+    &.section-edge {
         &::before,
         &::after {
             color: var(--background-color-body);
@@ -391,55 +381,63 @@
 
 // Section Edges
 .section-edge {
-    &::before {
-        content: "";
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16.271;
-	    clip-path: shape(from 100% 0.3%,vline to 0%,line to 0% 0%,line to 0% 100%,line to 100% 0.3%,close);
-        display: block;
-        position: absolute;
-        top: 100%;
-
-    }
-
+    // &::before {
+    //     content: "";
+    //     width: 100%;
+    //     height: auto;
+    //     aspect-ratio: 16.271;
+    //     clip-path: shape(from 0% 99.7%,vline to 100%,hline to 100%,vline to 0%,line to 0% 99.7%,close);
+    //     display: block;
+    //     position: absolute;
+    //     top: calc(100% - 1px);
+    //     left: 0;
+    //     right: 0;
+        
+    // }
+    
     &::after {
         content: "";
         width: 100%;
         height: auto;
         aspect-ratio: 16.271;
-	    clip-path: shape(from 0% 99.7%,vline to 100%,hline to 100%,vline to 0%,line to 0% 99.7%,close);
+        clip-path: shape(from 100% 0.3%,vline to 0%,line to 0% 0%,line to 0% 100%,line to 100% 0.3%,close);
         display: block;
         position: absolute;
-        top: 100%;
+        top: calc(100% - 1px);
+        left: 0;
+        right: 0;
 
     }
 }
 
-.section-edge-top {
-    &::before {
-        content: "";
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16.271;
-	    clip-path: shape(from 0% 99.7%,vline to 100%,hline to 100%,vline to 0%,line to 0% 99.7%,close);
-        display: block;
-        position: absolute;
-        top: 100%;
+// .section-edge-top {
+//     &::before {
+//         content: "";
+//         width: 100%;
+//         height: auto;
+//         aspect-ratio: 16.271;
+// 	    clip-path: shape(from 0% 99.7%,vline to 100%,hline to 100%,vline to 0%,line to 0% 99.7%,close);
+//         display: block;
+//         position: absolute;
+//         top: calc(100% - 1px);
+//         left: 0;
+//         right: 0;
 
-    }
-}
+//     }
+// }
 
-.section-edge-bottom {
-    &::after {
-        content: "";
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16.271;
-	    clip-path: shape(from 100% 0.3%,vline to 0%,line to 0% 0%,line to 0% 100%,line to 100% 0.3%,close);
-        display: block;
-        position: absolute;
-        top: 100%;
+// .section-edge-bottom {
+//     &::after {
+//         content: "";
+//         width: 100%;
+//         height: auto;
+//         aspect-ratio: 16.271;
+// 	    clip-path: shape(from 100% 0.3%,vline to 0%,line to 0% 0%,line to 0% 100%,line to 100% 0.3%,close);
+//         display: block;
+//         position: absolute;
+//         top: calc(100% - 1px);
+//         left: 0;
+//         right: 0;
 
-    }
-}
+//     }
+// }

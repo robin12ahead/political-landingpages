@@ -3,6 +3,11 @@ add_shortcode( 'medienberichte', 'medienberichte_shortcode' );
 function medienberichte_shortcode( $atts ) { 
 	
 	$post_id = get_the_ID();
+
+    // set unique identifier for each query (for indivisual paginations)
+    static $instance_count = 0;
+    $instance_count++;
+    $instance_id = 'medienbericht_' . $instance_count;
 	
 	$parameters = shortcode_atts( array(
 		'status' => 'publish',
@@ -10,11 +15,16 @@ function medienberichte_shortcode( $atts ) {
 		'orderby' => 'menu_order',
 		'order' => 'ASC',
 		'paged' => 'false',
+        'categories' => '',
 
 	), $atts, 'medienberichte' );
 
-    // Define output var
-    $output = '';
+    if ( $parameters['paged'] == "true" ) {
+        // $paged = (get_query_var($instance_id . '_paged')) ? get_query_var($instance_id . '_paged') : 1;
+        $paged = isset( $_GET[$instance_id . '_paged'] ) ? (int) $_GET[$instance_id . '_paged'] : 1;
+    } else {
+        $paged = false;
+    }
 
     $args = array (
         'post_type'           => 'medienbericht',
@@ -25,8 +35,33 @@ function medienberichte_shortcode( $atts ) {
         'orderby'             => "{$parameters['orderby']}",
         'order'               => "{$parameters['order']}",
 		'supress_filters'     => true,
-        'paged'               => "{$parameters['paged']}",
+        'paged'               => $paged,
     );
+
+        // categories filter
+    $categories = '';
+
+    if ( $parameters['categories'] !== "" ) {
+        $categories = explode(",", "{$parameters['categories']}");
+
+        $tax_query = array (
+            'tax_query' => array(
+                'relation' => 'OR',
+                array(
+                    'taxonomy' => 'medienbericht_category',   // taxonomy name
+                    'field' => 'term_id',           // term_id, slug or name
+                    'terms' => $categories,       // term id, term slug or term name
+                    'operator' => 'IN',
+                )
+            ),
+        );
+    
+        // merge args arrays together
+        $args = array_merge($args, $tax_query);
+    }
+
+    // Define output var
+    $output = '';
 
     // Query posts
     $custom_query = new WP_Query($args);
@@ -40,12 +75,12 @@ function medienberichte_shortcode( $atts ) {
             $output .= '<div class="medienberichte-item medienberichte-id-' . get_the_ID() . ' col">';
                 $output .= '<div class="medienberichte-inner box">';
 
-                    $output .= '<div class="content">';                
+                    $output .= '<div class="text-wrapper">';                
 
                         $output .= '<div class="item-meta text-size-medium">';
                             $output .= '<span class="">' . get_field('absender') . '</span>';
-                            $output .= '<span class="meta-separator"> | </span>';
-                            $output .= '<span class="">' . get_field('absender') . '</span>';
+                            $output .= '<span class="meta-separator">  |  </span>';
+                            $output .= '<span class="">' . get_field('link_medienbericht') . '</span>';
                         $output .= '</div>';
 
                         if ( get_field('title') ) {
@@ -56,7 +91,7 @@ function medienberichte_shortcode( $atts ) {
                     
                     $output .= '</div>';
                         
-                    $output .= '<a href="' . get_the_title('link_medienbericht') . '" target="_blank" class="button btn btn-has-arrow" target="">Zum Bericht</a>';
+                    $output .= '<a href="' . get_the_title('link_medienbericht') . '" target="_blank" class="button btn is-secondary btn-has-arrow" target="">Zum Bericht</a>';
 
                 $output .= '</div>';
 

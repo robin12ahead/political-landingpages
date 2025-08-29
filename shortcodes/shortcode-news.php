@@ -2,12 +2,12 @@
 add_shortcode( 'news', 'news_shortcode' );
 function news_shortcode( $atts ) {
     
+	$post_id = get_the_ID();
+
     // set unique identifier for each query (for indivisual paginations)
     static $instance_count = 0;
     $instance_count++;
     $instance_id = 'news_' . $instance_count;
-	
-	$post_id = get_the_ID();
 	
 	$parameters = shortcode_atts( array(
 		'status' => 'publish',

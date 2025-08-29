@@ -17,7 +17,7 @@ function medienberichte_shortcode( $atts ) {
     $output = '';
 
     $args = array (
-        'post_type'           => 'argument',
+        'post_type'           => 'medienbericht',
         'status'              => "{$parameters['status']}",
         'posts_per_page'      => "{$parameters['posts_per_page']}",
         'post__not_in'        => array($post_id),

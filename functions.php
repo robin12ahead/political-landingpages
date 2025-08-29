@@ -318,7 +318,7 @@ require get_template_directory() . '/post-types/post-type-faq.php';
 // Downloads
 require get_template_directory() . '/post-types/post-type-download.php';
 
-// Downloads
+// Medienbericht
 require get_template_directory() . '/post-types/post-type-medienbericht.php';
 
 
@@ -354,6 +354,9 @@ require get_template_directory() . '/shortcodes/shortcode-faq.php';
 
 // Downloads
 require get_template_directory() . '/shortcodes/shortcode-downloads.php';
+
+// Medienbericht
+require get_template_directory() . '/shortcodes/shortcode-medienberichte.php';
 
 // Bezirk Map
 require get_template_directory() . '/shortcodes/shortcode-bezirk.php';

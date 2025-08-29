@@ -102,14 +102,14 @@ function testimonials_shortcode( $atts ) {
                     }
 
                     if( !empty($profilePicture) ) {
-                        $output .= '<img class="testimonial-logo is-absolute" src="' . get_theme_mod( 'custom_logo' ) .'" alt="headvisual">';
+                        $output .= '<img class="testimonial-logo is-absolute" src="' . wp_get_attachment_image_src(get_theme_mod( 'custom_logo' )) .'" alt="headvisual">';
                     } else {
-                        $output .= '<img class="testimonial-logo" src="' . get_theme_mod( 'custom_logo' ) .'" alt="headvisual">';
+                        $output .= '<img class="testimonial-logo" src="' . wp_get_attachment_image_src(get_theme_mod( 'custom_logo' )) .'" alt="headvisual">';
                     }
 
                     $output .= '<div class="text-wrapper">';
                         $output .= '<div class="quote-text">' . "«" . get_field('zitat') . "»" . '</div>';
-                        $output .= '<p class="text-size-medium text-color-accent">' . $text_sender . '</p>';
+                        $output .= '<p class="quote-author">' . $text_sender . '</p>';
                     $output .= '</div>';
                 $output .= '</div>';
 

@@ -1,5 +1,5 @@
 <?php
-add_shortcode( 'medienberichte', 'medienberichte_shortcode¨' );
+add_shortcode( 'medienberichte', 'medienberichte_shortcode' );
 function medienberichte_shortcode( $atts ) { 
 	
 	$post_id = get_the_ID();

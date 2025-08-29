@@ -17,7 +17,27 @@ function faq_shortcode( $atts ) {
     // Define output var
     $output = '';
 
-    $categories = explode(",", "{$parameters['categories']}");
+    // categories filter
+    $categories = '';
+
+    if ( $parameters['categories'] !== "" ) {
+        $categories = explode(",", "{$parameters['categories']}");
+
+        $tax_query = array (
+            'tax_query' => array(
+                'relation' => 'OR',
+                array(
+                    'taxonomy' => 'faq_category',   // taxonomy name
+                    'field' => 'term_id',           // term_id, slug or name
+                    'terms' => $categories,       // term id, term slug or term name
+                    'operator' => 'IN',
+                )
+            ),
+        );
+    
+        // merge args arrays together
+        $args = array_merge($args, $tax_query);
+    }
 
     $args = array (
         'post_type'           => 'faq',

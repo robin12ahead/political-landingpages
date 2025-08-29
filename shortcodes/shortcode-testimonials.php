@@ -12,7 +12,7 @@ function testimonials_shortcode( $atts ) {
 		'status' => 'publish',
 		'posts_per_page' => '-1',
 		'orderby' => 'menu_order',
-        'categories' => '7',
+        'categories' => '',
 		'order' => 'ASC',
 		'paged' => 'false',
 
@@ -53,12 +53,12 @@ function testimonials_shortcode( $atts ) {
                     'terms' => $categories,       // term id, term slug or term name
                     'operator' => 'IN',
                 ),
-                array(
-                    'taxonomy' => 'testimonial_category',   // taxonomy name
-                    'field' => 'term_id',           // term_id, slug or name
-                    'terms' => '19',       // term id, term slug or term name
-                    'operator' => 'NOT IN',
-                ),
+                // array(
+                //     'taxonomy' => 'testimonial_category',   // taxonomy name
+                //     'field' => 'term_id',           // term_id, slug or name
+                //     'terms' => '19',       // term id, term slug or term name
+                //     'operator' => 'NOT IN',
+                // ),
             ),
         );
     

@@ -61,6 +61,7 @@ function political_landingpages_setup() {
 	*/
 	add_image_size( 'komitee', 300, 300, true );
 	add_image_size( 'testimonial', 440, 440, true );
+	add_image_size( 'bildgalerie', 520, 520, true );
 
 	/*
 	* Switch default core markup for search form, comment form, and comments

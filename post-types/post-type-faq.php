@@ -20,7 +20,7 @@ function create_post_type_faq() {
     $labels = array(
         'name' => _x('Accordions', 'plural'),
         'singular_name' => _x('Accordion', 'singular'),
-        'menu_name' => _x('Accordion', 'admin menu'),
+        'menu_name' => _x('Accordions', 'admin menu'),
         'name_admin_bar' => _x('Accordion', 'admin bar'),
         'add_new' => _x('Neues Accordion', 'add new'),
         'add_new_item' => __('Neues Accordion'),

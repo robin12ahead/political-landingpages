@@ -14,8 +14,17 @@ function faq_shortcode( $atts ) {
 
 	), $atts, 'faqs' );
 
-    // Define output var
-    $output = '';
+    $args = array (
+        'post_type'           => 'faq',
+        'status'              => "{$parameters['status']}",
+        'posts_per_page'      => "{$parameters['posts_per_page']}",
+        'post__not_in'        => array($post_id),
+        'ignore_sticky_posts' => 1,
+        'orderby'             => "{$parameters['orderby']}",
+        'order'               => "{$parameters['order']}",
+		'supress_filters'     => true,
+        'paged'               => "{$parameters['paged']}",
+    );
 
     // categories filter
     $categories = '';
@@ -39,26 +48,8 @@ function faq_shortcode( $atts ) {
         $args = array_merge($args, $tax_query);
     }
 
-    $args = array (
-        'post_type'           => 'faq',
-        'status'              => "{$parameters['status']}",
-        'posts_per_page'      => "{$parameters['posts_per_page']}",
-        'tax_query' => array(
-			'relation' => 'OR',
-			array(
-				'taxonomy' => 'faq_category',   // taxonomy name
-				'field' => 'term_id',           // term_id, slug or name
-				'terms' => $categories,       // term id, term slug or term name
-				'operator' => 'IN',
-			)
-		),
-        'post__not_in'        => array($post_id),
-        'ignore_sticky_posts' => 1,
-        'orderby'             => "{$parameters['orderby']}",
-        'order'               => "{$parameters['order']}",
-		'supress_filters'     => true,
-        'paged'               => "{$parameters['paged']}",
-    );
+    // Define output var
+    $output = '';
 
     // Query posts
     $custom_query = new WP_Query($args);

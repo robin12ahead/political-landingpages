@@ -80,7 +80,7 @@ function medienberichte_shortcode( $atts ) {
                         $output .= '<div class="item-meta text-size-medium">';
                             $output .= '<span class="">' . get_field('absender') . '</span>';
                             $output .= '<span class="meta-separator">  |  </span>';
-                            $output .= '<span class="">' . get_field('link_medienbericht') . '</span>';
+                            $output .= '<span class="">' . get_field('date_published') . '</span>';
                         $output .= '</div>';
 
                         if ( get_field('title') ) {
@@ -91,7 +91,7 @@ function medienberichte_shortcode( $atts ) {
                     
                     $output .= '</div>';
                         
-                    $output .= '<a href="' . get_the_title('link_medienbericht') . '" target="_blank" class="button btn is-secondary btn-has-arrow" target="">Zum Bericht</a>';
+                    $output .= '<a href="' . get_field('link_medienbericht') . '" target="_blank" class="button btn is-secondary btn-has-arrow" target="">Zum Bericht</a>';
 
                 $output .= '</div>';
 

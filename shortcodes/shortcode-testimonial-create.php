@@ -49,13 +49,13 @@ function shortcode_testimonial_create( $atts ) {
 
 }
 
-// proceed if status is set to "active"
-$optionsAddons = get_field('addons', 'option');
-if ($optionsAddons["banner_generator_status"] == true) {
-
 /*---------------------------------------------------------------------------
 Create custom Banner Image
 ---------------------------------------------------------------------------*/
+
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["banner_generator_status"] == true) {
 
 add_action('acf/save_post', 'create_custom_testimonial_banner');
 function create_custom_testimonial_banner($post_id) {
@@ -82,6 +82,8 @@ function create_custom_testimonial_banner($post_id) {
     $banner_width = $BannerOptions["banner_width"];
     $banner_height = $BannerOptions["banner_height"];
     $banner_padding = $BannerOptions["banner_padding"];
+    $BannerBGColor = $BannerOptions["banner_background_color"];
+    $BannerTextColor = $BannerOptions["banner_text_color"];
 
     /*--------------------------------------------
     Get Texts
@@ -161,7 +163,9 @@ function create_custom_testimonial_banner($post_id) {
 
     // Image base (BG)
     $image = imagecreatetruecolor($banner_width, $banner_height);
-    $background_color = imagecolorallocate($image, 255, 229, 0); // background color in RGB
+    // $background_color = imagecolorallocate($image, 255, 229, 0); // background color in RGB
+    
+    $background_color = imagecolorallocate($image, $BannerBGColor["green"], $BannerBGColor["red"], $BannerBGColor["blue"]); // background color in RGB
     imagefilledrectangle($image, 0, 0, $banner_width, $banner_height, $background_color);
 
     /*--------------------------------------------
@@ -244,7 +248,7 @@ function create_custom_testimonial_banner($post_id) {
     // Quote text
     if ( !empty($text_quote) ) {
 
-        $text_quote_color = imagecolorallocate($image, 0, 0, 0); // RGB Color
+        $text_quote_color = imagecolorallocate($image, $BannerTextColor["red"], $BannerTextColor["green"], $BannerTextColor["blue"]); // RGB Color
         $text_quote_size = '54';
         $text_quote_PosY = '900';
 
@@ -255,7 +259,7 @@ function create_custom_testimonial_banner($post_id) {
     // Sender text
     if ( !empty($text_sender) ) {
 
-        $text_author_color = imagecolorallocate($image, 218, 8, 18); // RGB Color
+        $text_author_color = imagecolorallocate($image, $BannerTextColor["red"], $BannerTextColor["green"], $BannerTextColor["blue"]); // RGB Color
         $text_author_size = '48';
         $text_author_PosY = '1380';
 
@@ -265,7 +269,7 @@ function create_custom_testimonial_banner($post_id) {
 
     if ( !empty($profilePictureImage) ) {
         // quotation mark
-        $quotation_color = imagecolorallocate($image, 218, 8, 18); // RGB Color
+        $quotation_color = imagecolorallocate($image, $BannerTextColor["red"], $BannerTextColor["green"], $BannerTextColor["blue"]); // RGB Color
         $quotation_size = '256';
         $quotation_PosY = '768';
 

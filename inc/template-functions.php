@@ -167,49 +167,54 @@ function get_image_file_path_from_url($image_url) {
 // Output banner Image on testimonial
 =========================================================*/
 
-// Add new column to the testimonial post type list
-function add_custom_banner_image_column($columns) {
-    $columns['custom_banner_image'] = __('Banner Image', 'political-landingpages');
-    return $columns;
-}
-add_filter('manage_testimonial_posts_columns', 'add_custom_banner_image_column');
+// proceed if status is set to "active"
+$optionsAddons = get_field('addons', 'option');
+if ($optionsAddons["banner_generator_status"] == true) {
 
-// Display the custom banner image in the custom column
-function display_custom_banner_image_column($column, $post_id) {
-    if ($column == 'custom_banner_image') {
-        $image_url = get_post_meta($post_id, 'custom_banner_image', true);
-        if ($image_url) {
-            echo '<img src="' . esc_url($image_url) . '" style="max-width:100px; height:auto;" />';
-        } else {
-            echo __('No Banner image', 'political-landingpages');
+    // Add new column to the testimonial post type list
+    function add_custom_banner_image_column($columns) {
+        $columns['custom_banner_image'] = __('Banner Image', 'political-landingpages');
+        return $columns;
+    }
+    add_filter('manage_testimonial_posts_columns', 'add_custom_banner_image_column');
+
+    // Display the custom banner image in the custom column
+    function display_custom_banner_image_column($column, $post_id) {
+        if ($column == 'custom_banner_image') {
+            $image_url = get_post_meta($post_id, 'custom_banner_image', true);
+            if ($image_url) {
+                echo '<img src="' . esc_url($image_url) . '" style="max-width:100px; height:auto;" />';
+            } else {
+                echo __('No Banner image', 'political-landingpages');
+            }
         }
     }
-}
-add_action('manage_testimonial_posts_custom_column', 'display_custom_banner_image_column', 10, 2);
+    add_action('manage_testimonial_posts_custom_column', 'display_custom_banner_image_column', 10, 2);
 
-// Register the custom meta box
-function custom_banner_image_meta_box() {
-    add_meta_box(
-        'custom_banner_image_meta_box', // Unique ID
-        __('Custom Banner Image', 'textdomain'), // Box title
-        'display_custom_banner_image_meta_box', // Content callback, must be of type callable
-        'testimonial', // Post type
-        'side', // Context
-        'high' // Priority
-    );
-}
-add_action('add_meta_boxes', 'custom_banner_image_meta_box');
+    // Register the custom meta box
+    function custom_banner_image_meta_box() {
+        add_meta_box(
+            'custom_banner_image_meta_box', // Unique ID
+            __('Custom Banner Image', 'textdomain'), // Box title
+            'display_custom_banner_image_meta_box', // Content callback, must be of type callable
+            'testimonial', // Post type
+            'side', // Context
+            'high' // Priority
+        );
+    }
+    add_action('add_meta_boxes', 'custom_banner_image_meta_box');
 
-// Display the custom banner image in the meta box
-function display_custom_banner_image_meta_box($post) {
-    // Retrieve the existing image URL if it exists
-    $image_url = get_post_meta($post->ID, 'custom_banner_image', true);
+    // Display the custom banner image in the meta box
+    function display_custom_banner_image_meta_box($post) {
+        // Retrieve the existing image URL if it exists
+        $image_url = get_post_meta($post->ID, 'custom_banner_image', true);
 
-    // Display the image
-    if ($image_url) {
-        echo '<img src="' . esc_url($image_url) . '" style="max-width:100%; height:auto;" />';
-    } else {
-        echo __('No image available', 'political-landingpages');
+        // Display the image
+        if ($image_url) {
+            echo '<img src="' . esc_url($image_url) . '" style="max-width:100%; height:auto;" />';
+        } else {
+            echo __('No image available', 'political-landingpages');
+        }
     }
 }
 
@@ -280,8 +285,8 @@ function my_pagination( $args = array() ) {
 // Hide Posts from Wordpress Dashboard
 =========================================================*/
 
+// proceed if status is set to "inactive"
 $optionsAddons = get_field('addons', 'option');
-
 if ($optionsAddons["news_status"] == false) {
 
 // Hide "Posts" menu in the WordPress admin

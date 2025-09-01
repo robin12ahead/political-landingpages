@@ -303,3 +303,16 @@ function my_remove_posts_admin_bar() {
 add_action('wp_before_admin_bar_render', 'my_remove_posts_admin_bar');
 
 }
+
+/*=========================================================
+// Function to convert HEX color string to RGB value
+=========================================================*/
+
+function hex2rgba( $color, $opacity ) {
+
+    list($r, $g, $b) = sscanf($color, "#%02x%02x%02x");
+    $output = "rgba($r, $g, $b, $opacity)";
+
+    return $output;
+
+}

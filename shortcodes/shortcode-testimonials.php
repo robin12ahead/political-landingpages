@@ -78,10 +78,15 @@ function testimonials_shortcode( $atts ) {
         
         while ($custom_query->have_posts()) : $custom_query->the_post();
         
+            // Get Custom Fields
             $profilePicture = get_field("profilbild");
             $text_firstName = get_field('vorname');
             $text_lastName = get_field('nachname');
             $text_function = get_field('funktion');
+
+            // Get the logo URL
+            $custom_logo_id = get_theme_mod('custom_logo');
+            $custom_logo = wp_get_attachment_image_src($custom_logo_id , 'full');
 
             if ( get_field('partei') ) {
                 $text_party = ", " . get_field('partei');
@@ -102,9 +107,9 @@ function testimonials_shortcode( $atts ) {
                     }
 
                     if( !empty($profilePicture) ) {
-                        $output .= '<img class="testimonial-logo is-absolute" src="' . wp_get_attachment_image_src(get_theme_mod( 'custom_logo' ), 'full') .'" alt="headvisual">';
+                        $output .= '<img class="testimonial-logo is-absolute" src="' . esc_url($custom_logo[0]) .'" alt="headvisual">';
                     } else {
-                        $output .= '<img class="testimonial-logo" src="' . wp_get_attachment_image_src(get_theme_mod( 'custom_logo' ), 'full') .'" alt="headvisual">';
+                        $output .= '<img class="testimonial-logo" src="' . esc_url($custom_logo[0]) .'" alt="headvisual">';
                     }
 
                     $output .= '<div class="text-wrapper">';

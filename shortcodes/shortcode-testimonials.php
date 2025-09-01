@@ -102,9 +102,9 @@ function testimonials_shortcode( $atts ) {
                     }
 
                     if( !empty($profilePicture) ) {
-                        $output .= '<img class="testimonial-logo is-absolute" src="' . wp_get_attachment_image_src(get_theme_mod( 'custom_logo' )) .'" alt="headvisual">';
+                        $output .= '<img class="testimonial-logo is-absolute" src="' . wp_get_attachment_image_src(get_theme_mod( 'custom_logo' ), 'full') .'" alt="headvisual">';
                     } else {
-                        $output .= '<img class="testimonial-logo" src="' . wp_get_attachment_image_src(get_theme_mod( 'custom_logo' )) .'" alt="headvisual">';
+                        $output .= '<img class="testimonial-logo" src="' . wp_get_attachment_image_src(get_theme_mod( 'custom_logo' ), 'full') .'" alt="headvisual">';
                     }
 
                     $output .= '<div class="text-wrapper">';

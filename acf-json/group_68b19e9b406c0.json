@@ -1,0 +1,107 @@
+{
+    "key": "group_68b19e9b406c0",
+    "title": "Medienberichte",
+    "fields": [
+        {
+            "key": "field_68b1a00f974ff",
+            "label": "Titel",
+            "name": "title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Überschreibt den Post-Title in der Übersicht (z.B falls dieser zu lang sein sollte)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68b19e9b3a2d2",
+            "label": "Absender",
+            "name": "absender",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68b19eba3a2d3",
+            "label": "Datum der Publikation",
+            "name": "date_published",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d.m.Y",
+            "return_format": "F Y",
+            "first_day": 1,
+            "default_to_current_date": 1,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_68b19f033a2d4",
+            "label": "Link zum Bericht",
+            "name": "link_medienbericht",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "allow_in_bindings": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "medienbericht"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1756481963
+}

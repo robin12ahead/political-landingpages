@@ -20,11 +20,11 @@
             "sub_fields": [
                 {
                     "key": "field_689f300234ad6",
-                    "label": "News Status",
+                    "label": "News",
                     "name": "news_status",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If deactivated, the standard post-type \"post\" will be disabled and hidden, posts cannot be edited and no new posts can be added (Added Posts will not be deleted).",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -32,20 +32,20 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "",
+                    "message": "(Posts will not be deleted)",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Active",
+                    "ui_off_text": "Inactive",
                     "ui": 1
                 },
                 {
                     "key": "field_68a8850aec851",
-                    "label": "Medienberichte Status",
+                    "label": "Medienberichte",
                     "name": "medienberichte_status",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If deactivated, the post-type \"medienbericht\" will be disabled and hidden, posts cannot be edited and no new posts can be added, and the shortcode [medienberichte] will not show items.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -53,20 +53,20 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "",
+                    "message": "(Posts will not be deleted)",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Active",
+                    "ui_off_text": "Inactive",
                     "ui": 1
                 },
                 {
                     "key": "field_689f2fe234ad5",
-                    "label": "Events Status",
+                    "label": "Events",
                     "name": "events_status",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If deactivated, the post-type \"events\" will be disabled and hidden, posts cannot be edited and no new posts can be added, and the shortcode [events] will not show items.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -74,20 +74,20 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "",
+                    "message": "(Posts will not be deleted)",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Active",
+                    "ui_off_text": "Inactive",
                     "ui": 1
                 },
                 {
                     "key": "field_68a86ee2897e7",
-                    "label": "Events Detailpage",
+                    "label": "Events Front Page",
                     "name": "events_detailpage",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If disabled, will deactivate the front page for the post-type event (items can still be outputted in a list using the shortcode (events).",
                     "required": 0,
                     "conditional_logic": [
                         [
@@ -106,17 +106,17 @@
                     "message": "",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Enabled",
+                    "ui_off_text": "Disabled",
                     "ui": 1
                 },
                 {
                     "key": "field_689f2ed227ef9",
-                    "label": "Testimonials Status",
+                    "label": "Testimonials",
                     "name": "testimonial_status",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If deactivated, the post-type \"testimonials\" will be disabled and hidden, posts cannot be edited and no new posts can be added, and the shortcode [testimonials] will not show items.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -127,17 +127,17 @@
                     "message": "",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Active",
+                    "ui_off_text": "Inactive",
                     "ui": 1
                 },
                 {
                     "key": "field_689f31ff35dda",
-                    "label": "Testimonials Generieren (Frontend Formular)",
+                    "label": "Testimonials Frontend Form",
                     "name": "testimonials_generieren",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If enabled, users are able to create new testimonial items via a frontend form using the shortcode [testimonial-create].",
                     "required": 0,
                     "conditional_logic": [
                         [
@@ -156,8 +156,8 @@
                     "message": "",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Enabled",
+                    "ui_off_text": "Disabled",
                     "ui": 1
                 },
                 {
@@ -166,7 +166,7 @@
                     "name": "banner_generator_status",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If enabled, every time a testimonial item is saved a banner image will automatically be created (or updated if already exists).",
                     "required": 0,
                     "conditional_logic": [
                         [
@@ -185,17 +185,17 @@
                     "message": "",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Enabled",
+                    "ui_off_text": "Disabled",
                     "ui": 1
                 },
                 {
                     "key": "field_689f2fc834ad3",
-                    "label": "Komitee Status",
+                    "label": "Komitee",
                     "name": "komitee_status",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If deactivated, the post-type \"komitee\" will be disabled and hidden, posts cannot be edited and no new posts can be added, and the shortcode [komitee] will not show items.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -206,17 +206,17 @@
                     "message": "",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Active",
+                    "ui_off_text": "Inactive",
                     "ui": 1
                 },
                 {
                     "key": "field_689f322a35ddb",
-                    "label": "Komitee Registrieren",
+                    "label": "Komitee Frontend Form",
                     "name": "komitee_registrieren",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If enabled, users are able to create new komitee items via a frontend form using the shortcode [komitee-anmeldung].",
                     "required": 0,
                     "conditional_logic": [
                         [
@@ -235,17 +235,17 @@
                     "message": "",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Enabled",
+                    "ui_off_text": "Disabled",
                     "ui": 1
                 },
                 {
                     "key": "field_689f2f9f34ad1",
-                    "label": "Partner Status",
+                    "label": "Partner",
                     "name": "partner_status",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If deactivated, the post-type \"partner\" will be disabled and hidden, posts cannot be edited and no new posts can be added, and the shortcode [partner] will not show items.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -256,17 +256,17 @@
                     "message": "",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Active",
+                    "ui_off_text": "Inactive",
                     "ui": 1
                 },
                 {
                     "key": "field_689f2fbb34ad2",
-                    "label": "FAQ Status",
+                    "label": "Accordions (FAQs)",
                     "name": "faq_status",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If deactivated, the post-type \"accordions\" (formerly known as faqs) will be disabled and hidden, posts cannot be edited and no new posts can be added, and the shortcode [faqs] will not show items.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -277,38 +277,17 @@
                     "message": "",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
-                    "ui": 1
-                },
-                {
-                    "key": "field_689f2fd534ad4",
-                    "label": "Downloads Status",
-                    "name": "downloads_status",
-                    "aria-label": "",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 1,
-                    "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Active",
+                    "ui_off_text": "Inactive",
                     "ui": 1
                 },
                 {
                     "key": "field_689f301634ad7",
-                    "label": "Argumente Status",
+                    "label": "Themen (Argumente)",
                     "name": "argumente_status",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If deactivated, the post-type \"argumente\" (now known as Themen) will be disabled and hidden, posts cannot be edited and no new posts can be added, and the shortcode [argumente] will not show items.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -319,17 +298,17 @@
                     "message": "",
                     "default_value": 1,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Active",
+                    "ui_off_text": "Inactive",
                     "ui": 1
                 },
                 {
                     "key": "field_689f302c34ad8",
-                    "label": "Forderungen Status",
+                    "label": "Forderungen",
                     "name": "forderungen_status",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If deactivated, the post-type \"forderungen\" will be disabled and hidden, posts cannot be edited and no new posts can be added, and the shortcode [forderungen] will not show items.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -340,8 +319,29 @@
                     "message": "",
                     "default_value": 0,
                     "allow_in_bindings": 0,
-                    "ui_on_text": "Aktiviert",
-                    "ui_off_text": "Deaktiviert",
+                    "ui_on_text": "Active",
+                    "ui_off_text": "Inactive",
+                    "ui": 1
+                },
+                {
+                    "key": "field_689f2fd534ad4",
+                    "label": "Downloads",
+                    "name": "downloads_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "If deactivated, the post-type \"downloads\" will be disabled and hidden, posts cannot be edited and no new posts can be added, and the shortcode [downloads] will not show items.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Active",
+                    "ui_off_text": "Inactive",
                     "ui": 1
                 }
             ]
@@ -365,5 +365,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755874817
+    "modified": 1756820223
 }

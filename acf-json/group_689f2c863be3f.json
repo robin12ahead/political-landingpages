@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "block",
+            "layout": "row",
             "sub_fields": [
                 {
                     "key": "field_66b497494921d",
@@ -128,7 +128,7 @@
                     "name": "banner_width",
                     "aria-label": "",
                     "type": "number",
-                    "instructions": "",
+                    "instructions": "Width for the generated Banner image (in Pixels)",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -151,7 +151,7 @@
                     "name": "banner_height",
                     "aria-label": "",
                     "type": "number",
-                    "instructions": "",
+                    "instructions": "Height for the generated Banner image (in Pixels)",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -230,6 +230,25 @@
                     "allow_in_bindings": 0
                 },
                 {
+                    "key": "field_68b6e643c60c2",
+                    "label": "Banner Accent Color",
+                    "name": "banner_accent_color",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#000000",
+                    "enable_opacity": 0,
+                    "return_format": "array",
+                    "allow_in_bindings": 0
+                },
+                {
                     "key": "field_68a3386672517",
                     "label": "Banner Visual",
                     "name": "banner_visual",
@@ -276,5 +295,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755527363
+    "modified": 1756817059
 }

@@ -24,7 +24,7 @@
                     "name": "send_email_new_testimonial",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If activated, an informational email will be sent every time a new testimonial is created",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -47,7 +47,15 @@
                     "type": "text",
                     "instructions": "(Optional) If the field is empty it will use WP-admin-email",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66b49ac449225",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -66,7 +74,7 @@
                     "name": "send_email_new_comitee_member",
                     "aria-label": "",
                     "type": "true_false",
-                    "instructions": "",
+                    "instructions": "If activated, an informational email will be sent every time a new comitee member is created",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -89,7 +97,15 @@
                     "type": "text",
                     "instructions": "(Optional) If the field is empty it will use WP-admin-email",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66b49af549227",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -123,5 +139,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755508902
+    "modified": 1756819128
 }

@@ -84,6 +84,7 @@ function create_custom_testimonial_banner($post_id) {
     $banner_padding = $BannerOptions["banner_padding"];
     $BannerBGColor = $BannerOptions["banner_background_color"];
     $BannerTextColor = $BannerOptions["banner_text_color"];
+    $BannerAccentColor = $BannerOptions["banner_accent_color"];
 
     /*--------------------------------------------
     Get Texts
@@ -230,8 +231,8 @@ function create_custom_testimonial_banner($post_id) {
             $headvisualHeight = imagesy($headVisualImage);
 
             // Calculate new dimensions to fit within the base image
-            $newHeadvisualWidth = '580';
-            $newHeadvisualHeight = '430';
+            $newHeadvisualWidth = '290';
+            $newHeadvisualHeight = '215';
 
             $headVisualPosY = $banner_padding;
 
@@ -269,7 +270,7 @@ function create_custom_testimonial_banner($post_id) {
 
     if ( !empty($profilePictureImage) ) {
         // quotation mark
-        $quotation_color = imagecolorallocate($image, $BannerTextColor["red"], $BannerTextColor["green"], $BannerTextColor["blue"]); // RGB Color
+        $quotation_color = imagecolorallocate($image, $BannerAccentColor["red"], $BannerAccentColor["green"], $BannerAccentColor["blue"]); // RGB Color
         $quotation_size = '256';
         $quotation_PosY = '768';
 

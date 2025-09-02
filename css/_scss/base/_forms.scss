@@ -5,6 +5,8 @@ label.form_placeholder {
     top: .25rem;
     left: var(--forms-padding-lr);
     font-size: calc(var(--font-size-form-fields) * .65);
+    color: var(--text-color-primary);
+    opacity: .5;
 }
 
 body,

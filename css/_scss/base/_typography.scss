@@ -185,6 +185,8 @@ h2,
 .text-style-h2,
 h3,
 .text-style-h4 {
+    display: inline-block;
+    
     &::after {
         content: "";
         display: block;

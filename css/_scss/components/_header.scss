@@ -84,7 +84,7 @@ header.header {
                                 .dropdown-wrapper {
                                     display: inline-flex;
                                     gap: .5rem;
-                                    align-items: center;
+                                    align-items: baseline;
                                 }
 
                                 span.dropdown-icon {
@@ -97,18 +97,20 @@ header.header {
                                     display: inline-block;
                                     transform: rotate(0deg);
                                     // transition: transform ease 250ms;
+                                    font-weight: $medium;
+                                    color: var(--text-color-accent);
 
                                     &::after {
                                         content: "+";
                                     }
 
-                                    &.open {
-                                        // transform: rotate(180deg);
+                                    // &.open {
+                                    //     // transform: rotate(180deg);
 
-                                         &::after {
-                                            content: "-";
-                                        }
-                                    }
+                                    //      &::after {
+                                    //         content: "-";
+                                    //     }
+                                    // }
                                 }
 
                                 // dropdowns (sub-menu)

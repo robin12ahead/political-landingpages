@@ -181,10 +181,7 @@ span.highlighted-text {
     font-size: 1.55em;
 }
 
-h2,
-.text-style-h2,
-h3,
-.text-style-h4 {
+.heading-has-unterline {
     display: inline-block;
     
     &::after {

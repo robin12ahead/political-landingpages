@@ -11,6 +11,8 @@ header.header {
         .navbar#main-navbar {
     
             .site-branding {
+                max-height: 4rem;
+                
                 .site-title {
                     font-size: clamp(calc(var(--font-size-site-title) / 2), 6vw, var(--font-size-site-title));
                 }

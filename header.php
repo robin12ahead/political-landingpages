@@ -61,13 +61,15 @@
 							?>
 					</nav><!-- #site-navigation -->
 
-				</div>
+					<button class="navbar-toggle hamburger hamburger--squeeze" aria-controls="primary-menu" aria-expanded="false">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
 
-				<button class="navbar-toggle hamburger hamburger--squeeze" aria-controls="primary-menu" aria-expanded="false">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</button>
+				</div><!-- .navigation-wrapper -->
+
+
 			</div>
 
 		</div>

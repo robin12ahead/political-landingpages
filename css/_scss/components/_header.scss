@@ -32,12 +32,14 @@ header.header {
 
             .container {
                 flex: 1;
-                align-items: center;
+                align-items: stretch;
             }
     
             .site-branding {
                     max-width: 9rem;
                     transition: all 250ms ease;
+                    max-height: 6rem;
+                    display: inline-flex;
     
                 .site-title {
                     font-family: $font_headings;

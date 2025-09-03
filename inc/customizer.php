@@ -523,7 +523,7 @@ $font_sizes = array (
 	),
 	'font-size-form-fields' => array (
 		"label" => "Form Fields Font Size",
-		"default" => "1.5rem",
+		"default" => "1.25rem",
 		"section" => "forms",
 	),
 

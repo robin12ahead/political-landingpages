@@ -375,7 +375,7 @@ function testimonial_after_save($post_id) {
         } else {
             $to = get_option('admin_email');
         }
-        $headers = array('Content-Type: text/html; charset=UTF-8', 'From: ' . get_bloginfo( 'name' ) . ' <admin@gratis-studium-nein.ch>');//make it HTML
+        $headers = array('Content-Type: text/html; charset=UTF-8', 'From: ' . get_bloginfo( 'name' ) . '<' . get_option('admin_email') . '>');//make it HTML
         $subject = __('Neues Testimonial');
     
         // Message

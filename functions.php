@@ -359,5 +359,8 @@ require get_template_directory() . '/shortcodes/shortcode-downloads.php';
 // Medienbericht
 require get_template_directory() . '/shortcodes/shortcode-medienberichte.php';
 
+// District Map
+require get_template_directory() . '/shortcodes/shortcode-map-district.php';
+
 // Bezirk Map
-require get_template_directory() . '/shortcodes/shortcode-bezirk.php';
+require get_template_directory() . '/shortcodes/shortcode-social-media-links.php';

@@ -96,7 +96,7 @@
             "name": "map",
             "aria-label": "",
             "type": "group",
-            "instructions": "Use Shortcode [bezirk] to display an SVG-Map of the Canton Zurich that will automatically highlight the selected Bezirk (District).",
+            "instructions": "Use Shortcode [map-district] to display an SVG-Map of the Canton Zurich that will automatically highlight the selected Bezirk (District).",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -166,5 +166,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756907084
+    "modified": 1756907183
 }

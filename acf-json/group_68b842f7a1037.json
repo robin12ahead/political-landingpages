@@ -47,7 +47,7 @@
                             "aria-label": "",
                             "type": "link",
                             "instructions": "",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -61,11 +61,11 @@
                         {
                             "key": "field_68b8433213eec",
                             "label": "Icon",
-                            "name": "social_media_icon",
+                            "name": "icon",
                             "aria-label": "",
                             "type": "icon_picker",
                             "instructions": "",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -77,7 +77,7 @@
                                 "media_library",
                                 "url"
                             ],
-                            "return_format": "string",
+                            "return_format": "array",
                             "allow_in_bindings": 0,
                             "library": "all",
                             "default_value": {
@@ -166,5 +166,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756908302
+    "modified": 1756908858
 }

@@ -28,34 +28,40 @@
 		<div id="main-navbar" class="navbar">
 			<div class="container">
 
-					<div class="site-branding">
+				<div class="site-branding">
 
-						<?php
-						if ( has_custom_logo() ) : ?>
-							<?php the_custom_logo(); ?>
-						<?php 
-						$genericLogo = get_template_directory_uri() . '/assets/img/site-logo.svg';
-						elseif ( getimagesize( $genericLogo ) ) : ?>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="custom-logo-link" rel="home" aria-current="page"><img src="<?php echo $genericLogo; ?>" class="custom-logo" alt="<?php bloginfo( 'name' ); ?>-logo" decoding="async"></a>
-						<?php else: ?>
-							<div class="site-title"><a class="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
-						<?php endif; ?>
-
-					</div><!-- .site-branding -->
-		
-				<nav id="main-nav" class="navigation">
 					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' 	=> 'primary-menu',
-							'menu_id'        	=> 'primary-menu',
-							'link_class'   	 => 'nav-link',
-							'menu_class'     => 'menu nav',
-							'container' => false,
-							)
-						);
-						?>
-				</nav><!-- #site-navigation -->
+					if ( has_custom_logo() ) : ?>
+						<?php the_custom_logo(); ?>
+					<?php 
+					$genericLogo = get_template_directory_uri() . '/assets/img/site-logo.svg';
+					elseif ( getimagesize( $genericLogo ) ) : ?>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="custom-logo-link" rel="home" aria-current="page"><img src="<?php echo $genericLogo; ?>" class="custom-logo" alt="<?php bloginfo( 'name' ); ?>-logo" decoding="async"></a>
+					<?php else: ?>
+						<div class="site-title"><a class="site-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
+					<?php endif; ?>
+
+				</div><!-- .site-branding -->
+		
+				<div class="navigation-wrapper">
+
+					<?php echo do_shortcode( '[social-media-links]' ); ?>
+					
+					<nav id="main-nav" class="navigation">
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location' 	=> 'primary-menu',
+								'menu_id'        	=> 'primary-menu',
+								'link_class'   	 => 'nav-link',
+								'menu_class'     => 'menu nav',
+								'container' => false,
+								)
+							);
+							?>
+					</nav><!-- #site-navigation -->
+
+				</div>
 
 				<button class="navbar-toggle hamburger hamburger--squeeze" aria-controls="primary-menu" aria-expanded="false">
 					<span class="hamburger-box">

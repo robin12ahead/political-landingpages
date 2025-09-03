@@ -54,7 +54,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
+                            "return_format": "url",
                             "allow_in_bindings": 0,
                             "parent_repeater": "field_68b8431813eea"
                         },
@@ -166,5 +166,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756907183
+    "modified": 1756908302
 }

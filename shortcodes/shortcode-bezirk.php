@@ -1,9 +1,9 @@
 <?php
-add_shortcode( 'bezirk', 'bezirk_shortcode' );
-function bezirk_shortcode( $atts ) { 
+add_shortcode( 'map-district', 'district_shortcode' );
+function district_shortcode( $atts ) { 
 	
-    $options = get_field('meta', 'option');
-    $bezirk = $options['bezirk'];
+    $options = get_field('map', 'option');
+    $bezirk = $options['district'];
 
     $output = '';
     $output .= '<div class="bezirk-map bezirk-shortcode" data-bezirk="' . $bezirk . '">';

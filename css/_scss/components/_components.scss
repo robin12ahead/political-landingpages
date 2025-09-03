@@ -157,3 +157,18 @@
     transform: translate(5vw, 4vw);
     margin-bottom: -25%;
 }
+
+// Social Media Shortcode
+a.social-media-link {
+    color: var(--text-color-accent);
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &:hover {
+        color: var(--links-color-hover);
+    }
+}

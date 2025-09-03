@@ -1,0 +1,170 @@
+{
+    "key": "group_68b842f7a1037",
+    "title": "Options: Personal",
+    "fields": [
+        {
+            "key": "field_68b842f713ee9",
+            "label": "Social Media",
+            "name": "social_media",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_68b8431813eea",
+                    "label": "Socia Media Link",
+                    "name": "socia_media_link",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "Add all Social Media Links for this person.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_68b8432913eeb",
+                            "label": "Link",
+                            "name": "link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "allow_in_bindings": 0,
+                            "parent_repeater": "field_68b8431813eea"
+                        },
+                        {
+                            "key": "field_68b8433213eec",
+                            "label": "Icon",
+                            "name": "social_media_icon",
+                            "aria-label": "",
+                            "type": "icon_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "tabs": [
+                                "dashicons",
+                                "media_library",
+                                "url"
+                            ],
+                            "return_format": "string",
+                            "allow_in_bindings": 0,
+                            "library": "all",
+                            "default_value": {
+                                "type": null,
+                                "value": null
+                            },
+                            "parent_repeater": "field_68b8431813eea"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_68b8440dd2beb",
+            "label": "Map",
+            "name": "map",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Use Shortcode [bezirk] to display an SVG-Map of the Canton Zurich that will automatically highlight the selected Bezirk (District).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_68a85e68da004",
+                    "label": "Bezirk (District)",
+                    "name": "district",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Bezirk (Kanton ZH) wählen. Diese Einstellung ändert die Karte im shortcode [bezirk] automatisch.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "dielsdorf": "Dielsdorf",
+                        "winterthur": "Winterthur",
+                        "pfaeffikon": "Pfäffikon",
+                        "zuerich": "Zürich",
+                        "dietikon": "Dietikon",
+                        "uster": "Uster",
+                        "meilen": "Meilen",
+                        "horgen": "Horgen",
+                        "affoltern": "Affoltern",
+                        "hinwil": "Hinwil",
+                        "buelach": "Bülach",
+                        "andelfingen": "Andelfingen"
+                    },
+                    "default_value": "zuerich",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "create_options": 0,
+                    "save_options": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "options-personal"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1756907084
+}

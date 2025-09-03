@@ -375,7 +375,14 @@ function testimonial_after_save($post_id) {
         } else {
             $to = get_option('admin_email');
         }
-        $headers = array('Content-Type: text/html; charset=UTF-8', 'From: ' . get_bloginfo( 'name' ) . '<' . get_option('admin_email') . '>');//make it HTML
+
+        if ( $optionsEmails['sender_email'] ) {
+            $from = $optionsEmails['sender_email'];
+        } else {
+            $from = get_option('admin_email');
+        }
+
+        $headers = array('Content-Type: text/html; charset=UTF-8', 'From: ' . get_bloginfo( 'name' ) . '<' . $from . '>');//make it HTML
         $subject = __('Neues Testimonial');
     
         // Message

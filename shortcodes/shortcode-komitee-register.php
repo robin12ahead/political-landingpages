@@ -121,7 +121,14 @@ function update_komitee_post($post_id){
         } else {
             $to = get_option('admin_email');
         }
-        $headers = array('Content-Type: text/html; charset=UTF-8', 'From: ' . get_bloginfo( 'name' ) . ' <admin@gratis-studium-nein.ch>');//make it HTML
+        
+        if ( $optionsEmails['sender_email'] ) {
+            $from = $optionsEmails['sender_email'];
+        } else {
+            $from = get_option('admin_email');
+        }
+
+        $headers = array('Content-Type: text/html; charset=UTF-8', 'From: ' . get_bloginfo( 'name' ) . '<' . $from . '>');//make it HTML
         $subject = __('Neue Komitee-Anmeldung');
 
         // Message

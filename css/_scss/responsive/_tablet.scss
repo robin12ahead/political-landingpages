@@ -2,7 +2,7 @@
 
 // Header / Navigation
 
-$header_height : 5rem;
+$header_height : 6rem;
 
 header.header {
 
@@ -12,7 +12,7 @@ header.header {
     
         .navbar#main-navbar {
             padding: 1rem 0;
-            height: $header_height;
+            max-height: $header_height;
     
             .site-branding {
                 position: relative;
@@ -31,14 +31,14 @@ header.header {
                     top: 0;
                     right: 0;
                     left: 0;
-                    bottom: 0;
+                    // bottom: 0;
                     height: calc(100dvh + 1px);
                     overflow: auto;
                     transform: translateY(-100%);
-                    padding-top: $header_height ;
+                    padding-top: $header_height * 2;
                     padding-left: $container_padding;
                     padding-right: $container_padding;
-                    background-color: var(--background-color-primary);
+                    background-color: var(--background-color-body);
                     // border-bottom: 1px solid var(--base-color-white);
 
                     &.menu-open {

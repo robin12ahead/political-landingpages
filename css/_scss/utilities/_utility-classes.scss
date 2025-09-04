@@ -436,3 +436,18 @@
     display: inline-flex;
     gap: .5rem;
 }
+
+.heading-has-unterline {
+    display: inline-block;
+    
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        max-width: 10rem;
+        min-width: 5rem;
+        height: .25rem;
+        background-color: var(--border-color-accent);
+        margin: 2rem 0;
+    }
+}

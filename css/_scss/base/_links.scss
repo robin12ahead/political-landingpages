@@ -246,8 +246,10 @@ a.download-button {
 
     .divider {
         border-color: var(--border-color-accent);
-        height: 1px;
-        width: 2.5rem;
+        height: .25rem;
+        width: 100%;
+        max-width: 10rem;
+        min-width: 5rem;
         display: block;
     }
 

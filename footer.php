@@ -15,8 +15,9 @@
 	<footer id="site-footer" class="footer">
 		<div class="container">
 			<div class="footer-wrapper">
-				<div class="row justify-content-between row-cols-auto">
-					<div class="footer-col">
+				<!-- <div class="row justify-content-between row-cols-auto"> -->
+				<div class="row">
+					<div class="footer-col footer-col-branding col-md-3">
 						<div class="site-branding">
 
 						<?php
@@ -33,13 +34,13 @@
 						</div><!-- .site-branding -->
 					</div>
 
-					<div class="footer-col footer-col-1">
+					<div class="footer-col footer-col-1 col-md-3">
 						<?php if ( is_active_sidebar( 'footer-1' ) ) {
 							dynamic_sidebar( 'footer-1' );
 						} ?>
 					</div>
 
-					<div class="footer-col footer-col-2">
+					<div class="footer-col footer-col-2 col">
 						<?php if ( is_active_sidebar( 'footer-2' ) ) {
 							dynamic_sidebar( 'footer-2' );
 						} ?>

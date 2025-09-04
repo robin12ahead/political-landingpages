@@ -21,6 +21,13 @@ footer.footer {
                 justify-content: space-between;
                 gap: $gutter_desk;
             }
+
+            &.footer-col-2 {
+                margin-left: auto;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end; 
+            }
         }
 
         .site-title {

@@ -77,7 +77,7 @@
     &.hero-events {
 
         .date-wrapper {
-            background-color: var(--background-color-primary);
+            background-color: var(--background-color-body);
             padding: 1rem 2rem;
             display: inline-flex;
             flex-direction: column;
@@ -97,6 +97,17 @@
                 line-height: 1;
                 font-weight: $bold;
             }
+        }
+
+        .icon-wrapper {
+            background-color: var(--background-color-body);
+        }
+    }
+
+    // Hero news
+    &.hero-news {
+        .icon-wrapper {
+            background-color: var(--background-color-body);
         }
     }
 } 

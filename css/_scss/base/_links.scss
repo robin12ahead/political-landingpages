@@ -245,8 +245,8 @@ a.download-button {
     }
 
     .divider {
-        background-color: var(--border-color-accent);
-        height: .25rem;
+        border-color: var(--border-color-accent);
+        border-width: .25rem;
         width: 100%;
         max-width: 6rem;
         min-width: 3rem;
@@ -261,7 +261,7 @@ a.download-button {
         }
 
         .divider {
-            background-color: var(--border-color-accent);
+            border-color: var(--border-color-accent);
         }
 
         .text-link {

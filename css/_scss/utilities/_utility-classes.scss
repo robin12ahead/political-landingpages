@@ -445,34 +445,24 @@
 // Heading underline
 .heading-has-unterline {
 
-    h1,
-    h2,
-    h3,
-    h4 {
-        display: inline-block;
+    display: inline-block;
 
-        &::after {
-            content: "";
-            display: block;
-            width: 100%;
-            max-width: 10rem;
-            min-width: 5rem;
-            height: .25rem;
-            background-color: var(--border-color-accent);
-            margin: 2rem 0;
-        }
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        max-width: 10rem;
+        min-width: 5rem;
+        height: .25rem;
+        background-color: var(--border-color-accent);
+        margin: 2rem 0;
     }
 
     &.text-align-center {
 
-        h1,
-        h2,
-        h3,
-        h4 {
-            &::after {
-                margin-left: auto;
-                margin-right: auto;
-            }
+        &::after {
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
@@ -482,14 +472,9 @@
 
     .heading-has-unterline {
 
-        h1,
-        h2,
-        h3,
-        h4 {
-            &::after {
-                margin-left: auto;
-                margin-right: auto;
-            }
+        &::after {
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

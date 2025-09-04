@@ -116,7 +116,6 @@
         min-height: 80vh;
         padding-bottom: 6.15vw;
         padding-top: 5rem;
-        overflow: hidden;
         position: relative;
         border-bottom: 0;
 
@@ -128,7 +127,7 @@
             clip-path: shape(from 0% 99.7%,vline to 100%,hline to 100%,vline to 0%,line to 0% 99.7%,close);
             display: block;
             position: absolute;
-            bottom: 0;
+            bottom: -1px;
             left: 0;
             right: 0;
             z-index: 9;

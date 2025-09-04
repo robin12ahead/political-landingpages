@@ -34,6 +34,10 @@ footer.footer {
             font-family: $font_headings;
             font-size: calc(var(--font-size-site-title) * .75);
         }
+
+        .site-branding {
+            max-width: 6rem;
+        }
     }
 
     .row {

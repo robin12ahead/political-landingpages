@@ -60,6 +60,24 @@ header.header {
     }
 }
 
+// Footer
+footer.footer {
+
+    // site footer
+    &#site-footer {
+        .footer-col {
+
+            &.footer-col-2 {
+                display: block;
+            }
+        }
+
+        .site-branding {
+            max-width: 4rem;
+        }
+    }
+}
+
 // Hero
 .hero-section {
 

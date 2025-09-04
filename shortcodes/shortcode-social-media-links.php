@@ -9,13 +9,13 @@ function social_media_shortcode( $atts ) {
     $output = '';
 
     $output .= '<div class="social-media-links-shortcode">';
-        $output .= '<div class="button-group">';
+        $output .= '<div class="icon-group">';
 
             foreach( $soMe_items as $soMe_item ) {
                 $link = $soMe_item['link'];
                 $icon = $soMe_item['icon'];
 
-                $output .= '<a href="' . $link . '" class="social-media-link" target="_blank">';
+                $output .= '<a href="' . $link . '" class="social-media-link icon-wrapper" target="_blank">';
 
                     // Handle if the return type is a string.
                     if ( is_string( $icon ) ) {

@@ -113,6 +113,10 @@
 
     // hero FDP
     &.hero-fdp {
+        min-height: 80vh;
+        padding-bottom: 6.15vw;
+        padding-top: 5rem;
+
          &::after {
             content: "";
             width: 100%;
@@ -126,6 +130,26 @@
             right: 0;
 
         }
+
+        .fdp-hero_content {
+            .fdp-hero_title {
+                transform: rotate(3.5deg);
+                color: white;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .fdp-hero_underline {
+                background-color: var(--background-color-primary);
+                padding: 1em;
+                padding-left: 5em;
+                display: inline-block;
+
+                &.is-accent {
+                    background-color: var(--background-color-accent);
+                }
+            }
+        } 
     }
 } 
 

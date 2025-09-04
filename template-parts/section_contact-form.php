@@ -13,7 +13,7 @@
     <div class="section-padding-large">
         <div class="spacer-edge"></div>
         <div class="container">
-            <h2 class="heading-has-unterline"><?php _e( 'Kontaktieren Sie uns', 'political-landingpages' ); ?></h2>
+            <h2 class="heading-has-unterline"><?php _e( 'Kontakt', 'political-landingpages' ); ?></h2>
             <div class="spacer-medium"></div>
         
             <?php if ( is_active_sidebar( 'contact-form' ) ) {

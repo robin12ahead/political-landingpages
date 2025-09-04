@@ -147,7 +147,7 @@ input[type="submit"],
     background-color: var(--buttons-color-background);
     font-size: var(--buttons-font-size);
     line-height: 1;
-    font-family: $font_body;
+    font-family: $font_headings;
     font-weight: $bold;
     padding: var(--buttons-padding-tb) var(--buttons-padding-lr);
     border-radius: var(--buttons-border-radius);
@@ -188,6 +188,13 @@ input[type="submit"],
 
         &:visited {
             color: var(--buttons-color-background);
+        }
+    }
+
+    &.btn-has-arrow {
+        &::after {
+            content: "->";
+            margin-left: 1rem;
         }
     }
 }

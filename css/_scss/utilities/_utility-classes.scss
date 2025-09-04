@@ -8,8 +8,9 @@
 .background-color-primary {
     color: var(--text-color-white);
     background-color: var(--background-color-primary);
-    
+
     &.section-edge {
+
         &::before,
         &::after {
             background-color: var(--background-color-primary);
@@ -22,6 +23,7 @@
     background-color: var(--background-color-secondary);
 
     &.section-edge {
+
         &::before,
         &::after {
             background-color: var(--background-color-secondary);
@@ -33,6 +35,7 @@
     background-color: var(--background-color-tertiary);
 
     &.section-edge {
+
         &::before,
         &::after {
             background-color: var(--background-color-tertiary);
@@ -45,6 +48,7 @@
     background-color: var(--background-color-accent);
 
     &.section-edge {
+
         &::before,
         &::after {
             background-color: var(--background-color-accent);
@@ -56,6 +60,7 @@
     background-color: var(--background-color-body);
 
     &.section-edge {
+
         &::before,
         &::after {
             background-color: var(--background-color-body);
@@ -238,13 +243,13 @@
 }
 
 @media screen and (min-width: 768px) {
-    
+
     .padding-container-left {
-        padding-left: clamp(calc((50vw - 15px / 2) - (var(--grid-container-width) / 2)), #{$container_padding}, #{$container_padding} ) !important;
+        padding-left: clamp(calc((50vw - 15px / 2) - (var(--grid-container-width) / 2)), #{$container_padding}, #{$container_padding}) !important;
     }
-    
+
     .padding-container-right {
-        padding-right: clamp(calc((50vw - 15px / 2) - (var(--grid-container-width) / 2)), #{$container_padding}, #{$container_padding} ) !important;
+        padding-right: clamp(calc((50vw - 15px / 2) - (var(--grid-container-width) / 2)), #{$container_padding}, #{$container_padding}) !important;
     }
 }
 
@@ -401,15 +406,15 @@
     //     top: calc(100% - 1px);
     //     left: 0;
     //     right: 0;
-        
+
     // }
-    
+
     &::after {
         content: "";
         width: 100%;
         height: auto;
         aspect-ratio: 16.271;
-        clip-path: shape(from 100% 0.3%,vline to 0%,line to 0% 0%,line to 0% 100%,line to 100% 0.3%,close);
+        clip-path: shape(from 100% 0.3%, vline to 0%, line to 0% 0%, line to 0% 100%, line to 100% 0.3%, close);
         display: block;
         position: absolute;
         top: calc(100% - 1px);
@@ -423,7 +428,7 @@
 
 .section-padding-edge {
     .e-con-inner {
-        padding-top: 6.15vw!important;
+        padding-top: 6.15vw !important;
     }
 }
 
@@ -437,17 +442,54 @@
     gap: .5rem;
 }
 
+// Heading underline
 .heading-has-unterline {
-    display: inline-block;
-    
-    &::after {
-        content: "";
-        display: block;
-        width: 100%;
-        max-width: 10rem;
-        min-width: 5rem;
-        height: .25rem;
-        background-color: var(--border-color-accent);
-        margin: 2rem 0;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        display: inline-block;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            max-width: 10rem;
+            min-width: 5rem;
+            height: .25rem;
+            background-color: var(--border-color-accent);
+            margin: 2rem 0;
+        }
+    }
+
+    &.text-align-center {
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            &::after {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+
+.text-align-center {
+
+    .heading-has-unterline {
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            &::after {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     }
 }

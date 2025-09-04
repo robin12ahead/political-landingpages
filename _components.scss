@@ -116,9 +116,6 @@
         min-height: 80vh;
         padding-bottom: 6.15vw;
         padding-top: 5rem;
-        overflow: hidden;
-        position: relative;
-        border-bottom: none;
 
          &::after {
             content: "";
@@ -131,12 +128,9 @@
             bottom: 0;
             left: 0;
             right: 0;
-            z-index: 9;
-            background-color: var(--background-color-primary)
         }
 
         .fdp-hero_content {
-            margin-left: ;
             .fdp-hero_title {
                 transform: rotate(3.5deg);
                 color: white;
@@ -146,8 +140,8 @@
 
             .fdp-hero_underline {
                 background-color: var(--background-color-primary);
-                padding: 1rem;
-                padding-left: 8rem;
+                padding: 1em;
+                padding-left: 5em;
                 display: inline-block;
 
                 &.is-accent {

@@ -140,7 +140,7 @@
             .fdp-hero_title {
                 transform: rotate(-3.5deg);
                 color: white;
-                flex-direction: column;
+                display: inline-block;
             }
 
             .fdp-hero_underline {
@@ -148,6 +148,7 @@
                 padding: 1rem;
                 padding-left: 8rem;
                 display: inline-block;
+                margin-bottom: -1px;
 
                 &.is-accent {
                     background-color: var(--background-color-accent);

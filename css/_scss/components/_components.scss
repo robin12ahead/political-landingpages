@@ -118,7 +118,7 @@
         padding-top: 5rem;
         overflow: hidden;
         position: relative;
-        border-bottom: none;
+        border-bottom: 0;
 
          &::after {
             content: "";
@@ -132,11 +132,12 @@
             left: 0;
             right: 0;
             z-index: 9;
-            background-color: var(--background-color-primary)
+            background-color: var(--background-color-primary);
         }
 
         .fdp-hero_content {
-            margin-left: ;
+            margin-left: -4rem;
+            
             .fdp-hero_title {
                 transform: rotate(3.5deg);
                 color: white;

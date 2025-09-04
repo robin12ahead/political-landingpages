@@ -72,7 +72,7 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'news' ) );
 		</div><!-- .container -->
 	</main><!-- #main -->
 
-	<section class="section_more-posts background-color-secondary">
+	<section class="section_more-posts background-color-tertiary section-edge section-padding-edge">
 		<div class="section-padding-large">
 			<div class="container">
 				<h2 class=""><?php _e( 'Weitere News', 'political-landingpages' ); ?></h2>

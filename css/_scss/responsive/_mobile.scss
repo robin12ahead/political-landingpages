@@ -142,3 +142,14 @@ footer.footer {
 .linkbox {
     padding: calc(var(--boxes-padding-tb) * .7) calc(var(--boxes-padding-lr) * .7);
 }
+
+// Heading underline
+.heading-has-unterline {
+
+    &::after {
+        content: "";
+        max-width: 6rem;
+        min-width: 3rem;
+        height: 2px;
+    }
+}

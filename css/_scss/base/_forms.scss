@@ -66,6 +66,7 @@ body,
         color: var(--links-color);
         border: 2px solid;
         margin-right: .5em;
+        cursor: pointer;
 
         &:hover {
             color: var(--links-color-hover);
@@ -306,6 +307,10 @@ ul.acf-checkbox-list:focus-within {
                 display: inline-flex;
                 align-items: center;
             }
+        }
+
+        &.wpcf7-acceptance label {
+            display: inline-flex;
         }
     }
 

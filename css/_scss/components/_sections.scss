@@ -70,10 +70,17 @@
             flex-direction: column;
             gap: .5rem;
             height: 100%;
+            z-index: 1;
 
             .argumente-nr {
-                line-height: 1;
-                color: var(--text-color-accent);
+                    line-height: 1;
+                    color: #F0F0F0;
+                    font-weight: $medium;
+                    position: absolute;
+                    z-index: -1;
+                    font-size: 10rem;
+                    top: 0;
+                    left: 1rem;
             }
         }
     }
@@ -465,6 +472,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: var(--spacer-xs);
             background-color: var(--background-color-body);
             
@@ -472,7 +480,8 @@
                 // max-width: 60%;
                 position: relative;
                 z-index: 1;
-                // aspect-ratio: 1;
+                aspect-ratio: 1;
+                max-width: 1rem;
 
                 img {
                     border-radius: 100%;
@@ -499,9 +508,9 @@
                 font-family: $font_headings;
                 color: var(--text-color-accent);
                 font-weight: normal;
-                font-size: 10rem;
-                left: 0;
-                bottom: 10%;
+                font-size: 6rem;
+                left: 1rem;
+                top: 0;
                 line-height: 0;
             }
 
@@ -510,7 +519,8 @@
 
                 .quote-text {
                     font-size: 1.5rem;
-                    font-weight: $bold;
+                    font-weight: $medium;
+                    font-style: italic;
                     line-height: 1.3;
                     margin-bottom: var(--spacer-tiny);
                 }

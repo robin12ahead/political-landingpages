@@ -196,6 +196,18 @@ span.highlighted-text {
     }
 }
 
+.text-align-center {
+
+    .heading-has-unterline {
+    
+        &::after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+}
+
 
 // Typography on tablet
 @media screen and (max-width: $breakpoint_tab) {

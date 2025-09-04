@@ -41,7 +41,7 @@ function argumente_shortcode( $atts ) {
                 $output .= '<div class="argumente-inner box">';
 
 
-                    $output .= '<div class="text-style-h2 argumente-nr">' . get_field('nr') . '</div>';
+                    $output .= '<div class="argumente-nr">' . get_field('nr') . '</div>';
                     if ( get_field('title') ) {
                         $output .= '<h3 class="argumente-title text-style-h4">' . get_field('title') . '</h3>';
                     } else {

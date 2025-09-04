@@ -73,7 +73,7 @@ $(document).ready(function () {
     --------------------------------------------*/
 
     // Add floating placeholder label to all form fields
-    $('input, textarea, select, .wpcf7-form-control').each(function () {
+    $('input, textarea, select, .wpcf7-form-control, :not(.fit-the-fullspace)').each(function () {
 
         if ( $(this).attr('type') !== 'checkbox' &&  $(this).attr('type') !== 'file') {
 

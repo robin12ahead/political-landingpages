@@ -97,20 +97,21 @@ function testimonials_shortcode( $atts ) {
             $text_sender = $text_firstName . " " . $text_lastName . ", " . $text_function . $text_party;
 
             $output .= '<div class="testimonial-item testimonial-id-' . get_the_ID() . ' col-lg-4 col-md-6">';
-                $output .= '<div class="testimonial-inner box" data-name="' . get_the_title() . '">';
+                $output .= '<div class="testimonial-inner box text-align-center" data-name="' . get_the_title() . '">';
+
+                    $output .= '<span class="quotation-mark">«</span>';
 
                     if ($profilePicture) {
                         $output .= '<div class="profile-wrapper">';
                             $output .= wp_get_attachment_image( $profilePicture["id"], 'testimonial');
-                            $output .= '<span class="quotation-mark">«</span>';
                         $output .= '</div>';
                     }
 
-                    if( !empty($profilePicture) ) {
-                        $output .= '<img class="testimonial-logo is-absolute" src="' . esc_url($custom_logo[0]) .'" alt="headvisual">';
-                    } else {
-                        $output .= '<img class="testimonial-logo" src="' . esc_url($custom_logo[0]) .'" alt="headvisual">';
-                    }
+                    // if( !empty($profilePicture) ) {
+                    //     $output .= '<img class="testimonial-logo is-absolute" src="' . esc_url($custom_logo[0]) .'" alt="headvisual">';
+                    // } else {
+                    //     $output .= '<img class="testimonial-logo" src="' . esc_url($custom_logo[0]) .'" alt="headvisual">';
+                    // }
 
                     $output .= '<div class="text-wrapper">';
                         $output .= '<div class="quote-text">' . "«" . get_field('zitat') . "»" . '</div>';

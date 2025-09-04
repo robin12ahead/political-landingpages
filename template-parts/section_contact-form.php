@@ -13,9 +13,12 @@
     <div class="section-padding-large">
         <div class="spacer-edge"></div>
         <div class="container">
-            <h2 class=""><?php _e( 'Kontaktieren Sie uns', 'political-landingpages' ); ?></h2>
+            <h2 class="heading-has-unterline"><?php _e( 'Kontaktieren Sie uns', 'political-landingpages' ); ?></h2>
             <div class="spacer-medium"></div>
-            <?php echo do_shortcode('[contact-form-7 id="23d0a7b" title="Generisches Kontaktformular"]'); ?>
+        
+            <?php if ( is_active_sidebar( 'contact-form' ) ) {
+                dynamic_sidebar( 'contact-form' );
+            } ?>
         </div>
     </div>
 </section>

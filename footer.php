@@ -32,11 +32,19 @@
 
 						</div><!-- .site-branding -->
 					</div>
-					<div class="footer-col footer-icons">
+
+					<div class="footer-col footer-col-1">
 						<?php if ( is_active_sidebar( 'footer-1' ) ) {
 							dynamic_sidebar( 'footer-1' );
 						} ?>
 					</div>
+
+					<div class="footer-col footer-col-2">
+						<?php if ( is_active_sidebar( 'footer-2' ) ) {
+							dynamic_sidebar( 'footer-2' );
+						} ?>
+					</div>
+
 				</div>
 				
 				<div class="divider"></div>

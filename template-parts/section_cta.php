@@ -13,7 +13,7 @@
     <div class="section-padding-large">
         <div class="spacer-edge"></div>
         <div class="container">
-            <h2 class=""><?php _e( 'Mitmachen & Unterstützen', 'political-landingpages' ); ?></h2>
+            <h2 class="heading-has-unterline"><?php _e( 'Mitmachen & Unterstützen', 'political-landingpages' ); ?></h2>
             <div class="spacer-medium"></div>
 
             <div class="row justify-content-between row-cols-md-auto justify-content-md-center">

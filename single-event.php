@@ -98,7 +98,7 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'events' ) );
 
 		<div class="container">
 			<div class="section-padding-large">
-                <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2">
+                <div class="col-md-8">
 
 				<?php
 				while ( have_posts() ) :
@@ -119,7 +119,7 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'events' ) );
                 <?php if (get_field("event_link")) : ?>
                         <a class="button btn btn-has-arrow" href="<?php get_field("event_link"); ?>">Zum Event</a>
                 <?php endif; ?>
-                
+
 				</div>
 			</div>
 		</div><!-- .container -->

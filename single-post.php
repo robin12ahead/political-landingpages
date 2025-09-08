@@ -51,7 +51,8 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'news' ) );
 
 		<div class="container">
 			<div class="section-padding-large">
-                
+                <div class="col-md-8">
+                    
 				<?php
 				while ( have_posts() ) :
 					the_post();
@@ -67,6 +68,7 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'news' ) );
 
 				endwhile; // End of the loop.
 				?>
+                </div>
 
 			</div>
 		</div><!-- .container -->

@@ -67,6 +67,7 @@ body,
         border: 2px solid;
         margin-right: .5em;
         cursor: pointer;
+        flex-shrink: 0;
 
         &:hover {
             color: var(--links-color-hover);

@@ -8,7 +8,6 @@ header.header {
 
     // site header
     &#site-header {
-
     
         .navbar#main-navbar {
             padding: 1rem 0;
@@ -21,6 +20,11 @@ header.header {
                 .site-title {
                     font-size: clamp(calc(var(--font-size-site-title) / 2), 5vw, var(--font-size-site-title));
                 }
+            }
+
+            .navigation-wrapper {
+                justify-content: center;
+                flex-wrap: wrap;
             }
     
             nav.navigation {

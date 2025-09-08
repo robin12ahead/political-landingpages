@@ -83,6 +83,8 @@ function medienberichte_shortcode( $atts ) {
                             $output .= '<span class="">' . get_field('date_published') . '</span>';
                         $output .= '</div>';
 
+                        $output .= '<div class="spacer-sm"></div>';  
+
                         if ( get_field('title') ) {
                             $output .= '<h3 class="medienberichte-title text-style-h4">' . get_field('title') . '</h3>';
                         } else {

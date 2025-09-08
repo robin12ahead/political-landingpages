@@ -208,6 +208,7 @@ function events_shortcode( $atts ) {
         'categories' => '',
 		'paged' => 'false',
 		'filter' => '',
+        'style' => 'default',
 
 	), $atts, 'events' );
 
@@ -307,6 +308,69 @@ function events_shortcode( $atts ) {
 
             // if ( ($parameters['filter'] == "") || ( $parameters['filter'] == "past" && $start_date < $currentDateTimeObj ) || ( $parameters['filter'] == "future" && $start_date > $currentDateTimeObj ) ) {
 
+            if ($parameters['style'] == "list") {
+
+                $output .= '<div class="event-item event-id-' . get_the_ID() . ' col">';
+
+                    $output .= '<a class="event-inner box" href="' . get_the_permalink() . '">';
+                        
+                        $output .= '<div class="row">';
+                                
+                            $output .= '<div class="post-meta post-header">';
+                            
+                                $output .= '<div class="date-wrapper">';
+                                    $output .= '<h3 class="date-day">' . $start_date->format( 'j.' )  . '</h3>';
+                                    $output .= '<span class="date-month">' . $start_date->format( 'F' )  . '</span>';
+                                $output .= '</div>';
+                                
+                            $output .= '</div>';
+
+                            $output .= '<div class="content-wrapper">';
+
+                                $output .= '<div class="heading-wrapper">';
+                                    $output .= '<h3 class="post-title text-style-h4">' . get_the_title() . '</h3>';
+
+                                    $output .= '<button class="arrow-button"><img src="' . get_template_directory_uri() . '/assets/icons/arrow_right.svg" class="arrow inline-svg" alt="Arrow Icon"/></button>';
+                                $output .= '</div>';
+
+                                $output .= '<div class="text-wrapper">';
+
+                                    $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt(180) . '<span class="read-more-text">' . __("weiterlesen", "political-landingpages") . '</span></p></div>';
+
+                                    $output .= '<div class="post-meta">';
+                                        $output .= '<div class="location-wrapper">';
+
+                                            if (get_field("event_end_date")) {
+                                                $end_date = DateTime::createFromFormat( 'd.m.Y H:i', get_field("event_end_date") );
+                                                $output .= '<b class="text-size-regular post-meta-time">' . $start_date->format( 'H:i' ) . " - " . $end_date->format( 'H:i' ) . '</b>';
+                                            } else {
+                                                $output .= '<b class="text-size-regular post-meta-time">' . $start_date->format( 'H:i' ) . '</b>';
+                                            }
+
+                                            if (get_field("event_location")) {
+                                                $output .= '<p class="text-size-regular">' . get_field("event_location") . '</p>';
+                                            }
+
+                                            if (get_field("event_address")) {
+                                                $output .= '<p class="text-size-regular">' . get_field("event_address") . '</p>';
+                                            }
+
+                                        $output .= '</div>';
+
+                                    $output .= '</div>';
+
+                                $output .= '</div>'; // close .texts
+
+                            $output .= '</div>';
+
+                        $output .= '</div>'; 
+                    
+                    $output .= '</a>';
+
+                $output .= '</div>';
+
+            } else {
+
             $output .= '<div class="event-item event-id-' . get_the_ID() . ' col-lg-4 col-md-6">';
 
                 $output .= '<a class="event-inner box" href="' . get_the_permalink() . '">';
@@ -331,6 +395,8 @@ function events_shortcode( $atts ) {
                         $output .= '<h3 class="post-title text-style-h4">' . get_the_title() . '</h3>';
 
                         $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt(180) . '<span class="read-more-text">' . __("weiterlesen", "political-landingpages") . '</span></p></div>';
+
+                        $output .= '<div class="divider divider-tertiary"></div>';
 
                         $output .= '<div class="post-meta post-footer">';
                             $output .= '<div class="location-wrapper">';
@@ -361,8 +427,8 @@ function events_shortcode( $atts ) {
                 $output .= '</a>';
 
             $output .= '</div>';
-            
-            // }
+
+            }
 
         endwhile; 
 

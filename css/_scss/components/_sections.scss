@@ -418,10 +418,10 @@
         align-items: center;
         gap: $gutter_desk;
 
-        &.post-footer {
-            padding-top: $gutter_desk;
-            border-top: 1px solid var(--border-color-tertiary);
-        }
+        // &.post-footer {
+        //     padding-top: $gutter_desk;
+        //     border-top: 1px solid var(--border-color-tertiary);
+        // }
     }
 
     .location-wrapper {

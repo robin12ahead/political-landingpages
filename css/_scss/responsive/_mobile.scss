@@ -11,7 +11,7 @@ header.header {
         .navbar#main-navbar {
     
             .site-branding {
-                max-height: 5rem;
+                // max-height: 5rem;
 
                 .site-title {
                     font-size: clamp(calc(var(--font-size-site-title) / 2), 6vw, var(--font-size-site-title));
@@ -152,4 +152,9 @@ footer.footer {
         min-width: 3rem;
         height: 2px;
     }
+}
+
+// Berzirk Map
+.bezirk-map.bezirk-shortcode {
+    height: 100vw;
 }

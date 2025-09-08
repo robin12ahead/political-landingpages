@@ -16,6 +16,7 @@ header.header {
             .site-branding {
                 position: relative;
                 z-index: 10;
+                margin-right: auto;
 
                 .site-title {
                     font-size: clamp(calc(var(--font-size-site-title) / 2), 5vw, var(--font-size-site-title));
@@ -23,8 +24,8 @@ header.header {
             }
 
             .navigation-wrapper {
-                justify-content: center;
-                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
             }
     
             nav.navigation {

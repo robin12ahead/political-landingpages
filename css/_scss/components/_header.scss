@@ -35,6 +35,7 @@ header.header {
             background-color: var(--background-color-body);
             align-items: stretch;
             height: 10rem;
+            transition: 400ms ease height;
 
             .container {
                 flex: 1;

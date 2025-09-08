@@ -49,12 +49,13 @@
 
     .scroll-to-main {
         // background-color: var(--icons-color-background);
+        background: none;
         color: var(--icons-color-hover);
         border: 1px solid;
         width: 2.5rem;
         height: 2.5rem;
         display: inline-flex;
-        padding: .5rem;
+        padding: .75rem;
         align-items: center;
         justify-content: center;
         position: absolute;

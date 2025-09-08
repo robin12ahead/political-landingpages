@@ -317,7 +317,7 @@ function events_shortcode( $atts ) {
                     if ($optionsAddons["events_detailpage"] == true) {
                         $output .= '<a class="event-inner box" href="' .  get_the_permalink() . '">';
                     } else {
-                        $output .= '<a class="event-inner box" href="' .  get_field("event_link") . '">';
+                        $output .= '<a class="event-inner box" href="' .  get_field("event_link") . '" target="_blank">';
                     }
                     
                         $output .= '<div class="row">';

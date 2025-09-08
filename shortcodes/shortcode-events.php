@@ -336,7 +336,7 @@ function events_shortcode( $atts ) {
                                 $output .= '<div class="heading-wrapper">';
                                     $output .= '<h3 class="post-title text-style-h4">' . get_the_title() . '</h3>';
 
-                                    $output .= '<button class="arrow-button"><img src="' . get_template_directory_uri() . '/assets/icons/arrow_right.svg" class="arrow inline-svg" alt="Arrow Icon"/></button>';
+                                    $output .= '<button class="button btn btn-has-arrow">Zum Event</button>';
                                 $output .= '</div>';
 
 
@@ -344,14 +344,9 @@ function events_shortcode( $atts ) {
 
                                 $output .= '<div class="post-meta">';
 
-                                        if (get_field("event_location")) {
-                                            $output .= '<p class="text-size-regular">' . get_field("event_location") . '</p>';
-                                        }
-
-                                        if (get_field("event_address")) {
-                                            $output .= '<p class="text-size-regular">' . get_field("event_address") . '</p>';
-                                        }
-
+                                    if (get_field("event_location") || get_field("event_address")) {
+                                        $output .= '<b class="text-size-medium">' . get_field("event_location") . ', ' . get_field("event_address") . '</p>' } . '</b>';
+                                    }
 
                                 $output .= '</div>';
 

@@ -345,7 +345,7 @@ function events_shortcode( $atts ) {
                                 $output .= '<div class="post-meta">';
 
                                     if (get_field("event_location") || get_field("event_address")) {
-                                        $output .= '<b class="text-size-medium">' . get_field("event_location") . ', ' . get_field("event_address") . '</p>' } . '</b>';
+                                        $output .= '<b class="text-size-medium">' . get_field("event_location") . ', ' . get_field("event_address") . '</b>';
                                     }
 
                                 $output .= '</div>';

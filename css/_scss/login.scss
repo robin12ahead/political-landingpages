@@ -12,10 +12,13 @@ body.login {
         left: 0;
         right: 0;
         z-index: 9;
-        background-color: var(--background-color-secondary);
+        background-color: #00A0E2;
     }
 
     h1 a {
         background-image: url(../../assets/img/site-logo.svg);
+        height: 6rem;
+        background-size: contain;
+        width: 100%;
     }
 } 

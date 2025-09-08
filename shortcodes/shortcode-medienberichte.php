@@ -73,7 +73,7 @@ function medienberichte_shortcode( $atts ) {
         while ($custom_query->have_posts()) : $custom_query->the_post();
 
             $output .= '<div class="medienberichte-item medienberichte-id-' . get_the_ID() . ' col">';
-                $output .= '<a href="' . get_field('link_medienbericht') . 'class="medienberichte-inner box" target="_blank">';
+                $output .= '<a href="' . get_field('link_medienbericht') . '" class="medienberichte-inner box" target="_blank">';
 
                     $output .= '<div class="text-wrapper">';                
 

@@ -160,3 +160,16 @@ footer.footer {
     margin-bottom: 0;
     transform: none;
 }
+
+// fdp hero content
+.fdp-hero_content {
+    margin-left: -3rem;
+
+    .fdp-hero_title {
+        font-size: clamp(2rem, (var(--font-size-h1) * .5), var(--font-size-h1));
+    }
+
+    .fdp-hero_underline {
+        padding-left: 5rem;
+    }
+} 

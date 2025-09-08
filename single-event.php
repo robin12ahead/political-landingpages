@@ -105,6 +105,10 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'events' ) );
 					the_post();
 
 					get_template_part( 'template-parts/content', get_post_type() ); 
+
+                    if (get_field("event_link")) : ?>
+                        <a class="button btn btn-has-arrow" href="<?php get_field("event_link"); ?>">
+                    <?php endif;
 					
 					the_post_navigation(
 						array(

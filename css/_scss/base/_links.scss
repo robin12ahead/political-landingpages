@@ -156,6 +156,7 @@ input[type="submit"],
     transition: all .3s;
     border: none;
     cursor: pointer;
+    align-items: center;
     
     &:hover {
         background-color: var(--buttons-color-background-hover);
@@ -192,6 +193,8 @@ input[type="submit"],
     }
 
     &.btn-has-arrow {
+        gap: .5rem;
+        
         &::after {
             content: "";
             margin-left: 1rem;
@@ -199,6 +202,8 @@ input[type="submit"],
             height: 1rem;
             background: url(../../assets/icons/button_arrow-right.svg);
             background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
         }
     }
 }

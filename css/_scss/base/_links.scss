@@ -193,8 +193,12 @@ input[type="submit"],
 
     &.btn-has-arrow {
         &::after {
-            content: "->";
+            content: "";
             margin-left: 1rem;
+            width: 1.5rem;
+            height: 1rem;
+            background: url(../../assets/icons/button_arrow-right.svg);
+            background-repeat: no-repeat;
         }
     }
 }

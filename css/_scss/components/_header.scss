@@ -21,24 +21,32 @@ header.header {
                 box-shadow: 0px var(--effects-shadow-size) var(--effects-shadow-blur) rgba(0, 0, 0, 0.2);
             }   
 
-            .navbar#main-navbar .site-branding {
-                max-width: 6rem;
-            }   
+            .navbar#main-navbar {
+                height: 8rem;
+
+                .site-branding {
+                    max-width: 6rem;
+                }   
+            } 
         }
 
         .navbar#main-navbar {
             padding: 1.5rem 0;
             background-color: var(--background-color-body);
+            align-items: stretch;
+            height: 10rem;
 
             .container {
                 flex: 1;
                 align-items: stretch;
+                height: 100%;
             }
     
             .site-branding {
                     max-width: 9rem;
                     transition: all 250ms ease;
-                    max-height: 6rem;
+                    // max-height: 6rem;
+                    height: 100%;
                     display: inline-flex;
     
                 .site-title {

@@ -378,57 +378,80 @@
 .events-shortcode {
     .event-inner {
         height: 100%;
-    }
 
-    .text-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: var(--spacer-xs);
-        height: 100%;
-
-        .post-title {
-            color: var(--text-color-primary);
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacer-xs);
+            height: 100%;
+    
+            .post-title {
+                color: var(--text-color-primary);
+            }
+            
+            .post-excerpt {
+                color: var(--text-color-primary);
+                margin-bottom: auto;
+            }
+        }
+    
+        .date-wrapper {
+            .date-day {
+                font-family: $font_headings;
+                color: var(--text-color-accent);
+                font-size: 4rem;
+                line-height: 1;
+            }
+    
+            .date-month {
+                color: var(--text-color-secondary);
+                font-size: 1.5rem;
+                line-height: 1;
+                font-weight: $bold;
+            }
+        }
+    
+        .post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: $gutter_desk;
+    
+            // &.post-footer {
+            //     padding-top: $gutter_desk;
+            //     border-top: 1px solid var(--border-color-tertiary);
+            // }
+        }
+    
+        .location-wrapper {
+            color: var(--text-color-secondary);
+    
+            p {
+                margin-block-end: 0;
+            }
         }
         
-        .post-excerpt {
-            color: var(--text-color-primary);
-            margin-bottom: auto;
-        }
-    }
+        &.style-agenda {
 
-    .date-wrapper {
-        .date-day {
-            font-family: $font_headings;
-            color: var(--text-color-accent);
-            font-size: 4rem;
-            line-height: 1;
-        }
-
-        .date-month {
-            color: var(--text-color-secondary);
-            font-size: 1.5rem;
-            line-height: 1;
-            font-weight: $bold;
-        }
-    }
-
-    .post-meta {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: $gutter_desk;
-
-        // &.post-footer {
-        //     padding-top: $gutter_desk;
-        //     border-top: 1px solid var(--border-color-tertiary);
-        // }
-    }
-
-    .location-wrapper {
-        color: var(--text-color-secondary);
-
-        p {
-            margin-block-end: 0;
+            .date-wrapper {
+                background-color: #00A0E2;
+                padding: 1rem 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                
+                .date-day {
+                    font-size: var(--font-size-h4);
+                }
+        
+                .date-month {
+                    font-size: var(--font-size-h2);
+                    color: var(--text-color-secondary);
+                }
+            }
         }
     }
 

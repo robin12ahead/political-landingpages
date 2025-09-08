@@ -310,7 +310,7 @@ function events_shortcode( $atts ) {
 
             if ($parameters['style'] == "agenda") {
 
-                $output .= '<div class="event-item event-id-' . get_the_ID() . ' col ">';
+                $output .= '<div class="event-item event-id-' . get_the_ID() . ' col style-agenda">';
 
                     $output .= '<a class="event-inner box" href="' . get_the_permalink() . '">';
                         
@@ -319,7 +319,7 @@ function events_shortcode( $atts ) {
                             $output .= '<div class="post-meta post-header col-lg-2 col-md-4">';
                             
                                 $output .= '<div class="date-wrapper">';
-                                    $output .= '<h3 class="date-day">' . $start_date->format( 'j. F' )  . '</h3>';
+                                    $output .= '<h4 class="date-day">' . $start_date->format( 'j. F' )  . '</h4>';
                                     // $output .= '<span class="date-month">' . $start_date->format( 'F' )  . '</span>';
                                     if (get_field("event_end_date")) {
                                         $end_date = DateTime::createFromFormat( 'd.m.Y H:i', get_field("event_end_date") );
@@ -375,7 +375,7 @@ function events_shortcode( $atts ) {
                         $output .= '<div class="post-meta post-header row justify-content-between row-cols-auto align-items-end">';
                         
                             $output .= '<div class="date-wrapper">';
-                                $output .= '<h3 class="date-day">' . $start_date->format( 'j.' )  . '</h3>';
+                                $output .= '<h4 class="date-day">' . $start_date->format( 'j.' )  . '</h4>';
                                 $output .= '<span class="date-month">' . $start_date->format( 'F' )  . '</span>';
                             $output .= '</div>';
 

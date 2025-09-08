@@ -316,7 +316,7 @@ function events_shortcode( $atts ) {
                         
                         $output .= '<div class="row">';
                                 
-                            $output .= '<div class="post-meta post-header col-lg-2 col-md-4">';
+                            $output .= '<div class="post-meta post-header col-lg-3 col-md-6">';
                             
                                 $output .= '<div class="date-wrapper">';
                                     $output .= '<h4 class="date-day">' . $start_date->format( 'j. F' )  . '</h4>';
@@ -331,10 +331,10 @@ function events_shortcode( $atts ) {
                                 
                             $output .= '</div>';
 
-                            $output .= '<div class="text-wrapper col-lg-10 col-md-8">';
+                            $output .= '<div class="text-wrapper col-lg-9 col-md-6">';
 
                                 $output .= '<div class="heading-wrapper">';
-                                    $output .= '<h3 class="post-title text-style-h4">' . get_the_title() . '</h3>';
+                                    $output .= '<h3 class="post-title">' . get_the_title() . '</h3>';
 
                                     $output .= '<button class="button btn btn-has-arrow">Zum Event</button>';
                                 $output .= '</div>';

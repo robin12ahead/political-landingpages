@@ -151,7 +151,7 @@ nav.navigation {
     border: var(--boxes-border-width) solid var(--border-color-secondary);
     position: relative;
     display: block;
-    box-shadow: var(--effects-shadow-size) var(--effects-shadow-size) var(--effects-shadow-blur) 0px rgba(var(--effects-shadow-color), 0.2) !important;
+    box-shadow: var(--effects-shadow-size) var(--effects-shadow-size) var(--effects-shadow-blur) 0px #0000001a !important;
 
     &.box-gutter,
     &.box-gap {

@@ -314,7 +314,7 @@ function events_shortcode( $atts ) {
 
                 $output .= '<div class="event-item event-id-' . get_the_ID() . ' col style-agenda">';
 
-                    if ($optionsAddons["events_status"] == true) {
+                    if ($optionsAddons["events_detailpage"] == true) {
                         if( get_field("event_link") ) {
                             $output .= '<a class="event-inner box" href="' .  get_field("event_link") . '">';
                         } else {
@@ -371,7 +371,7 @@ function events_shortcode( $atts ) {
 
             $output .= '<div class="event-item event-id-' . get_the_ID() . ' col-lg-4 col-md-6">';
 
-                    if ($optionsAddons["events_status"] == true) {
+                    if ($optionsAddons["events_detailpage"] == true) {
                         if( get_field("event_link") ) {
                             $output .= '<a class="event-inner box" href="' .  get_field("event_link") . '">';
                         } else {

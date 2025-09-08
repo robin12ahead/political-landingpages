@@ -195,6 +195,8 @@ function events_shortcode( $atts ) {
     // $currentDateTime = wp_date('d.m.Y H:i');
     $currentDateTime = wp_date('Y-m-d H:i:s');
     $currentDateTimeObj= new DateTime($currentDateTime);
+
+    $optionsAddons = get_field('addons', 'option');
 	
     // get the current post / page id
 	$post_id = get_the_ID();
@@ -312,7 +314,13 @@ function events_shortcode( $atts ) {
 
                 $output .= '<div class="event-item event-id-' . get_the_ID() . ' col style-agenda">';
 
-                    $output .= '<a class="event-inner box" href="' . get_the_permalink() . '">';
+                    if ($optionsAddons["events_status"] == true) {
+                        if( get_field("event_link") ) {
+                            $output .= '<a class="event-inner box" href="' .  get_field("event_link") . '">';
+                        } else {
+                            $output .= '<a class="event-inner box" href="' .  get_the_permalink() . '">';
+                        }
+                    }
                         
                         $output .= '<div class="row">';
                                 
@@ -363,7 +371,13 @@ function events_shortcode( $atts ) {
 
             $output .= '<div class="event-item event-id-' . get_the_ID() . ' col-lg-4 col-md-6">';
 
-                $output .= '<a class="event-inner box" href="' . get_the_permalink() . '">';
+                    if ($optionsAddons["events_status"] == true) {
+                        if( get_field("event_link") ) {
+                            $output .= '<a class="event-inner box" href="' .  get_field("event_link") . '">';
+                        } else {
+                            $output .= '<a class="event-inner box" href="' .  get_the_permalink() . '">';
+                        }
+                    }
                         
                     $output .= '<div class="text-wrapper">';
 

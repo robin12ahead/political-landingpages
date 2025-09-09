@@ -321,39 +321,39 @@ function hex2rgba( $color, $opacity ) {
 // Force Elementor to use custom capability instead of manage_options
 =========================================================*/
 
-// /**
-//  * Fake manage_options/edit_theme_options ONLY inside Elementor editor requests.
-//  */
-// function scoped_elementor_caps( $allcaps, $caps, $args, $user ) {
-//     // Check if user has our custom "use_elementor"
-//     if ( empty( $user->allcaps['use_elementor'] ) ) {
-//         return $allcaps;
-//     }
+/**
+ * Fake manage_options/edit_theme_options ONLY inside Elementor editor requests.
+ */
+function scoped_elementor_caps( $allcaps, $caps, $args, $user ) {
+    // Check if user has our custom "use_elementor"
+    if ( empty( $user->allcaps['use_elementor'] ) ) {
+        return $allcaps;
+    }
 
-//     // Detect Elementor context
-//     $is_elementor_request = false;
+    // Detect Elementor context
+    $is_elementor_request = false;
 
-//     // Elementor AJAX or REST
-//     if ( defined( 'DOING_AJAX' ) && DOING_AJAX && ! empty( $_REQUEST['action'] ) && strpos( $_REQUEST['action'], 'elementor' ) !== false ) {
-//         $is_elementor_request = true;
-//     }
-//     if ( isset( $_REQUEST['action'] ) && strpos( $_REQUEST['action'], 'elementor' ) !== false ) {
-//         $is_elementor_request = true;
-//     }
-//     if ( defined( 'ELEMENTOR_VERSION' ) && ( is_admin() && isset( $_GET['action'] ) && $_GET['action'] === 'elementor' ) ) {
-//         $is_elementor_request = true;
-//     }
+    // Elementor AJAX or REST
+    if ( defined( 'DOING_AJAX' ) && DOING_AJAX && ! empty( $_REQUEST['action'] ) && strpos( $_REQUEST['action'], 'elementor' ) !== false ) {
+        $is_elementor_request = true;
+    }
+    if ( isset( $_REQUEST['action'] ) && strpos( $_REQUEST['action'], 'elementor' ) !== false ) {
+        $is_elementor_request = true;
+    }
+    if ( defined( 'ELEMENTOR_VERSION' ) && ( is_admin() && isset( $_GET['action'] ) && $_GET['action'] === 'elementor' ) ) {
+        $is_elementor_request = true;
+    }
 
-//     // Only grant inside Elementor
-//     if ( $is_elementor_request ) {
-//         if ( in_array( 'manage_options', (array) $caps, true ) ) {
-//             $allcaps['manage_options'] = true;
-//         }
-//         if ( in_array( 'edit_theme_options', (array) $caps, true ) ) {
-//             $allcaps['edit_theme_options'] = true;
-//         }
-//     }
+    // Only grant inside Elementor
+    if ( $is_elementor_request ) {
+        if ( in_array( 'manage_options', (array) $caps, true ) ) {
+            $allcaps['manage_options'] = true;
+        }
+        if ( in_array( 'edit_theme_options', (array) $caps, true ) ) {
+            $allcaps['edit_theme_options'] = true;
+        }
+    }
 
-//     return $allcaps;
-// }
-// add_filter( 'user_has_cap', 'scoped_elementor_caps', 10, 4 );
+    return $allcaps;
+}
+add_filter( 'user_has_cap', 'scoped_elementor_caps', 10, 4 );

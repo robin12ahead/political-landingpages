@@ -221,11 +221,12 @@ header.header {
         }
 
         a.sidenav_menu-item {
-            width: 2rem;
-            height: 2rem;
+            width: 3rem;
+            height: 3rem;
             background: var(--background-color-accent);
             color: white;
-            padding: .25rem;
+            padding: .5rem;
+            border-radius: var(--icons-border-radius);
             display: inline-flex;
             align-items: center;
             justify-content: center;

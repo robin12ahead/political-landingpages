@@ -328,3 +328,25 @@ function custom_elementor_capabilities( $cap ) {
 add_filter( 'elementor/settings/page_capability', 'custom_elementor_capabilities' );
 add_filter( 'elementor/editor/role_capability', 'custom_elementor_capabilities' );
 add_filter( 'elementor/documents/edit/capability', 'custom_elementor_capabilities' );
+
+/**
+ * Force Elementor to use a custom capability instead of manage_options
+ */
+function fix_elementor_caps( $allcaps, $caps, $args, $user ) {
+    // Elementor sometimes checks for 'manage_options'
+    if ( in_array( 'manage_options', (array) $caps, true ) ) {
+        if ( isset( $user->allcaps['use_elementor'] ) && $user->allcaps['use_elementor'] ) {
+            $allcaps['manage_options'] = true; // fake it if user has our custom cap
+        }
+    }
+
+    // Elementor sometimes checks for 'edit_theme_options'
+    if ( in_array( 'edit_theme_options', (array) $caps, true ) ) {
+        if ( isset( $user->allcaps['use_elementor'] ) && $user->allcaps['use_elementor'] ) {
+            $allcaps['edit_theme_options'] = true; // fake it if user has our custom cap
+        }
+    }
+
+    return $allcaps;
+}
+add_filter( 'user_has_cap', 'fix_elementor_caps', 10, 4 );

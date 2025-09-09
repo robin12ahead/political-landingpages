@@ -79,14 +79,14 @@ function news_shortcode( $atts ) {
 
             $output .= '<div class="news-item news-id-' . get_the_ID() . ' col-lg-4 col-md-6">';
 
-                $output .= '<a class="news-inner box" href="' . get_the_permalink() . '">';
-                
+                if( has_post_thumbnail() && $parameters['thumbnail'] == "true" ) { 
                     $output .= '<div class="thumbnail-wrapper">';
-                    if( has_post_thumbnail() && $parameters['thumbnail'] == "true" ) { 
                         $output .= get_the_post_thumbnail( get_the_ID(), 'thumbnail' );
-                    } 
                     $output .= '</div>';
+                } 
 
+                $output .= '<a class="news-inner box" href="' . get_the_permalink() . '">';
+            
                     $output .= '<div class="text-wrapper">';
                         $output .= '<h3 class="post-title text-style-h4">' . get_the_title() . '</h3>';
 

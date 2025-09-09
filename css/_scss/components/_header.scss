@@ -209,13 +209,10 @@ header.header {
 
 // Sidenav
 .sidenav {
-    
-    aside.sidenav {
-        position: fixed;
-        right: 0;
-        top: 12rem;
-        z-index: 10;
-    }
+    position: fixed;
+    right: 0;
+    top: 12rem;
+    z-index: 10;
 
     nav.sidenav_menu {
         nav.sidenav_menu {

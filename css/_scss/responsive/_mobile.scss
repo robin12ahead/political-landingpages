@@ -148,9 +148,9 @@ footer.footer {
 
     &::after {
         content: "";
-        max-width: 6rem;
-        min-width: 3rem;
-        height: 2px;
+        max-width: 6rem!important;
+        min-width: 3rem!important;
+        height: 2px!important;
     }
 }
 

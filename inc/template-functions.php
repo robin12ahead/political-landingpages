@@ -357,3 +357,19 @@ function scoped_elementor_caps( $allcaps, $caps, $args, $user ) {
     return $allcaps;
 }
 add_filter( 'user_has_cap', 'scoped_elementor_caps', 10, 4 );
+
+
+/*=========================================================
+// Rename Post to "News"
+=========================================================*/
+
+function change_post_labels() {
+    global $wp_post_types;
+    $labels = &$wp_post_types['post']->labels;
+    $labels->name = 'News'; // Plural name
+    $labels->singular_name = 'News'; // Singular name
+    $labels->menu_name = 'News';
+    // $labels->all_items = 'All News Articles';
+    // Add other labels you want to change, such as:
+}
+add_action('init', 'change_post_labels');

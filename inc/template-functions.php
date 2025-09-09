@@ -316,3 +316,15 @@ function hex2rgba( $color, $opacity ) {
     return $output;
 
 }
+
+/*=========================================================
+// Force Elementor to use custom capability instead of manage_options
+=========================================================*/
+
+function custom_elementor_capabilities( $cap ) {
+    return 'use_elementor'; // our custom capability
+}
+
+add_filter( 'elementor/settings/page_capability', 'custom_elementor_capabilities' );
+add_filter( 'elementor/editor/role_capability', 'custom_elementor_capabilities' );
+add_filter( 'elementor/documents/edit/capability', 'custom_elementor_capabilities' );

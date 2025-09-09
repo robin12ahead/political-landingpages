@@ -357,9 +357,9 @@ function scoped_elementor_caps( $allcaps, $caps, $args, $user ) {
         if ( in_array( 'manage_options', (array) $caps, true ) ) {
             $allcaps['manage_options'] = true;
         }
-        if ( in_array( 'edit_theme_options', (array) $caps, true ) ) {
-            $allcaps['edit_theme_options'] = true;
-        }
+        // if ( in_array( 'edit_theme_options', (array) $caps, true ) ) {
+        //     $allcaps['edit_theme_options'] = true;
+        // }
     }
 
     return $allcaps;

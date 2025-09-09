@@ -206,3 +206,36 @@ header.header {
         }
     }
 }
+
+// Sidenav
+.sidenav {
+    
+    aside.sidenav {
+        position: fixed;
+        right: 0;
+        top: 12rem;
+        z-index: 10;
+    }
+
+    nav.sidenav_menu {
+        nav.sidenav_menu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a.sidenav_menu-item {
+            width: 2rem;
+            height: 2rem;
+            background: var(--background-color-accent);
+            color: white;
+            padding: .25rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background: var(--background-color-secondary);
+            }
+        }
+    }
+}

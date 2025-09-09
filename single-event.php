@@ -117,7 +117,7 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'agenda' ) );
 				?>
 
                 <?php if (get_field("event_link")) : ?>
-                        <a class="button btn btn-has-arrow" href="<?php echo get_field("event_link"); ?>">Zum Event</a>
+                        <a class="button btn btn-has-arrow" href="<?php echo get_field("event_link"); ?>" target="_blank">Zum Event</a>
                 <?php endif; ?>
 
 				</div>

@@ -229,6 +229,7 @@ header.header {
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            transition: 250ms all ease;
 
             &:hover {
                 background: var(--background-color-secondary);

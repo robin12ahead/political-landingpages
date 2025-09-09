@@ -22,7 +22,7 @@ if ( get_field("event_end_date") ) {
     $end_date = $start_date->add(new DateInterval('PT2H'));
 }
 
-$overviewPageUrl = get_permalink( get_page_by_path( 'events' ) );
+$overviewPageUrl = get_permalink( get_page_by_path( 'agenda' ) );
 
 ?>
 

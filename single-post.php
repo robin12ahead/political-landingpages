@@ -9,7 +9,7 @@
 
 get_header();
 
-$overviewPageUrl = get_permalink( get_page_by_path( 'news' ) );
+$overviewPageUrl = get_permalink( get_page_by_path( 'aktuelles' ) );
 ?>
 
 	<main id="primary" class="site-main">
@@ -52,7 +52,7 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'news' ) );
 		<div class="container">
 			<div class="section-padding-large">
                 <div class="col-md-8">
-                    
+
 				<?php
 				while ( have_posts() ) :
 					the_post();

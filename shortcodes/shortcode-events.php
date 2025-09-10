@@ -349,7 +349,7 @@ function events_shortcode( $atts ) {
                                 if ($optionsAddons["events_detailpage"] == true) {
                                     $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt(180) . '<span class="read-more-text">' . __("weiterlesen", "political-landingpages") . '</span></p></div>';
                                 } else {
-                                    $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt() . '</p></div>';
+                                    $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt(180) . '</p></div>';
                                 }
 
                                 $output .= '<div class="post-meta">';

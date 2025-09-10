@@ -15,10 +15,10 @@
     "menu_icon": [],
     "update_button": "Update",
     "updated_message": "Options Updated",
-    "capability": "edit_theme_options",
+    "capability": "manage_options",
     "data_storage": "options",
     "post_id": "",
     "autoload": 0,
     "_parent": 83,
-    "modified": 1757405453
+    "modified": 1757512966
 }

@@ -3,12 +3,69 @@
     "title": "Options: Personal",
     "fields": [
         {
+            "key": "field_68b8440dd2beb",
+            "label": "Map",
+            "name": "map",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Use Shortcode [map-district] to display an SVG-Map of the Canton Zurich that will automatically highlight the selected Bezirk (District).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_68a85e68da004",
+                    "label": "Bezirk (District)",
+                    "name": "district",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Bezirk (Kanton ZH) wählen. Diese Einstellung ändert die Karte im shortcode [bezirk] automatisch.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "dielsdorf": "Dielsdorf",
+                        "winterthur": "Winterthur",
+                        "pfaeffikon": "Pfäffikon",
+                        "zuerich": "Zürich",
+                        "dietikon": "Dietikon",
+                        "uster": "Uster",
+                        "meilen": "Meilen",
+                        "horgen": "Horgen",
+                        "affoltern": "Affoltern",
+                        "hinwil": "Hinwil",
+                        "buelach": "Bülach",
+                        "andelfingen": "Andelfingen"
+                    },
+                    "default_value": "zuerich",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "create_options": 0,
+                    "save_options": 0
+                }
+            ]
+        },
+        {
             "key": "field_68b842f713ee9",
             "label": "Social Media",
             "name": "social_media",
             "aria-label": "",
             "type": "group",
-            "instructions": "",
+            "instructions": "Diese Social Media Icons und Verlinkungen werden auf der gesamten Website mehrfach angezeigt.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -89,63 +146,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "key": "field_68b8440dd2beb",
-            "label": "Map",
-            "name": "map",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "Use Shortcode [map-district] to display an SVG-Map of the Canton Zurich that will automatically highlight the selected Bezirk (District).",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_68a85e68da004",
-                    "label": "Bezirk (District)",
-                    "name": "district",
-                    "aria-label": "",
-                    "type": "select",
-                    "instructions": "Bezirk (Kanton ZH) wählen. Diese Einstellung ändert die Karte im shortcode [bezirk] automatisch.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "dielsdorf": "Dielsdorf",
-                        "winterthur": "Winterthur",
-                        "pfaeffikon": "Pfäffikon",
-                        "zuerich": "Zürich",
-                        "dietikon": "Dietikon",
-                        "uster": "Uster",
-                        "meilen": "Meilen",
-                        "horgen": "Horgen",
-                        "affoltern": "Affoltern",
-                        "hinwil": "Hinwil",
-                        "buelach": "Bülach",
-                        "andelfingen": "Andelfingen"
-                    },
-                    "default_value": "zuerich",
-                    "return_format": "value",
-                    "multiple": 0,
-                    "allow_null": 0,
-                    "allow_in_bindings": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "placeholder": "",
-                    "create_options": 0,
-                    "save_options": 0
-                }
-            ]
         }
     ],
     "location": [
@@ -166,5 +166,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756908858
+    "modified": 1757513015
 }

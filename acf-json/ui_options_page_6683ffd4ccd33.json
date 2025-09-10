@@ -18,9 +18,9 @@
     },
     "update_button": "Aktualisieren",
     "updated_message": "Optionen aktualisiert",
-    "capability": "edit_theme_options",
+    "capability": "manage_options",
     "data_storage": "options",
     "post_id": "",
     "autoload": 0,
-    "modified": 1757405203
+    "modified": 1757513338
 }

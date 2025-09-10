@@ -325,7 +325,7 @@ function events_shortcode( $atts ) {
                             $output .= '<div class="post-meta post-header col-lg-3 col-md-6">';
                             
                                 $output .= '<div class="date-wrapper">';
-                                    $output .= '<h4 class="date-day">' . $start_date->format( 'j. F' )  . '</h4>';
+                                    $output .= '<h4 class="date-day">' . $start_date->wp_date( 'j. F' )  . '</h4>';
                                     // $output .= '<span class="date-month">' . $start_date->format( 'F' )  . '</span>';
                                     if (get_field("event_end_date")) {
                                         $end_date = DateTime::createFromFormat( 'd.m.Y H:i', get_field("event_end_date") );

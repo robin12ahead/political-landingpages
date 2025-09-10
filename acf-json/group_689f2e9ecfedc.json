@@ -124,7 +124,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "",
+                    "message": "(Posts will not be deleted)",
                     "default_value": 1,
                     "allow_in_bindings": 0,
                     "ui_on_text": "Active",
@@ -171,7 +171,7 @@
                     "conditional_logic": [
                         [
                             {
-                                "field": "field_689f31ff35dda",
+                                "field": "field_689f2ed227ef9",
                                 "operator": "==",
                                 "value": "1"
                             }
@@ -203,7 +203,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "",
+                    "message": "(Posts will not be deleted)",
                     "default_value": 1,
                     "allow_in_bindings": 0,
                     "ui_on_text": "Active",
@@ -253,7 +253,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "",
+                    "message": "(Posts will not be deleted)",
                     "default_value": 1,
                     "allow_in_bindings": 0,
                     "ui_on_text": "Active",
@@ -274,7 +274,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "",
+                    "message": "(Posts will not be deleted)",
                     "default_value": 1,
                     "allow_in_bindings": 0,
                     "ui_on_text": "Active",
@@ -295,7 +295,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "",
+                    "message": "(Posts will not be deleted)",
                     "default_value": 1,
                     "allow_in_bindings": 0,
                     "ui_on_text": "Active",
@@ -316,7 +316,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "",
+                    "message": "(Posts will not be deleted)",
                     "default_value": 0,
                     "allow_in_bindings": 0,
                     "ui_on_text": "Active",
@@ -337,7 +337,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "",
+                    "message": "(Posts will not be deleted)",
                     "default_value": 1,
                     "allow_in_bindings": 0,
                     "ui_on_text": "Active",
@@ -356,7 +356,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 2,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -365,5 +365,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756820223
+    "modified": 1757506524
 }

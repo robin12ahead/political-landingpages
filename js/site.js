@@ -205,6 +205,24 @@ $(document).ready(function () {
     $('svg#bezirke-kanton-zh > #Zonen').find('#' + Bezirk).css("fill", "var(--background-color-accent)");
 
 
+    /*--------------------------------------------
+    Move event button on mobile
+    --------------------------------------------*/
+
+    $(window).on('resize load', function () {
+
+        if($(window).innerWidth() <= 768) {
+            
+            $('.event-item.style-agenda').each(function() {
+                var currentEvent = $(this);
+                var currentEventInner = $(this).find('.event-inner');
+
+                $(currentEvent).find('.heading-wrapper').find('.button').appendTo(currentEventInner);
+
+            });
+        }
+    });
+
 });
 
 // document.addEventListener('DOMContentLoaded', function() {

@@ -235,6 +235,12 @@ header.header {
             &:hover {
                 background: var(--background-color-secondary);
             }
+
+            svg,
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }

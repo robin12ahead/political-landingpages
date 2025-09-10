@@ -128,6 +128,19 @@ header.header {
     }
 }
 
+// Sidenav
+.sidenav {
+    top: 10rem;
+
+    nav.sidenav_menu {
+
+        a.sidenav_menu-item {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+
 main.site-main {
     padding-top: $header_height;
 }

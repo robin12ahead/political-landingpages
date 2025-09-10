@@ -54,9 +54,12 @@
 					<div class="footer-col col-md-6">
 						<?php
 						$political_landingpages_description = get_bloginfo( 'description', 'display' );
+						$themeOptions = get_field("meta", "option");
+						$authorURL = $themeOptions["author_url"];
+
 						if ( $political_landingpages_description || is_customize_preview() ) :
 							?>
-							<p class="site-description">© <?php echo date('Y'); ?> - <?php echo $political_landingpages_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+							<p class="site-description">© <?php echo date('Y'); ?> - <?php echo $political_landingpages_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> – Designed & Developed by <a href="<?php echo $authorURL; ?>" target="_blank">12AHEAD</a></p>
 						<?php endif; ?>
 					</div>
 					<div class="footer-col">

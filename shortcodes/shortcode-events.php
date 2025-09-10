@@ -325,7 +325,7 @@ function events_shortcode( $atts ) {
                             $output .= '<div class="post-meta post-header col-lg-3 col-md-6">';
                             
                                 $output .= '<div class="date-wrapper">';
-                                    setlocale(LC_ALL, 'fr_FR');
+                                    setlocale(LC_ALL, 'de_DE');
                                     $output .= '<h4 class="date-day">' . $start_date->format( 'j. F' )  . '</h4>';
                                     // $output .= '<span class="date-month">' . $start_date->format( 'F' )  . '</span>';
                                     if (get_field("event_end_date")) {

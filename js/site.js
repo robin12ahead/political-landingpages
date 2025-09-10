@@ -212,10 +212,10 @@ $(document).ready(function () {
     $(window).on('resize load', function () {
 
         if($(window).innerWidth() <= 768) {
-            
+
             $('.event-item.style-agenda').each(function() {
                 var currentEvent = $(this);
-                var currentEventInner = $(this).find('.event-inner');
+                var currentEventInner = $(this).find('.text-wrapper');
 
                 $(currentEvent).find('.heading-wrapper').find('.button').appendTo(currentEventInner);
 

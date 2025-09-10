@@ -312,7 +312,7 @@ function events_shortcode( $atts ) {
 
             if ($parameters['style'] == "agenda") {
 
-                $output .= '<div class="event-item event-id-' . get_the_ID() . ' col style-agenda">';
+                $output .= '<div class="event-item event-id-' . get_the_ID() . ' col-12 style-agenda">';
 
                     if ($optionsAddons["events_detailpage"] == true) {
                         $output .= '<a class="event-inner box" href="' .  get_the_permalink() . '">';
@@ -400,7 +400,11 @@ function events_shortcode( $atts ) {
                         
                         $output .= '<h3 class="post-title text-style-h4">' . get_the_title() . '</h3>';
 
-                        $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt(180) . '<span class="read-more-text">' . __("weiterlesen", "political-landingpages") . '</span></p></div>';
+                        if ($optionsAddons["events_detailpage"] == true) {
+                            $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt(180) . '<span class="read-more-text">' . __("weiterlesen", "political-landingpages") . '</span></p></div>';
+                        } else {
+                            $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt(180) . '</p></div>';
+                        }
 
                         $output .= '<div class="divider divider-tertiary"></div>';
 

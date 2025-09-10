@@ -210,6 +210,10 @@
     border-radius: var(--boxes-border-radius);
 }
 
+.cky-btn-revisit-wrapper.cky-revisit-bottom-left {
+    display: none;
+}
+
 // Berzirk Map
 .bezirk-map.bezirk-shortcode {
     position: relative;

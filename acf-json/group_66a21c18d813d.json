@@ -63,6 +63,43 @@
             "new_lines": "br"
         },
         {
+            "key": "field_68cbf0a77f831",
+            "label": "Hero text",
+            "name": "hero_text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Optional: Text will be shown above the page title in the Hero Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_66a21d90f5d99",
+            "label": "Hero Button",
+            "name": "hero_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Set Link and Button Text in Hero Section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
             "key": "field_66a21c3637a5b",
             "label": "Hero Visual Override",
             "name": "hero_visual_override",
@@ -86,22 +123,6 @@
             "max_size": "",
             "mime_types": "",
             "preview_size": "medium"
-        },
-        {
-            "key": "field_66a21d90f5d99",
-            "label": "Hero Button",
-            "name": "hero_button",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "Set Link and Button Text in Hero Section",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
         }
     ],
     "location": [
@@ -113,7 +134,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 9,
     "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
@@ -122,5 +143,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755259545
+    "modified": 1758195911
 }

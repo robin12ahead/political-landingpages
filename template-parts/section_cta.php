@@ -19,7 +19,7 @@
             <div class="row justify-content-between row-cols-md-auto justify-content-md-center">
 
             <?php if ( is_active_sidebar( 'cta-1' ) ) : ?>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg col-md-6">
                     <div class="box cta-box">
                         <?php dynamic_sidebar( 'cta-1' ); ?>
                     </div>
@@ -27,7 +27,7 @@
             <?php endif; ?>
 
             <?php if ( is_active_sidebar( 'cta-2' ) ) : ?>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg col-md-6">
                     <div class="box cta-box">
                         <?php dynamic_sidebar( 'cta-2' ); ?>
                     </div>
@@ -35,7 +35,7 @@
             <?php endif; ?>
 
             <?php if ( is_active_sidebar( 'cta-3' ) ) : ?>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg col-md-6">
                     <div class="box cta-box">
                         <?php dynamic_sidebar( 'cta-3' ); ?>
                     </div>

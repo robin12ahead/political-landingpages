@@ -27,12 +27,17 @@
                             the_title( '<h1 class="site-title text-color-accent">', '</h1>' );
                         }
                     endif; ?>
-                    <div class="spacer-medium"></div>
+                    
+                    <?php if (get_field("hero_text")) : ?>
+                        <div class="spacer-medium"></div>
+                        <p class="text-size-medium text-color-secondary"><?php the_field("hero_text"); ?></p>
+                     <?php endif; ?>
                 </div>
-
+            
                 <?php 
                 $hero_button = get_field("hero_button"); 
                 if ( $hero_button ) : ?>
+                 <div class="spacer-medium"></div>
                 <a href="<?php echo $hero_button["url"]; ?>" class="button btn btn-has-arrow" target="<?php echo $hero_button["target"]; ?>"><?php echo $hero_button["title"]; ?></a>
                 <?php endif; ?>
             </div>

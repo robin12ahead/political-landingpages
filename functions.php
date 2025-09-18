@@ -168,7 +168,7 @@ function political_landingpages_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'CTA Box 1', 'political-landingpages' ),
+			'name'          => esc_html__( 'CTA Footer 1', 'political-landingpages' ),
 			'id'            => 'cta-1',
 			'description'   => esc_html__( 'Add widgets here.', 'political-landingpages' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -180,7 +180,7 @@ function political_landingpages_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'CTA Box 2', 'political-landingpages' ),
+			'name'          => esc_html__( 'CTA Footer 2', 'political-landingpages' ),
 			'id'            => 'cta-2',
 			'description'   => esc_html__( 'Add widgets here.', 'political-landingpages' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -192,8 +192,44 @@ function political_landingpages_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'CTA Box 3', 'political-landingpages' ),
+			'name'          => esc_html__( 'CTA Footer 3', 'political-landingpages' ),
 			'id'            => 'cta-3',
+			'description'   => esc_html__( 'Add widgets here.', 'political-landingpages' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'CTA Box 1', 'political-landingpages' ),
+			'id'            => 'cta-box-1',
+			'description'   => esc_html__( 'Add widgets here.', 'political-landingpages' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'CTA Box 2', 'political-landingpages' ),
+			'id'            => 'cta-box-2',
+			'description'   => esc_html__( 'Add widgets here.', 'political-landingpages' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'CTA Box 3', 'political-landingpages' ),
+			'id'            => 'cta-box-3',
 			'description'   => esc_html__( 'Add widgets here.', 'political-landingpages' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',

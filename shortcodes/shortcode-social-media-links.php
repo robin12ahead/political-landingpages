@@ -34,18 +34,16 @@ function social_media_shortcode( $atts ) {
                         }
 
                         // If the type selected was a Media Library image, use the attachment ID to get and render the image.
-                        if ( 'media_library' === $icon['type'] ) {
-                            $attachment_id = $icon['value'];
-                            $size = 'full'; // (thumbnail, medium, large, full, or custom size)
+                        if ( 'media_library' === $icon['type'] ) {  
+                            $attachment = $icon['value'];
 
-                            $image_html = wp_get_attachment_image( $attachment_id, $size );
-                            $output .= wp_kses_post( $image_html );
+                            $output .= '<img src="' . $attachment['url'] .'" alt="social-icon" class="inline-svg" style="width: 100%;">';
                         }
 
                         // If the type selected was a URL, render an image tag with the URL.
                         if ( 'url' === $icon['type'] ) {
                             $url = $icon['value'];
-                            $output .= '<img src="' . esc_url( $url ) .'" alt="">';
+                            $output .= '<img src="' . esc_url( $url ) .'" alt="social-icon">';
                         }
                     }
                         

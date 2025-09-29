@@ -77,6 +77,6 @@
 	</header><!-- #site-header -->
 
 	<?php
-		// Load CTA Section
-		get_template_part('template-parts/sticky-button.php'); 
+	// Get sticky Button Template
+	get_template_part('template-parts/sticky-button'); 
 	?>

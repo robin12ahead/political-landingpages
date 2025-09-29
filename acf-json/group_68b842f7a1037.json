@@ -146,6 +146,95 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_68da8f7751bec",
+            "label": "Sticky Button",
+            "name": "sticky_button",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_68da90973d746",
+                    "label": "Status",
+                    "name": "sticky_button_status",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "Enabled",
+                    "ui_off_text": "Disabled",
+                    "ui": 1
+                },
+                {
+                    "key": "field_68da90dd3d747",
+                    "label": "Icon",
+                    "name": "icon",
+                    "aria-label": "",
+                    "type": "icon_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "tabs": [
+                        "dashicons",
+                        "media_library"
+                    ],
+                    "return_format": "array",
+                    "allow_in_bindings": 0,
+                    "library": "all",
+                    "default_value": {
+                        "type": null,
+                        "value": null
+                    }
+                },
+                {
+                    "key": "field_68da91043d748",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "allow_archives": 1,
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0
+                }
+            ]
         }
     ],
     "location": [
@@ -166,5 +255,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757513015
+    "modified": 1759158991
 }

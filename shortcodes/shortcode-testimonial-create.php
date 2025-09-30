@@ -14,7 +14,7 @@ function shortcode_testimonial_create( $atts ) {
     // Attributes
     $atts = shortcode_atts( array(
         'submit_text' => 'Testimonial erstellen',
-        'updated_message' => 'Vielen Dank fürs Erstellen der Referenz! Ihre Angaben werden nun von uns überprüft.',
+        'updated_message' => 'Danke für Ihre Unterstützung!  Ich werde Ihr Testimonial überprüfen und im Anschluss aufschalten.',
     ), $atts, 'testimonial-create' );
 
     $optionsAddons = get_field('addons', 'option');

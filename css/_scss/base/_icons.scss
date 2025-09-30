@@ -21,11 +21,14 @@
     }
 }
 
-
 // dashicons
-.dashicons {
+.dashicons, 
+.dashicons-before:before {
     font-family: 'dashicons';
     line-height: 1;
     font-weight: normal;
     font-style: normal;
+    width: auto;
+    height: auto;
+    font-size: 1.25em;
 }

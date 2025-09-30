@@ -25,6 +25,68 @@
     --bs-gutter-y: #{$gutter_desk};
 }
 
+// Elementor Container
+.elementor {
+
+    // .e-con.e-child {
+    //     width: calc(#{var(--width)} - (#{var(--gap)}));
+    // }
+
+    .e-con {
+        --widgets-spacing: #{$gutter_desk};
+        --container-max-width: #{$container_width};
+    }
+
+    .e-con,
+    .e-con.e-flex
+    .e-con.e-grid {
+
+        .e-con-inner {
+            padding-left: $container_padding;
+            padding-right: $container_padding;
+            box-sizing: content-box;
+            width: calc(100% - #{$container_padding * 2});
+        }
+        
+        &.gutter-default {
+            gap: $gutter_desk;
+
+            &.e-con-boxed  {
+                --content-width: #{$container_width};
+                // --gap: #{$gutter_desk};
+            }
+
+            .e-con-inner {
+                gap: $gutter_desk;
+            }
+
+            // .e-child {
+            //     width: calc(#{var(--width)} - (#{$gutter_desk} / 2));
+            // }
+        }
+    }
+}
+
+// Elementor Container inside BS
+.container,
+.container-fluid {
+    .elementor {
+    
+        .e-con,
+        .e-con.e-flex
+        .e-con.e-grid {
+    
+            .e-con-inner {
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+            }
+        }
+    }            
+}
+
+
+// Responsive Containers
 @media screen and (max-width: $breakpoint_tab) {
     .row {
         --bs-gutter-x: #{$gutter_tab};
@@ -76,62 +138,4 @@
             }
         }
     }
-}
-
-.elementor {
-
-    // .e-con.e-child {
-    //     width: calc(#{var(--width)} - (#{var(--gap)}));
-    // }
-
-    .e-con {
-        --widgets-spacing: #{$gutter_desk};
-        --container-max-width: #{$container_width};
-    }
-
-    .e-con,
-    .e-con.e-flex
-    .e-con.e-grid {
-
-        .e-con-inner {
-            padding-left: $container_padding;
-            padding-right: $container_padding;
-            box-sizing: content-box;
-            width: calc(100% - #{$container_padding * 2});
-        }
-        
-        &.gutter-default {
-            gap: $gutter_desk;
-
-            &.e-con-boxed  {
-                --content-width: #{$container_width};
-                // --gap: #{$gutter_desk};
-            }
-
-            .e-con-inner {
-                gap: $gutter_desk;
-            }
-
-            // .e-child {
-            //     width: calc(#{var(--width)} - (#{$gutter_desk} / 2));
-            // }
-        }
-    }
-}
-
-.container,
-.container-fluid {
-    .elementor {
-    
-        .e-con,
-        .e-con.e-flex
-        .e-con.e-grid {
-    
-            .e-con-inner {
-                padding-left: 0;
-                padding-right: 0;
-                width: 100%;
-            }
-        }
-    }            
 }

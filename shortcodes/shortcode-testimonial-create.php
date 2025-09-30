@@ -8,39 +8,67 @@ Add Shortcode to create Testimonial with frontend form
 ---------------------------------------------------------------------------*/
 add_shortcode( 'testimonial-create', 'shortcode_testimonial_create' );
 function shortcode_testimonial_create( $atts ) { 
-
+    
     ob_start();
-
+    
     // Attributes
     $atts = shortcode_atts( array(
-        'submit_text' => 'Banner erstellen',
+        'submit_text' => 'Testimonial erstellen',
         'updated_message' => 'Vielen Dank fürs Erstellen der Referenz! Ihre Angaben werden nun von uns überprüft.',
     ), $atts, 'testimonial-create' );
-    
-    acf_form(array(
-        'post_id'       => 'new_post',
-        'new_post'      => array(
-            'post_type'     => 'testimonial',
-            'post_status'   => 'publish',
-            'tax_input'    => array(
-                'testimonial_category' => array("7", "19")
+
+    $optionsAddons = get_field('addons', 'option');
+    if ($optionsAddons["banner_generator_status"] == true) {
+        
+        acf_form(array(
+            'id' => 'acf-form-testimonial',
+            'post_id'       => 'new_post',
+            'new_post'      => array(
+                'post_type'     => 'testimonial',
+                'post_status'   => 'publish',
+                'tax_input'    => array(
+                    'testimonial_category' => array("")
+                ),
             ),
-        ),
-        'post_title' => false,
-        'post_content' => false,
-        'field_groups' => array("group_6698e5e74ec9d"),
-        // 'fields' => array("field_66a1223baaf73","field_66a1226aaaf74","field_6698e631e9799", "field_6698e5e7e9796", "field_6698e61ce9797", "field_6698e625e9798"),
-        'updated_message' => $atts['updated_message'],
-        'return' => '%post_url%',
-        'submit_value'  => $atts['submit_text'],
-        'honeypot' => true,
-        'form' => true,
-        'uploader' => 'basic',
-        'label_placement' => 'top',
-        'instruction_placement' => 'field',
-        'html_before_fields' => '<div class="shortcode_testimonial-create row">',
-        'html_after_fields' => '</div>',
-    ));
+            'post_title' => false,
+            'post_content' => false,
+            'field_groups' => array("group_6698e5e74ec9d"),
+            'updated_message' => $atts['updated_message'],
+            'return' => '%post_url%',
+            'submit_value'  => 'Banner erstellen',
+            'honeypot' => true,
+            'form' => true,
+            'uploader' => 'basic',
+            'label_placement' => 'top',
+            'instruction_placement' => 'field',
+            'html_before_fields' => '<div class="shortcode_testimonial-create row">',
+            'html_after_fields' => '</div>',
+        ));
+
+    } else {
+        
+        acf_form(array(
+            'post_id'       => 'new_post',
+            'new_post'      => array(
+                'post_type'     => 'testimonial',
+                'post_status'   => 'pending',
+            ),
+            'post_title' => false,
+            'post_content' => false,
+            // 'field_groups' => array("group_6698e5e74ec9d"),
+            'fields' => array("field_66cc8b3cb4928", "field_66a1223baaf73","field_66a1226aaaf74","field_6698e631e9799", "field_6698e61ce9797", "field_66c7426818da5", "field_66b37f7e6e5c1"),
+            'updated_message' => $atts['updated_message'],
+            // 'return' => '',
+            'submit_value'  => $atts['submit_text'],
+            'honeypot' => true,
+            'form' => true,
+            'uploader' => 'basic',
+            'label_placement' => 'top',
+            'instruction_placement' => 'field',
+            'html_before_fields' => '<div class="shortcode_testimonial-create row">',
+            'html_after_fields' => '</div>',
+        ));
+    }
     
     $html = ob_get_contents(); 
     ob_end_clean();
@@ -54,7 +82,6 @@ Create custom Banner Image
 ---------------------------------------------------------------------------*/
 
 // proceed if status is set to "active"
-$optionsAddons = get_field('addons', 'option');
 if ($optionsAddons["banner_generator_status"] == true) {
 
 add_action('acf/save_post', 'create_custom_testimonial_banner');
@@ -357,7 +384,6 @@ function testimonial_after_save($post_id) {
     --------------------------------------------*/
 
     $optionsEmails = get_field('options_emails', 'option');
-
     if ($optionsEmails['send_email_new_testimonial'] == true) {
 
         // Get Info

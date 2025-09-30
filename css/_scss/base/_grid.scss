@@ -20,43 +20,61 @@
     width: calc(100% - #{$container_padding * 2});
 }
 
-// @function var($name) {
-//     @return unquote("var(#{$name})");
-//   }
-  
-// @mixin media($breakpoint) {
-//     @media (min-width: $breakpoint) {
-//         @content;
-//     }
-// }
-
 .row {
     --bs-gutter-x: #{$gutter_desk};
     --bs-gutter-y: #{$gutter_desk};
-
-    // @include media(var(--grid-breakpoint-tablet)) {
-    //     --bs-gutter-x: #{$gutter_tab};
-    //     --bs-gutter-y: #{$gutter_tab};
-    // }
-
-    // @include media(var(--grid-breakpoint-mobile)) {
-    //     --bs-gutter-x: #{$gutter_mob};
-    //     --bs-gutter-y: #{$gutter_mob};
-    // }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $breakpoint_tab) {
     .row {
         --bs-gutter-x: #{$gutter_tab};
         --bs-gutter-y: #{$gutter_tab};
     }
+
+    .container,
+    .container-fluid {
+        padding-left: #{$container_padding * .75};
+        padding-right: #{$container_padding * .75};
+    }
+
+    .elementor {
+
+        .e-con,
+        .e-con.e-flex
+        .e-con.e-grid {
+
+            .e-con-inner {
+                padding-left: #{$container_padding * .75};
+                padding-right: #{$container_padding * .75};
+            }
+        }
+    }
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $breakpoint_mob) {
     .row {
         --bs-gutter-x: #{$gutter_mob};
         --bs-gutter-y: #{$gutter_mob};
+    }
+
+    .container,
+    .container-fluid {
+        padding-left: #{$container_padding * .5};
+        padding-right: #{$container_padding * .5};
+    }
+
+    .elementor {
+
+        .e-con,
+        .e-con.e-flex
+        .e-con.e-grid {
+
+            .e-con-inner {
+                padding-left: #{$container_padding * .5};
+                padding-right: #{$container_padding * .5};
+            }
+        }
     }
 }
 

@@ -108,6 +108,7 @@
             .e-con-inner {
                 padding-left: calc(#{$container_padding } * .75);
                 padding-right: calc(#{$container_padding } * .75);
+                width: auto;
             }
         }
     }
@@ -135,6 +136,7 @@
             .e-con-inner {
                 padding-left: calc(#{$container_padding} * .5);
                 padding-right: calc(#{$container_padding} * .5);
+                width: auto;
             }
         }
     }

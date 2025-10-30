@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6698e6507a496",
-            "label": "Event Start Date",
+            "label": "Event Start (Datum und Uhrzeit)",
             "name": "event_start_date",
             "aria-label": "",
             "type": "date_time_picker",
@@ -19,11 +19,12 @@
             "display_format": "d.m.Y H:i",
             "return_format": "d.m.Y H:i",
             "first_day": 1,
-            "default_to_current_date": 0
+            "default_to_current_date": 0,
+            "allow_in_bindings": 1
         },
         {
             "key": "field_66ace0e5cbd8a",
-            "label": "Event End Date",
+            "label": "Event Ende (Datum)",
             "name": "event_end_date",
             "aria-label": "",
             "type": "date_time_picker",
@@ -38,11 +39,12 @@
             "display_format": "d.m.Y H:i",
             "return_format": "d.m.Y H:i",
             "first_day": 1,
-            "default_to_current_date": 0
+            "default_to_current_date": 0,
+            "allow_in_bindings": 1
         },
         {
             "key": "field_6698e74c7a498",
-            "label": "Location",
+            "label": "Event Standort",
             "name": "event_location",
             "aria-label": "",
             "type": "text",
@@ -56,13 +58,14 @@
             },
             "default_value": "",
             "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "",
             "prepend": "",
             "append": ""
         },
         {
             "key": "field_66b3284c606a9",
-            "label": "Adresse",
+            "label": "Event Adresse",
             "name": "event_address",
             "aria-label": "",
             "type": "text",
@@ -76,6 +79,7 @@
             },
             "default_value": "",
             "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "",
             "prepend": "",
             "append": ""
@@ -116,5 +120,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757344787
+    "display_title": "",
+    "modified": 1761839984
 }

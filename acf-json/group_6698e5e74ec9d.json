@@ -68,7 +68,7 @@
             "name": "zitat",
             "aria-label": "",
             "type": "textarea",
-            "instructions": "Maximal 120 Zeichen. Anführungs- und Schlusszeichen werden automatisch hinzugefügt.",
+            "instructions": "Maximal 180 Zeichen. Anführungs- und Schlusszeichen werden automatisch hinzugefügt.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -77,7 +77,7 @@
                 "id": ""
             },
             "default_value": "",
-            "maxlength": 240,
+            "maxlength": 180,
             "allow_in_bindings": 1,
             "rows": 5,
             "placeholder": "Ihr Zitat *",
@@ -197,5 +197,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1761204009
+    "modified": 1761654469
 }

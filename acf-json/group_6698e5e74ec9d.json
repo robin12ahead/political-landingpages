@@ -68,7 +68,7 @@
             "name": "zitat",
             "aria-label": "",
             "type": "textarea",
-            "instructions": "Maximal 180 Zeichen. Anführungs- und Schlusszeichen werden automatisch hinzugefügt.",
+            "instructions": "Maximal 240 Zeichen. Anführungs- und Schlusszeichen werden automatisch hinzugefügt.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -77,7 +77,7 @@
                 "id": ""
             },
             "default_value": "",
-            "maxlength": 180,
+            "maxlength": 240,
             "allow_in_bindings": 1,
             "rows": 5,
             "placeholder": "Ihr Zitat *",
@@ -129,7 +129,7 @@
             "name": "profilbild",
             "aria-label": "",
             "type": "image",
-            "instructions": "Profilbild hochladen (optional). Max 1MB, .zulässige Dateiformate sind .JPG und .PNG. Für das beste Ergebnis Profilbild quadratisch hochladen.",
+            "instructions": "Profilbild hochladen (optional). Max 1MB, es sind nur .JPG Bilder zugelassen. Für das beste Ergebnis Profilbild quadratisch hochladen.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -145,7 +145,8 @@
             "max_width": "",
             "max_height": "",
             "max_size": 2,
-            "mime_types": ".jpg, .png",
+            "mime_types": ".jpg",
+            "allow_in_bindings": 1,
             "preview_size": "komitee"
         },
         {
@@ -197,5 +198,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1761654469
+    "modified": 1761837283
 }

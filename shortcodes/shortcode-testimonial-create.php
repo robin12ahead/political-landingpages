@@ -8,6 +8,31 @@ Add Shortcode to create Testimonial with frontend form
 ---------------------------------------------------------------------------*/
 add_shortcode( 'testimonial-create', 'shortcode_testimonial_create' );
 function shortcode_testimonial_create( $atts ) { 
+
+    $taxonomy = 'testimonial_category';
+    $term_slug = 'needs-approval';
+    $term_name = 'Needs Approval'; // Display name if it needs to be created
+
+    // 1. Check if the term exists
+    $term = get_term_by('slug', $term_slug, $taxonomy);
+
+    // 2. If it doesn't exist, create it
+    if (!$term) {
+        $new_term = wp_insert_term(
+            $term_name,
+            $taxonomy,
+            array('slug' => $term_slug)
+        );
+
+        if (is_wp_error($new_term)) {
+            error_log('Error creating term: ' . $new_term->get_error_message());
+            return;
+        }
+
+        $term_id = $new_term['term_id'];
+    } else {
+        $term_id = $term->term_id;
+    }
     
     ob_start();
     
@@ -27,7 +52,7 @@ function shortcode_testimonial_create( $atts ) {
                 'post_type'     => 'testimonial',
                 'post_status'   => 'publish',
                 'tax_input'    => array(
-                    'testimonial_category' => array("")
+                    $taxonomy => array($term_slug)
                 ),
             ),
             'post_title' => false,
@@ -56,7 +81,7 @@ function shortcode_testimonial_create( $atts ) {
             'post_title' => false,
             'post_content' => false,
             // 'field_groups' => array("group_6698e5e74ec9d"),
-            'fields' => array("field_66cc8b3cb4928", "field_66a1223baaf73","field_66a1226aaaf74","field_6698e631e9799", "field_6698e61ce9797", "field_66c7426818da5", "field_66b37f7e6e5c1"),
+            'fields' => array("field_66cc8b3cb4928", "field_66a1223baaf73","field_66a1226aaaf74","field_6698e631e9799", "field_6698e61ce9797", "field_66c7426818da5", "field_6698e625e9798", "field_66b37f7e6e5c1"),
             'updated_message' => $atts['updated_message'],
             // 'return' => '',
             'submit_value'  => $atts['submit_text'],
@@ -225,14 +250,14 @@ function create_custom_testimonial_banner($post_id) {
         $profilePictureHeight = imagesy($profilePictureImageCircular);
     
         // Calculate new dimensions to fit within the base image
-        $newProfileWidth = '680';
-        $newProfileHeight = '680';
+        $newProfileWidth = '500';
+        $newProfileHeight = '500';
     
         // Copy the imported image onto the base image
         imagecopyresampled($image, $profilePictureImageCircular, $banner_padding, $banner_padding, 0, 0, $newProfileWidth, $newProfileHeight, $profilePictureWidth, $profilePictureHeight);
 
         // X coord for headvisual if profile picture exists
-        $headVisualPosX = '570';
+        $headVisualPosX = '900';
 
     } else {
 
@@ -277,8 +302,8 @@ function create_custom_testimonial_banner($post_id) {
     if ( !empty($text_quote) ) {
 
         $text_quote_color = imagecolorallocate($image, $BannerTextColor["red"], $BannerTextColor["green"], $BannerTextColor["blue"]); // RGB Color
-        $text_quote_size = '54';
-        $text_quote_PosY = '900';
+        $text_quote_size = '52';
+        $text_quote_PosY = '720';
 
         $text_quote = wordwrap($text_quote, 34, "\n", true);
         imagettftext($image, $text_quote_size, 0, $banner_padding, $text_quote_PosY, $text_quote_color, $font_heading, $text_quote);
@@ -288,8 +313,8 @@ function create_custom_testimonial_banner($post_id) {
     if ( !empty($text_sender) ) {
 
         $text_author_color = imagecolorallocate($image, $BannerTextColor["red"], $BannerTextColor["green"], $BannerTextColor["blue"]); // RGB Color
-        $text_author_size = '48';
-        $text_author_PosY = '1380';
+        $text_author_size = '40';
+        $text_author_PosY = '1400';
 
         imagettftext($image, $text_author_size, 0, $banner_padding, $text_author_PosY, $text_author_color, $font_body, $text_sender);
         
@@ -299,7 +324,7 @@ function create_custom_testimonial_banner($post_id) {
         // quotation mark
         $quotation_color = imagecolorallocate($image, $BannerAccentColor["red"], $BannerAccentColor["green"], $BannerAccentColor["blue"]); // RGB Color
         $quotation_size = '256';
-        $quotation_PosY = '768';
+        $quotation_PosY = '256';
 
         imagettftext($image, $quotation_size, 0, $banner_padding, $quotation_PosY, $quotation_color, $font_heading, "«");
     }

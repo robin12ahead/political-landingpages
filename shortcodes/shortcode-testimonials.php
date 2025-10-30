@@ -53,18 +53,30 @@ function testimonials_shortcode( $atts ) {
                     'terms' => $categories,       // term id, term slug or term name
                     'operator' => 'IN',
                 ),
-                // array(
-                //     'taxonomy' => 'testimonial_category',   // taxonomy name
-                //     'field' => 'term_id',           // term_id, slug or name
-                //     'terms' => '19',       // term id, term slug or term name
-                //     'operator' => 'NOT IN',
-                // ),
+                array(
+                    'taxonomy' => 'testimonial_category',   // taxonomy name
+                    'field' => 'slug',           // term_id, slug or name
+                    'terms' => 'needs-approval',       // term id, term slug or term name
+                    'operator' => 'NOT IN',
+                ),
             ),
         );
     
-        // merge args arrays together
-        $args = array_merge($args, $tax_query);
+    } else {
+        $tax_query = array (
+            'tax_query' => array(
+                'relation' => 'AND',
+                array(
+                    'taxonomy' => 'testimonial_category',   // taxonomy name
+                    'field' => 'slug',           // term_id, slug or name
+                    'terms' => 'needs-approval',       // term id, term slug or term name
+                    'operator' => 'NOT IN',
+                ),
+            ),
+        );
     }
+    // merge args arrays together
+    $args = array_merge($args, $tax_query);
 
     // Define output var
     $output = '';

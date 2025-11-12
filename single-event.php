@@ -12,17 +12,17 @@ get_header();
 
 // event meta
 if ( get_field("event_start_date") ) {
-    $start_date = DateTime::createFromFormat( 'd.m.Y H:i', get_field("event_start_date") );
+    $start_date = DateTime::createFromFormat( 'd.m.Y H:i', get_field("event_start_date"), wp_timezone() );
 }
 if ( get_field("event_end_date") ) {
-    $end_date = DateTime::createFromFormat( 'd.m.Y H:i', get_field("event_end_date") );
+    $end_date = DateTime::createFromFormat( 'd.m.Y H:i', get_field("event_end_date"), wp_timezone() );
 } else {
     // $end_date = date('Y-m-d\TH:i:s', strtotime(get_field("event_start_date") . ' +2 hours'));
     // $end_date = date('Y-m-d\TH:i:s', strtotime('+2 hours', $start_date->getTimestamp()));
     $end_date = $start_date->add(new DateInterval('PT2H'));
 }
 
-$overviewPageUrl = get_permalink( get_page_by_path( 'agenda' ) );
+$overviewPageUrl = get_permalink( get_page_by_path( 'events' ) );
 
 ?>
 
@@ -60,8 +60,8 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'agenda' ) );
                         <div class="hero-events_content row align-items-center">
                             <div class="col-md-2">
                                 <div class="date-wrapper">
-                                    <h3 class="date-day"><?php echo $start_date->format( 'j.' ); ?></h3>
-                                    <span class="date-month"><?php echo $start_date->format( 'F' ); ?></span>
+                                    <h3 class="date-day"><?php echo wp_date('j.' , $start_date->getTimestamp() ); ?></h3>
+                                    <span class="date-month"><?php echo wp_date('F' , $start_date->getTimestamp() ); ?></span>
                                 </div>
                             </div>
                             <div class="col-md-8 text-align-center">
@@ -74,9 +74,9 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'agenda' ) );
                             <div class="location-wrapper">
 
                                 <?php if ( get_field("event_end_date") ) : ?>
-                                    <b class="text-size-regular post-meta-time"><?php echo $start_date->format( 'H:i' ) . " - " . $end_date->format( 'H:i' ); ?></b>
+                                    <b class="text-size-regular post-meta-time"><?php echo wp_date('H:i' , $start_date->getTimestamp() ) . " - " . wp_date('H:i' , $end_date->getTimestamp() ); ?></b>
                                 <?php else : ?>
-                                    <b class="text-size-regular post-meta-time"><?php echo $start_date->format( 'H:i' ); ?></b>
+                                    <b class="text-size-regular post-meta-time"><?php echo  wp_date('H:i' , $end_date->getTimestamp() ); ?></b>
                                 <?php endif; ?>
                                 
                                 <?php if ( get_field("event_location") ) : ?>

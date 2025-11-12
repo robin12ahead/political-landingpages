@@ -76,7 +76,7 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'events' ) );
                                 <?php if ( get_field("event_end_date") ) : ?>
                                     <b class="text-size-regular post-meta-time"><?php echo wp_date('H:i' , $start_date->getTimestamp() ) . " - " . wp_date('H:i' , $end_date->getTimestamp() ); ?></b>
                                 <?php else : ?>
-                                    <b class="text-size-regular post-meta-time"><?php echo  wp_date('H:i' , $end_date->getTimestamp() ); ?></b>
+                                    <b class="text-size-regular post-meta-time"><?php echo wp_date('H:i' , $end_date->getTimestamp() ); ?></b>
                                 <?php endif; ?>
                                 
                                 <?php if ( get_field("event_location") ) : ?>
@@ -106,12 +106,12 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'events' ) );
 
 					get_template_part( 'template-parts/content', get_post_type() ); 
 					
-					the_post_navigation(
-						array(
-							'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Vorheriges Event:', 'political-landingpages' ) . '</span> <span class="nav-title">%title</span>',
-							'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Nächstes Event:', 'political-landingpages' ) . '</span> <span class="nav-title">%title</span>',
-						)
-					);
+					// the_post_navigation(
+					// 	array(
+					// 		'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Vorheriges Event:', 'political-landingpages' ) . '</span> <span class="nav-title">%title</span>',
+					// 		'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Nächstes Event:', 'political-landingpages' ) . '</span> <span class="nav-title">%title</span>',
+					// 	)
+					// );
 
 				endwhile; // End of the loop.
 				?>
@@ -130,7 +130,7 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'events' ) );
 			<div class="container">
 				<h2 class=""><?php _e( 'Weitere Events', 'political-landingpages' ); ?></h2>
 				<div class="spacer-medium"></div>
-				<?php echo do_shortcode('[events filter="future" orderby="meta_value" meta_key="event_start_date" order="ASC" posts_per_page="3"]'); ?>
+
 				<div class="spacer-medium"></div>
 				<a href="<?php echo $overviewPageUrl; ?>" class="button button-secondary"><?php _e( 'Alle Events', 'political-landingpages' ); ?></a>
 			</div>

@@ -148,7 +148,7 @@ function events_shortcode( $atts ) {
                                         $end_date = DateTime::createFromFormat( 'd.m.Y H:i', get_field("event_end_date"), wp_timezone() );
                                         $output .= '<b class="text-size-regular post-meta-time">' . wp_date('H:i' , $start_date->getTimestamp() ) . " - " . wp_date('H:i' , $end_date->getTimestamp() ) . '</b>';
                                     } else {
-                                        $output .= '<b class="text-size-regular post-meta-time">' . wp_date('H:i' , $end_date->getTimestamp() ) . '</b>';
+                                        $output .= '<b class="text-size-regular post-meta-time">' . wp_date('H:i' , $start_date->getTimestamp() ) . '</b>';
                                     }
                                 $output .= '</div>';
                                 
@@ -163,10 +163,12 @@ function events_shortcode( $atts ) {
                                 $output .= '</div>';
 
 
-                                if ($optionsAddons["events_detailpage"] == true) {
-                                    $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt(180) . '<span class="read-more-text">' . __("weiterlesen", "political-landingpages") . '</span></p></div>';
-                                } else {
-                                    $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt(180) . '</p></div>';
+                                if (get_the_excerpt()) {
+                                    if ($optionsAddons["events_detailpage"] == true) {
+                                        $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt(180) . '<span class="read-more-text">' . __("weiterlesen", "political-landingpages") . '</span></p></div>';
+                                    } else {
+                                        $output .= '<div class="post-excerpt text-size-medium"><p>' . get_excerpt(180) . '</p></div>';
+                                    }
                                 }
 
                                 $output .= '<div class="post-meta">';
@@ -203,8 +205,8 @@ function events_shortcode( $atts ) {
                         $output .= '<div class="post-meta post-header row justify-content-between row-cols-auto align-items-end">';
                         
                             $output .= '<div class="date-wrapper">';
-                                $output .= '<h4 class="date-day">' . $start_date->format( 'j.' )  . '</h4>';
-                                $output .= '<span class="date-month">' . $start_date->format( 'F' )  . '</span>';
+                                $output .= '<h4 class="date-day">' . wp_date('j.', $start_date->getTimestamp() )  . '</h4>';
+                                $output .= '<span class="date-month">' .  wp_date('F', $start_date->getTimestamp() )  . '</span>';
                             $output .= '</div>';
 
                             // if (get_the_terms( get_the_ID(), 'event_category' ) !== "" ) {
@@ -229,10 +231,10 @@ function events_shortcode( $atts ) {
                             $output .= '<div class="location-wrapper">';
 
                                 if (get_field("event_end_date")) {
-                                    $end_date = DateTime::createFromFormat( 'd.m.Y H:i', get_field("event_end_date") );
-                                    $output .= '<b class="text-size-regular post-meta-time">' . $start_date->format( 'H:i' ) . " - " . $end_date->format( 'H:i' ) . '</b>';
+                                    $end_date = DateTime::createFromFormat( 'd.m.Y H:i', get_field("event_end_date", wp_timezone()) );
+                                    $output .= '<b class="text-size-regular post-meta-time">' . wp_date('H:i' , $start_date->getTimestamp() ) . " - " . wp_date('H:i' , $end_date->getTimestamp() ) . '</b>';
                                 } else {
-                                    $output .= '<b class="text-size-regular post-meta-time">' . $start_date->format( 'H:i' ) . '</b>';
+                                    $output .= '<b class="text-size-regular post-meta-time">' . wp_date('H:i' , $start_date->getTimestamp() ) . '</b>';
                                 }
 
                                 if (get_field("event_location")) {

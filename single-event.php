@@ -130,7 +130,7 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'events' ) );
 			<div class="container">
 				<h2 class=""><?php _e( 'Weitere Events', 'political-landingpages' ); ?></h2>
 				<div class="spacer-medium"></div>
-
+				<?php echo do_shortcode('[events filter="future"  posts_per_page="3"]'); ?>
 				<div class="spacer-medium"></div>
 				<a href="<?php echo $overviewPageUrl; ?>" class="button button-secondary"><?php _e( 'Alle Events', 'political-landingpages' ); ?></a>
 			</div>

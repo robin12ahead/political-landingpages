@@ -349,7 +349,7 @@ function create_custom_testimonial_banner($post_id) {
     
     // destroy php images
     imagedestroy($image);
-    imagedestroy($headVisualImage);
+    // imagedestroy($headVisualImage);
     // imagedestroy($profilePictureImage);
     // imagedestroy($profilePictureImageCircular);
 
@@ -399,7 +399,7 @@ function testimonial_after_save($post_id) {
 
     // Update the post
     wp_update_post( $new_post );
-    wp_set_post_terms( $post_id, array("7", "19"), 'testimonial_category' );
+    // wp_set_post_terms( $post_id, array("7", "19"), 'testimonial_category' );
 
     // Add the hook back
     add_action('acf/save_post', 'create_custom_testimonial_banner', 20);

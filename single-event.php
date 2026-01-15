@@ -19,7 +19,8 @@ if ( get_field("event_end_date") ) {
 } else {
     // $end_date = date('Y-m-d\TH:i:s', strtotime(get_field("event_start_date") . ' +2 hours'));
     // $end_date = date('Y-m-d\TH:i:s', strtotime('+2 hours', $start_date->getTimestamp()));
-    $end_date = $start_date->add(new DateInterval('PT2H'));
+    // $end_date = $start_date->add(new DateInterval('PT2H'));
+    $end_date = $start_date;
 }
 
 $overviewPageUrl = get_permalink( get_page_by_path( 'events' ) );
@@ -76,7 +77,7 @@ $overviewPageUrl = get_permalink( get_page_by_path( 'events' ) );
                                 <?php if ( get_field("event_end_date") ) : ?>
                                     <b class="text-size-regular post-meta-time"><?php echo wp_date('H:i' , $start_date->getTimestamp() ) . " - " . wp_date('H:i' , $end_date->getTimestamp() ); ?></b>
                                 <?php else : ?>
-                                    <b class="text-size-regular post-meta-time"><?php echo wp_date('H:i' , $end_date->getTimestamp() ); ?></b>
+                                    <b class="text-size-regular post-meta-time"><?php echo wp_date('H:i' , $start_date->getTimestamp() ); ?></b>
                                 <?php endif; ?>
                                 
                                 <?php if ( get_field("event_location") ) : ?>

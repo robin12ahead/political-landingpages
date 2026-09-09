@@ -60,6 +60,15 @@ header.header {
                         color: inherit;
                     }
                 }
+
+                a.custom-logo-link {
+                    display: inline-flex;
+                }
+
+                img.custom-logo {
+                    width: 100%;
+                    height: auto;
+                }
             }
 
             .navigation-wrapper {

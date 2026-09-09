@@ -25,10 +25,52 @@ h1,
     font-family: $font_headings;
     font-size: var(--font-size-h1);
     font-weight: $bold;
-    line-height: 1.1;
+    line-height: 1;
     letter-spacing: 0;
     hyphens: auto;
     margin: 0;
+    color: white;
+
+    // transform: rotate(-5.5deg);
+    // display: inline-block;
+
+    // text-decoration: underline;
+    // text-underline-position: under;
+    // text-underline-offset: -1.1em;
+    // text-decoration-skip-ink: none;
+    // text-decoration-thickness: .9em;
+    // font-style: italic;
+    // text-decoration-color: var(--background-color-primary);
+    // text-indent: .05em;
+
+    background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    var(--background-color-primary) 30%,
+    var(--background-color-primary) 90%,
+    transparent 90%
+    );
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    width: auto;
+    display: inline!important;
+    padding: 0 .1em!important;
+}
+
+
+.background-color-secondary {
+    h1,
+    .text-style-h1 ,
+    h1.elementor-heading-title {
+        // text-decoration-color: var(--background-color-secondary);
+        background: linear-gradient(
+        to bottom,
+        transparent 30%,
+        var(--background-color-secondary) 30%,
+        var(--background-color-secondary) 90%,
+        transparent 90%
+        );
+    }
 }
 
 // body.home {
@@ -43,11 +85,59 @@ h2,
     font-family: $font_headings;
     font-size: var(--font-size-h2);
     font-weight: $bold;
-    line-height: 1.2;
+    line-height: 1;
     letter-spacing: 0;
     hyphens: auto;
     margin: 0;
+    color: white;
+
+    background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    var(--background-color-secondary) 30%,
+    var(--background-color-secondary) 90%,
+    transparent 90%
+    );
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    width: auto;
+    display: inline!important;
+    padding: 0 .1em!important;
 }
+
+.background-color-secondary {
+    h2,
+    .text-style-h2 ,
+    h2.elementor-heading-title {
+        // text-decoration-color: var(--background-color-primary);
+        background: linear-gradient(
+        to bottom,
+        transparent 30%,
+        var(--background-color-primary) 30%,
+        var(--background-color-primary) 90%,
+        transparent 90%
+        );
+    }
+}
+
+// rotated titles
+.title-wrapper {
+    margin-bottom: 2em !important;
+    display: inline-block;
+
+    &.is-rotated {
+        transform: rotate(-5.5deg) translateX(-.35em);
+        text-indent: 0.35rem;
+    }
+}
+
+// // add margin-bottom to rotated headings
+// h1,
+// h2,
+// h1.elementor-heading-title,
+// h2.elementor-heading-title {
+//     margin-bottom: .75em!important;
+// }
 
 h3,
 .text-style-h3 {
@@ -140,7 +230,7 @@ i {
 .text-size-large p {
     font-size: var(--font-size-large);
     // line-height: inherit;
-    // font-weight: inherit;
+    font-weight: $medium;
     // font-style: inherit;
     // color: inherit;
 }
@@ -149,7 +239,7 @@ i {
 .text-size-medium p {
     font-size: var(--font-size-medium);
     // line-height: inherit;
-    // font-weight: inherit;
+    // font-weight: $medium;
     // font-style: inherit;
     // color: inherit;
 }

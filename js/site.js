@@ -204,6 +204,13 @@ $(document).ready(function () {
     var Bezirk = $('.bezirk-map').attr("data-bezirk");
     $('svg#bezirke-kanton-zh > #Zonen').find('#' + Bezirk).css("fill", "var(--background-color-accent)");
 
+    
+    /*--------------------------------------------
+    Wrap all h1 and h2 in div
+    --------------------------------------------*/
+
+    $('.site').find('h1, h2').wrap( "<div class='title-wrapper is-rotated'></div>" );
+
 
     /*--------------------------------------------
     Move event button on mobile

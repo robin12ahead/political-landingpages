@@ -7,6 +7,7 @@
     // height: 0;
     position: relative;
     // border-bottom: var(--border-width-default) solid var(--border-color-accent);
+    // overflow-x: hidden;
 
     .container {
         position: relative;
@@ -21,6 +22,19 @@
         max-width: 32rem;
     }
 
+    // .hero-content-wrapper {
+    //     display: inline-flex;
+    //     flex-direction: column;
+    //     align-items: flex-start;
+    // }
+
+    h4.text-style-overline {
+        transform: rotate(-5.5deg);
+        font-style: italic;
+        margin-bottom: .25em;
+    }
+
+
     &.hero-home {
         min-height: 42rem;
 
@@ -34,7 +48,7 @@
     }
 
     &.hero-subpages {
-        // min-height: 30rem;
+        min-height: 24rem;
 
         .headvisual-wrapper {
             max-width: 26rem;
@@ -62,7 +76,7 @@
         z-index: 10;
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: 2rem;
         margin: 0 auto;
         
         &:hover {
@@ -121,44 +135,67 @@
         position: relative;
         border-bottom: 0;
 
-         &::after {
-            content: "";
-            width: 100%;
-            height: auto;
-            aspect-ratio: 16.271;
-            clip-path: shape(from 0% 99.7%,vline to 100%,hline to 100%,vline to 0%,line to 0% 99.7%,close);
-            display: block;
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            right: 0;
-            z-index: 9;
-            background-color: var(--background-color-primary);
-        }
+        //  &::after {
+        //     content: "";
+        //     width: 100%;
+        //     height: auto;
+        //     aspect-ratio: 16.271;
+        //     clip-path: shape(from 0% 99.7%,vline to 100%,hline to 100%,vline to 0%,line to 0% 99.7%,close);
+        //     display: block;
+        //     position: absolute;
+        //     bottom: -1px;
+        //     left: 0;
+        //     right: 0;
+        //     z-index: 9;
+        //     background-color: var(--background-color-primary);
+        // }
     }
 } 
 
 // fdp hero content
 .fdp-hero_content {
-    margin-left: -5rem;
+    // margin-left: -5rem;
+    // max-width: 99vw;
 
-    .fdp-hero_title {
-        transform: rotate(-3.5deg);
-        color: white;
-        display: inline-block;
-    }
+    // .fdp-hero_title {
+    //     // transform: rotate(-5.5deg);
+    //     // color: white;
+    //     // display: inline-block;
+    //     // text-decoration: none;
+    //     // padding-left: 1rem;
+    //     // display: flex;
+    //     // flex-direction: column;
+    //     // line-height: 1;
+    // }
 
-    .fdp-hero_underline {
-        background-color: var(--background-color-primary);
-        padding: .25em;
-        padding-left: 8rem;
-        display: inline-block;
-        margin-bottom: -1px;
+    // .fdp-hero_underline {
+    //     // background-color: var(--background-color-primary);
+    //     // padding: .25em;
+    //     // display: inline-block;
+    //     // text-decoration: underline;
+    //     // text-decoration-color: var(--background-color-primary);
+    //     // text-underline-position: under;
+    //     // text-underline-offset: -1.1em;
+    //     // text-decoration-skip-ink: none;
+    //     // text-decoration-thickness: .9em;
+    //     // font-style: italic;
+    //     // transform: none;
 
-        &.is-accent {
-            background-color: var(--background-color-accent);
-        }
-    }
+    //     &.line-1 {
+    //         // padding-left: 1rem;
+    //     }
+        
+    //     &.line-2 {
+    //         // padding-left: .5rem;
+    //     }
+        
+    //     &.is-accent.line-3 {
+    //         // background-color: var(--background-color-accent);
+    //         // font-size: 8rem;
+    //         // padding-left: 2rem;
+    //         // text-decoration-color: var(--background-color-secondary);
+    //     }
+    // }
 } 
 
 
@@ -218,8 +255,8 @@
 .bezirk-map.bezirk-shortcode {
     position: relative;
     z-index: 9;
-    transform: translate(5vw, 4vw);
-    margin-bottom: -25%;
+    // transform: translate(5vw, 4vw);
+    // margin-bottom: -25%;
 }
 
 // Social Media Shortcode

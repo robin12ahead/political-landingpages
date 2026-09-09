@@ -51,12 +51,12 @@ Settings / Controls
 $typography = array (
 	'font-family-heading' => array (
 		"label" => "Font Family Headings",
-		"default" => "Arial",
+		"default" => "futura-100",
 		"section" => "typography",
 	),
 	'font-family-body' => array (
 		"label" => "Font Family Body",
-		"default" => "Arial",
+		"default" => "futura-100",
 		"section" => "typography",
 	),
 );
@@ -299,7 +299,7 @@ $sizes = array (
 	),
 	'grid-container-width' => array (
 		"label" => "Default Container max-width",
-		"default" => "1280px",
+		"default" => "1440px",
 		"section" => "grid",
 	),
 	'grid-container-padding' => array (
@@ -344,27 +344,27 @@ $sizes = array (
 	),
 	'spacer-lg' => array (
 		"label" => "Spacer Large",
-		"default" => "4rem",
+		"default" => "5rem",
 		"section" => "grid",
 	),
 	'spacer-xl' => array (
 		"label" => "Spacer XL",
-		"default" => "5rem",
+		"default" => "6rem",
 		"section" => "grid",
 	),
 	'spacer-xxl' => array (
 		"label" => "Spacer XXL",
-		"default" => "6rem",
+		"default" => "7.5rem",
 		"section" => "grid",
 	),
 	'spacer-huge' => array (
 		"label" => "Spacer Huge",
-		"default" => "7.5rem",
+		"default" => "10rem",
 		"section" => "grid",
 	),
 	'spacer-xhuge' => array (
 		"label" => "Spacer Xhuge",
-		"default" => "10rem",
+		"default" => "12rem",
 		"section" => "grid",
 	),
 	'buttons-padding-lr' => array (
@@ -384,12 +384,12 @@ $sizes = array (
 	),
 	'buttons-border-radius' => array (
 		"label" => "Button Border-Radius",
-		"default" => "1.5rem",
+		"default" => "0rem",
 		"section" => "buttons",
 	),
 	'icons-border-radius' => array (
 		"label" => "Icons Border-Radius",
-		"default" => "0.25rem",
+		"default" => "0rem",
 		"section" => "icons",
 	),
 	'boxes-border-radius' => array (
@@ -424,7 +424,7 @@ $sizes = array (
 	),
 	'forms-border-radius' => array (
 		"label" => "Form Field Border-Radius",
-		"default" => "1rem",
+		"default" => "0rem",
 		"section" => "forms",
 	),
 	'forms-border-width' => array (
@@ -448,12 +448,12 @@ $sizes = array (
 $font_sizes = array (
 	'font-size-h1' => array (
 		"label" => "Heading 1",
-		"default" => "5rem",
+		"default" => "5.5rem",
 		"section" => "font-sizes",
 	),
 	'font-size-h2' => array (
 		"label" => "Heading 2",
-		"default" => "4rem",
+		"default" => "3.5rem",
 		"section" => "font-sizes",
 	),
 	'font-size-h3' => array (
@@ -493,7 +493,7 @@ $font_sizes = array (
 	),
 	'font-size-regular' => array (
 		"label" => "text-size-regular",
-		"default" => "1rem",
+		"default" => "1.125rem",
 		"section" => "font-sizes",
 	),
 	'font-size-small' => array (
@@ -503,7 +503,7 @@ $font_sizes = array (
 	),
 	'font-size-paragraph' => array (
 		"label" => "Paragraph",
-		"default" => "1rem",
+		"default" => "1.125rem",
 		"section" => "font-sizes",
 	),
 	'font-size-body' => array (
@@ -847,3 +847,26 @@ function political_landingpages_customize_preview_js() {
 	wp_enqueue_script( 'political-landingpages-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
 add_action( 'customize_preview_init', 'political_landingpages_customize_preview_js' );
+
+
+/**
+ * Force update font-family set in customizer
+ */
+function my_theme_update_font_defaults() {
+
+    $theme_version = '2.0.0';
+    $installed_version = get_option('my_theme_version');
+
+    if ($installed_version === $theme_version) {
+        return;
+    }
+
+    // Force new font
+    set_theme_mod('font-family-heading', '"futura-100", sans-serif;');
+    set_theme_mod('font-family-body', '"futura-100", sans-serif;');
+
+    // Store current theme version
+    update_option('my_theme_version', $theme_version);
+}
+
+add_action('after_setup_theme', 'my_theme_update_font_defaults');

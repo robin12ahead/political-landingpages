@@ -252,6 +252,10 @@ a.download-button {
     > * {
         color: var(--links-color);
     }
+    
+    .text-link {
+        color: var(--text-color-secondary);
+    }
 
     .divider {
         border-color: var(--border-color-accent);
@@ -259,7 +263,7 @@ a.download-button {
         width: 100%;
         max-width: 6rem;
         min-width: 3rem;
-        display: block;
+        display: none;
     }
 
     &:hover {

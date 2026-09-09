@@ -97,7 +97,7 @@
     .container-fluid {
         padding-left: calc(#{$container_padding } * .75);
         padding-right: calc(#{$container_padding } * .75);
-        width: auto;
+        width: calc(100% - #{$container_padding * 1.5});
     }
 
     .elementor {
@@ -109,7 +109,7 @@
             .e-con-inner {
                 padding-left: calc(#{$container_padding } * .75);
                 padding-right: calc(#{$container_padding } * .75);
-                width: auto;
+                width: calc(100% - #{$container_padding * 1.5});
             }
         }
     }
@@ -126,7 +126,7 @@
     .container-fluid {
         padding-left: calc(#{$container_padding} * .5);
         padding-right: calc(#{$container_padding} * .5);
-        width: auto;
+        width: calc(100% - #{$container_padding});
     }
 
     .elementor {
@@ -138,7 +138,7 @@
             .e-con-inner {
                 padding-left: calc(#{$container_padding} * .5);
                 padding-right: calc(#{$container_padding} * .5);
-                width: auto;
+                width: calc(100% - #{$container_padding});
             }
         }
     }

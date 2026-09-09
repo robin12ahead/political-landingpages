@@ -157,16 +157,20 @@
     // margin-left: -5rem;
     // max-width: 99vw;
 
-    // .fdp-hero_title {
-    //     // transform: rotate(-5.5deg);
-    //     // color: white;
-    //     // display: inline-block;
-    //     // text-decoration: none;
-    //     // padding-left: 1rem;
-    //     // display: flex;
-    //     // flex-direction: column;
-    //     // line-height: 1;
-    // }
+    h1.fdp-hero_title {
+        // transform: rotate(-5.5deg);
+        // color: white;
+        // display: inline-block;
+        // text-decoration: none;
+        // padding-left: 1rem;
+        // display: flex;
+        // flex-direction: column;
+        // line-height: 1;
+
+        .text-style-h2 {
+            background: none;
+        }
+    }
 
     // .fdp-hero_underline {
     //     // background-color: var(--background-color-primary);

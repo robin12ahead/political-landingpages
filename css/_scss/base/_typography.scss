@@ -44,12 +44,13 @@ h1,
     // text-indent: .05em;
 
     background: linear-gradient(
-    to bottom,
-    transparent 30%,
-    var(--background-color-primary) 30%,
-    var(--background-color-primary) 90%,
-    transparent 90%
-    );
+            to bottom,
+            transparent calc(30% - 0.5px),
+            var(--background-color-primary) calc(30% + 0.5px),
+            var(--background-color-primary) calc(90% - 0.5px),
+            transparent calc(90% + 0.5px)
+        );
+    
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     width: auto;
@@ -65,11 +66,11 @@ h1,
         // text-decoration-color: var(--background-color-secondary);
         background: linear-gradient(
         to bottom,
-        transparent 30%,
-        var(--background-color-secondary) 30%,
-        var(--background-color-secondary) 90%,
-        transparent 90%
-        );
+        transparent calc(30% - 0.5px),
+        var(--background-color-secondary) calc(30% + 0.5px),
+        var(--background-color-secondary) calc(90% - 0.5px),
+        transparent calc(90% + 0.5px)
+    );
     }
 }
 
@@ -92,11 +93,11 @@ h2,
     color: white;
 
     background: linear-gradient(
-    to bottom,
-    transparent 30%,
-    var(--background-color-secondary) 30%,
-    var(--background-color-secondary) 90%,
-    transparent 90%
+        to bottom,
+        transparent calc(30% - 0.5px),
+        var(--background-color-secondary) calc(30% + 0.5px),
+        var(--background-color-secondary) calc(90% - 0.5px),
+        transparent calc(90% + 0.5px)
     );
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
@@ -111,11 +112,11 @@ h2,
     h2.elementor-heading-title {
         // text-decoration-color: var(--background-color-primary);
         background: linear-gradient(
-        to bottom,
-        transparent 30%,
-        var(--background-color-primary) 30%,
-        var(--background-color-primary) 90%,
-        transparent 90%
+            to bottom,
+            transparent calc(30% - 0.5px),
+            var(--background-color-primary) calc(30% + 0.5px),
+            var(--background-color-primary) calc(90% - 0.5px),
+            transparent calc(90% + 0.5px)
         );
     }
 }

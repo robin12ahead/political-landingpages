@@ -5,8 +5,91 @@
  * @package Political_Landingpages
  */
 
+
+/*=========================================================
+// Theme Updates / Migrations
+=========================================================*/
+
+function my_theme_update_logo() {
+
+    $logo_path = get_template_directory() . '/assets/img/FDP_Logo.svg';
+    $favicon_path = get_template_directory() . '/assets/img/FDP_favicon.png';
+
+    if ( ! file_exists( $logo_path ) || ! file_exists( $favicon_path ) ) {
+        return;
+    }
+
+    require_once ABSPATH . 'wp-admin/includes/file.php';
+    require_once ABSPATH . 'wp-admin/includes/media.php';
+    require_once ABSPATH . 'wp-admin/includes/image.php';
+
+    $site_logo = [
+        'name'     => 'FDP_Logo.svg',
+        'tmp_name' => $logo_path,
+        'type'     => 'image/svg+xml',
+        'error'    => 0,
+        'size'     => filesize( $logo_path ),
+    ];
+
+    $logo_id = media_handle_sideload( $site_logo, 0 );
+
+    if ( is_wp_error( $logo_id ) ) {
+        return;
+    }
+
+    // Set Site Logo
+    set_theme_mod( 'custom_logo', $logo_id );
+
+    $site_icon = [
+        'name'     => 'FDP_Favicon.png',
+        'tmp_name' => $favicon_path,
+        'type'     => 'image/png',
+        'error'    => 0,
+        'size'     => filesize( $favicon_path ),
+    ];
+
+    $icon_id = media_handle_sideload( $site_icon, 0 );
+
+    if ( is_wp_error( $icon_id ) ) {
+        return;
+    }
+
+    // Set Site Icon / Favicon
+    update_option( 'site_icon', $icon_id );
+}
+
+
+
+function my_theme_run_migrations() {
+
+    $installed_version = get_option( 'my_theme_version', '0' );
+
+    // Migration 2.0.0
+    if ( version_compare( $installed_version, '2.0.0', '<' ) ) {
+
+        // Force new font
+        set_theme_mod('font-family-heading', '"futura-100", sans-serif;');
+        set_theme_mod('font-family-body', '"futura-100", sans-serif;');
+
+    }
+
+    // Migration 2.1.0
+    if ( version_compare( $installed_version, '2.3.5', '<' ) ) {
+        my_theme_update_logo();
+    }
+
+    // Always update the migration version at the end
+    if ( version_compare( $installed_version, _S_VERSION, '<' ) ) {
+        update_option( 'my_theme_version', _S_VERSION );
+    }
+}
+
+add_action( 'after_setup_theme', 'my_theme_run_migrations' );
+
+/*=========================================================
+// Adds custom classes to the array of body classes.
+=========================================================*/
 /**
- * Adds custom classes to the array of body classes.
  *
  * @param array $classes Classes for the body element.
  * @return array

@@ -123,10 +123,10 @@ h2,
 
 // rotated titles
 .title-wrapper {
-    margin-bottom: 2em !important;
     display: inline-block;
-
+    
     &.is-rotated {
+        margin-bottom: 2em !important;
         transform: rotate(-5.5deg) translateX(-.35em);
         text-indent: 0.35rem;
     }

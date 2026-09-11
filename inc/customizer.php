@@ -448,7 +448,7 @@ $sizes = array (
 $font_sizes = array (
 	'font-size-h1' => array (
 		"label" => "Heading 1",
-		"default" => "5.5rem",
+		"default" => "4.5rem",
 		"section" => "font-sizes",
 	),
 	'font-size-h2' => array (
@@ -463,12 +463,12 @@ $font_sizes = array (
 	),
 	'font-size-h4' => array (
 		"label" => "Heading 4",
-		"default" => "2rem",
+		"default" => "1.75rem",
 		"section" => "font-sizes",
 	),
 	'font-size-h5' => array (
 		"label" => "Heading 5",
-		"default" => "1.5rem",
+		"default" => "1.25rem",
 		"section" => "font-sizes",
 	),
 	'font-size-h6' => array (
@@ -847,26 +847,3 @@ function political_landingpages_customize_preview_js() {
 	wp_enqueue_script( 'political-landingpages-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
 add_action( 'customize_preview_init', 'political_landingpages_customize_preview_js' );
-
-
-/**
- * Force update font-family set in customizer
- */
-function my_theme_update_font_defaults() {
-
-    $theme_version = '2.0.0';
-    $installed_version = get_option('my_theme_version');
-
-    if ($installed_version === $theme_version) {
-        return;
-    }
-
-    // Force new font
-    set_theme_mod('font-family-heading', '"futura-100", sans-serif;');
-    set_theme_mod('font-family-body', '"futura-100", sans-serif;');
-
-    // Store current theme version
-    update_option('my_theme_version', $theme_version);
-}
-
-add_action('after_setup_theme', 'my_theme_update_font_defaults');

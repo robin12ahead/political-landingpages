@@ -73,8 +73,8 @@ function my_theme_run_migrations() {
 
     }
 
-    // Migration 2.1.0
-    if ( version_compare( $installed_version, '2.3.5', '<' ) ) {
+    // Migration 2.5.0
+    if ( version_compare( $installed_version, '2.5.1', '<' ) ) {
         my_theme_update_logo();
     }
 
